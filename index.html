@@ -7,8 +7,8 @@
     <meta name="description" content="TheoX is a collaborative scientific workspace where people and AI build living, reproducible research together.">
     <title>TheoX — First Principles Labs</title>
     <link rel="icon" href="assets/theox-icon.png">
-    <link rel="stylesheet" href="styles.css?v=20261012-1">
-    <script src="home-film.js?v=20261012-1" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261012-2">
+    <script src="home-film.js?v=20261012-2" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -53,14 +53,21 @@
                 <span class="rail-glyph">◎</span>
               </aside>
 
+              <aside class="home-film-studies" aria-label="Studies">
+                <header><span>Studies</span><button type="button" aria-label="Create a study">+</button></header>
+                <button class="active" type="button"><strong>Update-order dynamics</strong><small>Active Study</small></button>
+                <button type="button"><strong>Spectral gap atlas</strong><small>12 durable events</small></button>
+                <button type="button"><strong>Finite orbit structure</strong><small>Paper checkpoint</small></button>
+              </aside>
+
               <section class="home-film-workspace">
-                <nav class="home-film-tabs" aria-label="Workflow scene">
-                  <button class="active" type="button" data-home-film-tab="chat">Chat</button>
-                  <button type="button" data-home-film-tab="discover">Discover</button>
-                  <button type="button" data-home-film-tab="team">Team</button>
-                  <button type="button" data-home-film-tab="dro">DRO</button>
-                  <button type="button" data-home-film-tab="paper">Paper</button>
-                </nav>
+                <header class="home-film-context">
+                  <div><small>Supervisor</small><strong>Update-order dynamics</strong></div>
+                  <div class="film-context-actions">
+                    <button id="home-film-team" type="button" data-home-film-tab="team" aria-label="Open Study collaboration">◎ <span>4</span></button>
+                    <span class="film-provider-chip"><i></i> OpenAI · Astra</span>
+                  </div>
+                </header>
 
                 <div class="home-film-scenes">
                   <div class="home-film-scene active" data-home-film-scene="chat">
@@ -71,8 +78,11 @@
                     </div>
                     <div class="film-advisor-line"><i></i><span>Inspecting the registry, code, and prior evidence</span></div>
                     <div class="film-composer">
-                      <span id="home-film-typed"></span><b class="typing-caret" aria-hidden="true"></b>
-                      <button id="home-film-send" type="button" aria-label="Send research direction">↑</button>
+                      <div class="film-composer-input"><span id="home-film-typed"></span><b class="typing-caret" aria-hidden="true"></b></div>
+                      <div class="film-composer-actions">
+                        <button class="film-model-route" type="button">OpenAI · Astra · High⌄</button>
+                        <button id="home-film-send" type="button" aria-label="Send research direction">↑</button>
+                      </div>
                     </div>
                   </div>
 
@@ -102,22 +112,39 @@
 
                   <div class="home-film-scene" data-home-film-scene="team">
                     <div class="film-scene-heading">
-                      <div><p class="film-kicker">Personal model routes</p><strong>Three researchers · three agents</strong></div>
-                      <span>Private Study</span>
+                      <div><p class="film-kicker">Collaboration workspace</p><strong>Four researchers · four agents</strong></div>
+                      <span>Relay preview</span>
                     </div>
-                    <div class="film-collab-stream">
-                      <article class="film-collab-event" data-film-collab-step="0">
+                    <div class="film-team-modes" aria-label="Collaboration view">
+                      <button class="active" type="button" data-film-team-mode="rooms">Members</button>
+                      <button type="button" data-film-team-mode="thread">Discussion</button>
+                    </div>
+                    <div class="film-team-view active" data-film-team-view="rooms">
+                      <div class="film-collab-stream">
+                      <article class="film-collab-event" data-film-room-step="0">
                         <span class="film-person maya">MC</span>
-                        <div><strong>Maya Chen <em>Gemini Pro</em></strong><p>The entropy split survives on the independent sample.</p><small>Her agent attached replication receipt 79b2e663.</small></div>
+                        <div><strong>Maya Chen <em>Gemini Pro</em></strong><p><b>@Arturo</b> The entropy split survives independently.</p><small>Agent attached replication receipt 79b2e663.</small></div>
                       </article>
-                      <article class="film-collab-event" data-film-collab-step="1">
+                      <article class="film-collab-event" data-film-room-step="1">
                         <span class="film-person arturo">AS</span>
-                        <div><strong>Arturo Silva <em>Claude Opus</em></strong><p>I found a nearby theorem, but its hypotheses exclude our family.</p><small>His agent linked the source and marked novelty unresolved.</small></div>
+                        <div><strong>Arturo Silva <em>Claude Opus</em></strong><p><b>@Maya</b> A nearby theorem excludes our family.</p><small>Agent linked the source; novelty remains open.</small></div>
                       </article>
-                      <article class="film-collab-event" data-film-collab-step="2">
+                      <article class="film-collab-event" data-film-room-step="2">
                         <span class="film-person leila">LM</span>
-                        <div><strong>Leila Morgan <em>OpenAI Astra</em></strong><p>I tested the exceptional family. No counterexample through 50,000 states.</p><small>Her agent shared code, logs, and 312 new rows with the Study.</small></div>
+                        <div><strong>Leila Morgan <em>OpenAI Astra</em></strong><p><b>@Noor</b> Can your local runner test the exception?</p><small>Agent shared code, logs, and 312 new rows.</small></div>
                       </article>
+                      <article class="film-collab-event" data-film-room-step="3">
+                        <span class="film-person noor">NR</span>
+                        <div><strong>Noor Rahman <em>Local Qwen</em></strong><p><b>@Leila</b> Reproduced. No failure through 50,000 states.</p><small>Local agent admitted the signed computation receipt.</small></div>
+                      </article>
+                      </div>
+                    </div>
+                    <div class="film-team-view" data-film-team-view="thread">
+                      <div class="film-shared-thread">
+                        <article class="film-thread-event" data-film-thread-step="0"><span class="film-person maya">MC</span><div><strong>Maya</strong><p>The entropy separation reproduced.</p><small>Gemini agent · replication attached</small></div></article>
+                        <article class="film-thread-event" data-film-thread-step="1"><span class="film-person arturo">AS</span><div><strong>Arturo</strong><p>The related theorem does not subsume it.</p><small>Claude agent · literature source linked</small></div></article>
+                        <article class="film-thread-event" data-film-thread-step="2"><span class="film-person noor">NR</span><div><strong>Noor</strong><p>Local replay agrees. Admit this round?</p><small>Qwen agent · computation receipt ready</small></div></article>
+                      </div>
                     </div>
                   </div>
 
@@ -140,6 +167,12 @@ the condensation height of $f$.
                   <strong id="home-film-caption-title">Direct the research</strong>
                   <span id="home-film-caption-copy">Work with TheoX in natural language.</span>
                 </div>
+                <nav class="home-film-tools" aria-label="Study workspace tools">
+                  <button class="active" type="button" data-home-film-tab="chat">Chat</button>
+                  <button type="button" data-home-film-tab="paper">Paper</button>
+                  <button type="button" data-home-film-tab="dro">DRO</button>
+                  <button id="home-film-run" class="film-run" type="button" data-home-film-tab="discover">▶ <span>Run</span></button>
+                </nav>
               </section>
             </div>
 
@@ -156,14 +189,14 @@ the condensation height of $f$.
           <h2 id="collaboration-title">Every collaborator can bring an agent</h2>
         </div>
         <div class="collaboration-copy">
-          <div class="collaboration-presence" aria-label="Three collaborators online">
-            <span>MC</span><span>AS</span><span>LM</span><small>3 online</small>
+          <div class="collaboration-presence" aria-label="Collaboration preview with four researchers">
+            <span>MC</span><span>AS</span><span>LM</span><span>NR</span><small>Relay preview</small>
           </div>
-          <p>Invite researchers into a shared Study. Each person can use personal provider keys, a local model, or a self-hosted endpoint while contributing selected results to the same versioned record.</p>
+          <p>The installed app includes the local causal ledger, roles, invitations, agent grants, discussion, and scientific version controls. When connected to a collaboration relay, researchers can contribute from personal provider keys, local models, or self-hosted endpoints to the same versioned Study.</p>
           <div class="model-routes" aria-label="Supported model routes">
             <span>OpenAI</span><span>Anthropic</span><span>Gemini</span><span>Local</span><span>Self-hosted</span>
           </div>
-          <small class="privacy-note">Model choice can change as the field advances. Local routes keep Study context on hardware the researcher controls.</small>
+          <small class="privacy-note">Live cross-device synchronization requires a configured relay. Local routes keep model execution on hardware the researcher controls.</small>
         </div>
       </section>
 

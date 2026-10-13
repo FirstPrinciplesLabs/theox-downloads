@@ -9,9 +9,13 @@ const filmDroTarget = document.querySelector("#home-film-dro-target");
 const filmEvidenceCount = document.querySelector("#home-film-evidence-count");
 const filmSearchStatus = document.querySelector("#film-search-status");
 const filmCompile = document.querySelector("#home-film-compile");
+const filmRunControl = document.querySelector("#home-film-run");
 const filmTabs = Array.from(document.querySelectorAll("[data-home-film-tab]"));
 const filmScenes = Array.from(document.querySelectorAll("[data-home-film-scene]"));
-const filmCollabEvents = Array.from(document.querySelectorAll("[data-film-collab-step]"));
+const filmTeamModes = Array.from(document.querySelectorAll("[data-film-team-mode]"));
+const filmTeamViews = Array.from(document.querySelectorAll("[data-film-team-view]"));
+const filmRoomEvents = Array.from(document.querySelectorAll("[data-film-room-step]"));
+const filmThreadEvents = Array.from(document.querySelectorAll("[data-film-thread-step]"));
 const reducedFilmMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 let filmRun = 0;
@@ -27,6 +31,11 @@ function setFilmScene(scene) {
 function setFilmCaption(title, copy) {
   filmCaptionTitle.textContent = title;
   filmCaptionCopy.textContent = copy;
+}
+
+function setFilmTeamMode(mode) {
+  filmTeamModes.forEach((button) => button.classList.toggle("active", button.dataset.filmTeamMode === mode));
+  filmTeamViews.forEach((view) => view.classList.toggle("active", view.dataset.filmTeamView === mode));
 }
 
 function waitFilm(milliseconds, run) {
@@ -88,7 +97,10 @@ function resetFilm() {
   filmSearchStatus.textContent = "Running";
   filmCompile.classList.remove("compiling");
   filmCompile.textContent = "Compile";
-  filmCollabEvents.forEach((event) => event.classList.remove("visible"));
+  filmRunControl.classList.remove("running");
+  filmRunControl.querySelector("span").textContent = "Run";
+  setFilmTeamMode("rooms");
+  [...filmRoomEvents, ...filmThreadEvents].forEach((event) => event.classList.remove("visible"));
   filmCursor.classList.remove("visible", "clicking");
   filmPaused = false;
   filmRunning = false;
@@ -119,8 +131,12 @@ async function playFilm() {
 
   setFilmCaption("Search the Study", "TheoX inspects data, code, prior claims, and counterexamples.");
   if (!(await clickFilmControl('[data-home-film-tab="discover"]', run))) return;
+  filmRunControl.classList.add("running");
+  filmRunControl.querySelector("span").textContent = "Stop";
   if (!(await waitFilm(900, run))) return;
   filmSearchStatus.textContent = "17 candidates";
+  filmRunControl.classList.remove("running");
+  filmRunControl.querySelector("span").textContent = "Run";
   if (!(await waitFilm(900, run))) return;
 
   setFilmCaption("Preserve what survives", "Evidence is dragged into the versioned research record.");
@@ -134,12 +150,21 @@ async function playFilm() {
   filmEvidenceCount.textContent = "39 assets";
   if (!(await waitFilm(650, run))) return;
 
-  setFilmCaption("Collaborate on your terms", "Each researcher controls a provider, local model, or self-hosted route.");
+  setFilmCaption("Open the Collaborators workspace", "Members, their model routes, agent grants, and version history stay visible beside the Study.");
   if (!(await clickFilmControl('[data-home-film-tab="team"]', run))) return;
-  for (let index = 0; index < filmCollabEvents.length; index += 1) {
-    filmCollabEvents[index].classList.add("visible");
-    if (!(await moveFilmCursor(`[data-film-collab-step="${index}"]`, run, 520))) return;
-    if (!(await waitFilm(420, run))) return;
+  for (let index = 0; index < filmRoomEvents.length; index += 1) {
+    filmRoomEvents[index].classList.add("visible");
+    if (!(await moveFilmCursor(`[data-film-room-step="${index}"]`, run, 460))) return;
+    if (!(await waitFilm(300, run))) return;
+  }
+  if (!(await waitFilm(500, run))) return;
+
+  setFilmCaption("Continue in the Study discussion", "The same workspace holds human messages, attributed agent work, and scientific-object threads.");
+  if (!(await clickFilmControl('[data-film-team-mode="thread"]', run))) return;
+  for (let index = 0; index < filmThreadEvents.length; index += 1) {
+    filmThreadEvents[index].classList.add("visible");
+    if (!(await moveFilmCursor(`[data-film-thread-step="${index}"]`, run, 460))) return;
+    if (!(await waitFilm(300, run))) return;
   }
   if (!(await waitFilm(700, run))) return;
 
@@ -164,6 +189,10 @@ async function playFilm() {
 
 filmTabs.forEach((tab) => {
   tab.addEventListener("click", () => setFilmScene(tab.dataset.homeFilmTab));
+});
+
+filmTeamModes.forEach((button) => {
+  button.addEventListener("click", () => setFilmTeamMode(button.dataset.filmTeamMode));
 });
 
 filmToggle.addEventListener("click", () => {
