@@ -1,0 +1,17 @@
+{
+  "schema_version": "theox.public-release.v1",
+  "product": "TheoX",
+  "version": "0.1.0-preview.1",
+  "channel": "preview",
+  "published_by": "First Principles Labs",
+  "artifacts": [
+    {
+      "platform": "macos",
+      "architecture": "arm64",
+      "name": "TheoX-0.1.0-arm64.dmg",
+      "sha256": "46a0461fa592249903245177b387ee3b222ac35d0b9f7ec3bd185d6080b1ec53",
+      "signed": false,
+      "notarized": false
+    }
+  ]
+}
