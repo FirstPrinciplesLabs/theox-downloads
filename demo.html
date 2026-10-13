@@ -182,7 +182,68 @@ the height of the condensation order of $f$.
               </div>
               <div class="dro-section release-row">
                 <div><h4>Publication readiness</h4><p>Evidence and authorship complete. Literature novelty remains unresolved.</p></div>
-                <button type="button">Inspect history</button>
+                <button type="button" data-view="replay">Replay history</button>
+              </div>
+            </section>
+
+            <section class="view-panel replay-panel" data-panel="replay" aria-label="Research history replay">
+              <div class="replay-content">
+                <header class="replay-heading">
+                  <div>
+                    <span class="overline" id="replay-category">Study foundation</span>
+                    <h3 id="replay-title">The Study begins</h3>
+                    <p id="replay-description">A finite-dynamics registry, its definitions, and its computation package enter the research record.</p>
+                  </div>
+                  <div class="replay-counter"><span id="replay-event-number">01</span><small>/ 07</small></div>
+                </header>
+
+                <div class="replay-scene">
+                  <div class="replay-plot" aria-label="Candidate pressure over the research history">
+                    <div class="plot-y-label">Candidate pressure</div>
+                    <div class="plot-area">
+                      <span class="plot-grid grid-top"></span>
+                      <span class="plot-grid grid-middle"></span>
+                      <span class="plot-grid grid-bottom"></span>
+                      <div class="plot-bars" aria-hidden="true">
+                        <span class="plot-bar" data-replay-bar="0"></span>
+                        <span class="plot-bar" data-replay-bar="1"></span>
+                        <span class="plot-bar" data-replay-bar="2"></span>
+                        <span class="plot-bar" data-replay-bar="3"></span>
+                        <span class="plot-bar" data-replay-bar="4"></span>
+                        <span class="plot-bar" data-replay-bar="5"></span>
+                        <span class="plot-bar" data-replay-bar="6"></span>
+                      </div>
+                    </div>
+                    <div class="plot-x-label">Research event</div>
+                  </div>
+                  <aside class="replay-evidence">
+                    <span class="overline">Record at this moment</span>
+                    <strong id="replay-metric">256 objects admitted</strong>
+                    <p id="replay-artifact">registry.csv · definitions.yaml · computation package</p>
+                  </aside>
+                </div>
+
+                <ol class="replay-timeline" id="replay-timeline" aria-label="Research events">
+                  <li class="active"><button type="button" data-replay-step="0"><span>00:00</span><b>Foundation</b></button></li>
+                  <li><button type="button" data-replay-step="1"><span>00:24</span><b>Search</b></button></li>
+                  <li><button type="button" data-replay-step="2"><span>00:53</span><b>Refutation</b></button></li>
+                  <li><button type="button" data-replay-step="3"><span>01:21</span><b>Visual</b></button></li>
+                  <li><button type="button" data-replay-step="4"><span>01:48</span><b>Invention</b></button></li>
+                  <li><button type="button" data-replay-step="5"><span>02:26</span><b>Replication</b></button></li>
+                  <li><button type="button" data-replay-step="6"><span>03:12</span><b>Release</b></button></li>
+                </ol>
+              </div>
+
+              <div class="replay-controls">
+                <button class="replay-toggle" id="replay-toggle" type="button" aria-label="Play research replay">▶</button>
+                <time id="replay-current-time">00:00</time>
+                <input id="replay-scrubber" type="range" min="0" max="6" step="1" value="0" aria-label="Research replay position">
+                <time>03:12</time>
+                <select id="replay-speed" aria-label="Playback speed">
+                  <option value="1">1×</option>
+                  <option value="1.5">1.5×</option>
+                  <option value="2">2×</option>
+                </select>
               </div>
             </section>
           </div>
@@ -191,6 +252,7 @@ the height of the condensation order of $f$.
             <button class="active" type="button" data-view="chat">Chat</button>
             <button type="button" data-view="paper">Paper</button>
             <button type="button" data-view="dro">DRO</button>
+            <button type="button" data-view="replay">Replay</button>
           </nav>
         </section>
       </div>
