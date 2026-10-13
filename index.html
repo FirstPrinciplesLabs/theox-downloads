@@ -8,7 +8,7 @@
     <title>TheoX — First Principles Labs</title>
     <link rel="icon" href="assets/theox-icon.png">
     <link rel="stylesheet" href="styles.css?v=20261012-4">
-    <script src="home-film.js?v=20261012-4" defer></script>
+    <script src="home-film.js?v=20261012-5" defer></script>
     <script src="feature-films.js?v=20261012-4" defer></script>
   </head>
   <body>
@@ -58,17 +58,17 @@
               </aside>
 
               <aside class="home-film-studies" aria-label="Study navigation">
-                <header><span>Update-order dynamics</span><button type="button" aria-label="Collapse Study sidebar">‹</button></header>
+                <header><span id="home-film-study-name">New Study</span><button type="button" aria-label="Collapse Study sidebar">‹</button></header>
                 <button class="active" type="button"><strong>▢ Study chat</strong></button>
                 <p>Files</p>
-                <ul class="film-file-tree">
-                  <li>› artifacts</li><li>› checks</li><li>› computation</li><li>› definitions</li><li>› evolution</li><li>› knowledge</li><li>› manuscript</li><li>› tables</li>
+                <ul class="film-file-tree" id="home-film-file-tree">
+                  <li data-generated-file>› artifacts</li><li data-generated-file>› checks</li><li data-generated-file>› computation</li><li data-generated-file>› definitions</li><li data-generated-file>› evolution</li><li data-generated-file>› knowledge</li><li data-generated-file>› manuscript</li><li data-generated-file>› tables</li>
                 </ul>
               </aside>
 
               <section class="home-film-workspace">
                 <header class="home-film-context">
-                  <div><small>Supervisor</small><strong>Update-order dynamics</strong></div>
+                  <div><small>Supervisor</small><strong id="home-film-context-name">Create a Study</strong></div>
                   <div class="film-context-actions">
                     <button id="home-film-team" type="button" data-home-film-tab="team" aria-label="Open Study collaboration">◎ <span>4</span></button>
                     <span class="film-provider-chip"><i></i> OpenAI · Astra</span>
@@ -80,9 +80,9 @@
                     <p class="film-kicker">Research advisor</p>
                     <div class="film-message">
                       <span>You</span>
-                      <p>Study how update order changes convergence.</p>
+                      <p>Create a Study of how update order changes convergence.</p>
                     </div>
-                    <div class="film-advisor-line"><i></i><span>Inspecting the registry, code, and prior evidence</span></div>
+                    <div class="film-advisor-line"><i></i><span id="home-film-advisor-status">Waiting for a research direction</span></div>
                     <div class="film-composer">
                       <div class="film-composer-input"><span id="home-film-typed"></span><b class="typing-caret" aria-hidden="true"></b></div>
                       <div class="film-composer-actions">
@@ -92,12 +92,31 @@
                     </div>
                   </div>
 
+                  <div class="home-film-scene" data-home-film-scene="build">
+                    <div class="film-scene-heading"><div><p class="film-kicker">Study construction</p><strong>Building the registry and its software</strong></div><span id="film-build-status">Creating</span></div>
+                    <div class="film-build-grid">
+                      <ol class="film-build-log">
+                        <li data-film-build-step="0"><i></i><div><strong>Define the objects</strong><small>Registry schema and scientific notation</small></div></li>
+                        <li data-film-build-step="1"><i></i><div><strong>Write the computation package</strong><small>Descriptors, predicates, and known-example tests</small></div></li>
+                        <li data-film-build-step="2"><i></i><div><strong>Generate the first dataset</strong><small>2,048 identified objects · 31 descriptors</small></div></li>
+                        <li data-film-build-step="3"><i></i><div><strong>Render an exploratory plot</strong><small>Source, labels, and execution receipt retained</small></div></li>
+                      </ol>
+                      <div class="film-created-files" aria-label="Files created for the Study">
+                        <small>Created in this Study</small>
+                        <code data-film-created-file="0">tables/registry.csv</code>
+                        <code data-film-created-file="1">computation/descriptors.py</code>
+                        <code data-film-created-file="2">checks/test_known_examples.py</code>
+                        <code data-film-created-file="3">artifacts/update_order_map.png</code>
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="home-film-scene" data-home-film-scene="discover">
                     <div class="film-scene-heading"><div><p class="film-kicker">Discovery pressure</p><strong>Search across code and evidence</strong></div><span id="film-search-status">Running</span></div>
                     <div class="film-discovery-grid">
-                      <div class="film-mini-plot" aria-label="Candidate pressure plot">
-                        <span style="height: 24%"></span><span style="height: 58%"></span><span style="height: 38%"></span><span style="height: 78%"></span><span style="height: 51%"></span><span style="height: 88%"></span>
-                        <small>candidate pressure</small>
+                      <div class="film-mini-plot" aria-label="Convergence time by condensation height">
+                        <i style="--x: 13%; --y: 18%"></i><i style="--x: 22%; --y: 29%"></i><i style="--x: 34%; --y: 31%"></i><i style="--x: 43%; --y: 45%"></i><i style="--x: 56%; --y: 54%"></i><i style="--x: 65%; --y: 63%"></i><i style="--x: 78%; --y: 74%"></i><i style="--x: 89%; --y: 85%"></i>
+                        <b class="film-axis-y">convergence time</b><b class="film-axis-x">condensation height</b>
                       </div>
                       <div class="film-findings">
                         <article class="film-claim" id="home-film-claim"><small>Surviving claim</small><strong>Update-order compression</strong><span>3 attacks survived</span></article>
@@ -183,7 +202,7 @@ the condensation height of $f$.
               </section>
             </div>
 
-            <footer class="home-film-statusbar"><span>Update-order dynamics · 2,048 objects · 31 descriptors</span><span>Target convergence time · V2 ready</span><span>184 durable events</span></footer>
+            <footer class="home-film-statusbar"><span id="home-film-study-status">No registry attached</span><span id="home-film-target-status">Create a Study to begin</span><span id="home-film-event-status">0 durable events</span></footer>
 
             <div class="home-film-cursor" id="home-film-cursor" aria-hidden="true">
               <svg viewBox="0 0 24 28" role="presentation"><path d="M2 2v19l5.2-4.8 3.8 8.6 4.1-1.8-3.8-8.5H19L2 2Z"></path></svg>
@@ -200,7 +219,7 @@ the condensation height of $f$.
         <div class="foundation-intro">
           <p class="section-label">A Study is a project</p>
           <h2 id="study-foundation-title">Every question grows its own scientific software</h2>
-          <p>TheoX does not separate the scientific result from the machinery that produced it. A Study owns its data, definitions, code, tests, evidence, discussion, and manuscript.</p>
+          <p>V2 begins without an inherited scientific registry. Each new Study creates or imports its own data, definitions, code, tests, evidence, discussion, and manuscript, so the result remains inseparable from the machinery that produced it.</p>
         </div>
         <ol class="foundation-parts" aria-label="Contents of a TheoX Study">
           <li><span>01</span><div><strong>Build</strong><small>Datasets, descriptors, simulations, packages, and tests evolve with the question.</small></div></li>
