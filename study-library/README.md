@@ -15,3 +15,18 @@ Download `packages/graph-theory-foundation-1.0.0.theox-study.json`, open TheoX's
 Study Library, choose **Import package**, inspect the manifest, and install it as a new
 independent Study. The package remains visibly unverified until TheoX has a publisher
 keyring that can validate its exact bytes.
+
+## Integer Arithmetic Foundation 1.0.0
+
+- 100,000 reconstructible positive integer objects
+- 55 exact scientific fields: 30 integer functions and 25 Boolean predicates
+- zero missing or non-finite scientific cells
+- complete dependency-free Python provider
+- optional C++ factorization core parity-tested on 1,000 objects across 11 fields
+- Lean foundation with explicit partial coverage and no claimed Python-to-Lean bridge
+- 31 files and 5,936,781 decoded payload bytes
+
+Download `packages/integer-arithmetic-foundation-1.0.0.theox-study.json`, open
+TheoX's Study Library, choose **Import package**, inspect the foundation, and
+install it as a new independent Study. It has no preselected research focus,
+target, conjecture, or run history.
