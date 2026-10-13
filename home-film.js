@@ -11,6 +11,7 @@ const filmSearchStatus = document.querySelector("#film-search-status");
 const filmCompile = document.querySelector("#home-film-compile");
 const filmTabs = Array.from(document.querySelectorAll("[data-home-film-tab]"));
 const filmScenes = Array.from(document.querySelectorAll("[data-home-film-scene]"));
+const filmCollabEvents = Array.from(document.querySelectorAll("[data-film-collab-step]"));
 const reducedFilmMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 let filmRun = 0;
@@ -87,6 +88,7 @@ function resetFilm() {
   filmSearchStatus.textContent = "Running";
   filmCompile.classList.remove("compiling");
   filmCompile.textContent = "Compile";
+  filmCollabEvents.forEach((event) => event.classList.remove("visible"));
   filmCursor.classList.remove("visible", "clicking");
   filmPaused = false;
   filmRunning = false;
@@ -131,6 +133,15 @@ async function playFilm() {
   filmClaim.classList.add("admitted");
   filmEvidenceCount.textContent = "39 assets";
   if (!(await waitFilm(650, run))) return;
+
+  setFilmCaption("Collaborate on your terms", "Each researcher controls a provider, local model, or self-hosted route.");
+  if (!(await clickFilmControl('[data-home-film-tab="team"]', run))) return;
+  for (let index = 0; index < filmCollabEvents.length; index += 1) {
+    filmCollabEvents[index].classList.add("visible");
+    if (!(await moveFilmCursor(`[data-film-collab-step="${index}"]`, run, 520))) return;
+    if (!(await waitFilm(420, run))) return;
+  }
+  if (!(await waitFilm(700, run))) return;
 
   setFilmCaption("Inspect the lineage", "Questions, failures, evidence, and contributors remain connected.");
   if (!(await clickFilmControl('[data-home-film-tab="dro"]', run))) return;
