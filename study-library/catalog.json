@@ -19,6 +19,24 @@
       "sizeBytes": 11521035,
       "packagePath": "packages/graph-theory-foundation-1.0.0.theox-study.json",
       "sha256": "d34ee41cfc963ef3f43bf508f7de0db7e731f055f6984e827621c7581621e539"
+    },
+    {
+      "key": "study-package:integer-arithmetic-foundation",
+      "slug": "integer_arithmetic_foundation",
+      "kind": "template",
+      "title": "Integer Arithmetic Foundation",
+      "summary": "A research-neutral exact arithmetic Study with 100,000 reconstructible integers, 55 complete scientific fields, and attached Python, C++, and Lean source.",
+      "field": "Mathematics",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "Proprietary",
+      "compatibility": "0.1.0",
+      "objectCount": 100000,
+      "descriptorCount": 55,
+      "fileCount": 31,
+      "sizeBytes": 5936781,
+      "packagePath": "packages/integer-arithmetic-foundation-1.0.0.theox-study.json",
+      "sha256": "ccd1619c3453fd7bf74639846adc508007baa88e05490be12727774c2ce4c294"
     }
   ]
 }
