@@ -7,9 +7,9 @@
     <meta name="description" content="TheoX is a collaborative scientific workspace where people and AI build living, reproducible research together.">
     <title>TheoX — First Principles Labs</title>
     <link rel="icon" href="assets/theox-icon.png">
-    <link rel="stylesheet" href="styles.css?v=20261012-5">
-    <script src="home-film.js?v=20261012-5" defer></script>
-    <script src="feature-films.js?v=20261012-4" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261012-6">
+    <script src="home-film.js?v=20261012-6" defer></script>
+    <script src="feature-films.js?v=20261012-6" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -80,7 +80,7 @@
                     <p class="film-kicker">Research advisor</p>
                     <div class="film-message">
                       <span>You</span>
-                      <p>Create a Study of how update order changes convergence.</p>
+                      <p>Create a Study of joint measurability for noisy qubit observables.</p>
                     </div>
                     <div class="film-advisor-line"><i></i><span id="home-film-advisor-status">Waiting for a research direction</span></div>
                     <div class="film-composer">
@@ -96,17 +96,17 @@
                     <div class="film-scene-heading"><div><p class="film-kicker">Study construction</p><strong>Building the registry and its software</strong></div><span id="film-build-status">Creating</span></div>
                     <div class="film-build-grid">
                       <ol class="film-build-log">
-                        <li data-film-build-step="0"><i></i><div><strong>Define the objects</strong><small>Registry schema and scientific notation</small></div></li>
-                        <li data-film-build-step="1"><i></i><div><strong>Write the computation package</strong><small>Descriptors, predicates, and known-example tests</small></div></li>
-                        <li data-film-build-step="2"><i></i><div><strong>Generate the first dataset</strong><small>2,048 identified objects · 31 descriptors</small></div></li>
-                        <li data-film-build-step="3"><i></i><div><strong>Render an exploratory plot</strong><small>Source, labels, and execution receipt retained</small></div></li>
+                        <li data-film-build-step="0"><i></i><div><strong>Define the objects</strong><small>Binary qubit POVMs, Bloch vectors, and visibility</small></div></li>
+                        <li data-film-build-step="1"><i></i><div><strong>Write the computation package</strong><small>Compatibility margins and exact benchmark tests</small></div></li>
+                        <li data-film-build-step="2"><i></i><div><strong>Generate the first dataset</strong><small>2,401 parameter points · 18 descriptors</small></div></li>
+                        <li data-film-build-step="3"><i></i><div><strong>Render a visibility plot</strong><small>Axes, source code, and execution receipt retained</small></div></li>
                       </ol>
                       <div class="film-created-files" aria-label="Files created for the Study">
                         <small>Created in this Study</small>
                         <code data-film-created-file="0">tables/registry.csv</code>
-                        <code data-film-created-file="1">computation/descriptors.py</code>
-                        <code data-film-created-file="2">checks/test_known_examples.py</code>
-                        <code data-film-created-file="3">artifacts/update_order_map.png</code>
+                        <code data-film-created-file="1">computation/compatibility.py</code>
+                        <code data-film-created-file="2">checks/test_pauli_benchmarks.py</code>
+                        <code data-film-created-file="3">artifacts/visibility_boundary.png</code>
                       </div>
                     </div>
                   </div>
@@ -114,13 +114,14 @@
                   <div class="home-film-scene" data-home-film-scene="discover">
                     <div class="film-scene-heading"><div><p class="film-kicker">Discovery pressure</p><strong>Search across code and evidence</strong></div><span id="film-search-status">Running</span></div>
                     <div class="film-discovery-grid">
-                      <div class="film-mini-plot" aria-label="Convergence time by condensation height">
-                        <i style="--x: 13%; --y: 18%"></i><i style="--x: 22%; --y: 29%"></i><i style="--x: 34%; --y: 31%"></i><i style="--x: 43%; --y: 45%"></i><i style="--x: 56%; --y: 54%"></i><i style="--x: 65%; --y: 63%"></i><i style="--x: 78%; --y: 74%"></i><i style="--x: 89%; --y: 85%"></i>
-                        <b class="film-axis-y">convergence time</b><b class="film-axis-x">condensation height</b>
+                      <div class="film-mini-plot" aria-label="Critical visibility by Bloch-vector angle">
+                        <i style="--x: 8%; --y: 82%"></i><i style="--x: 20%; --y: 68%"></i><i style="--x: 32%; --y: 50%"></i><i style="--x: 44%; --y: 34%"></i><i style="--x: 50%; --y: 28%"></i><i style="--x: 56%; --y: 34%"></i><i style="--x: 68%; --y: 50%"></i><i style="--x: 80%; --y: 68%"></i><i style="--x: 92%; --y: 82%"></i>
+                        <b class="film-axis-y">critical visibility η*</b><b class="film-axis-x">Bloch-vector angle θ</b>
+                        <small class="film-plot-note">pair benchmark: ‖a+b‖+‖a−b‖ ≤ 2</small>
                       </div>
                       <div class="film-findings">
-                        <article class="film-claim" id="home-film-claim"><small>Surviving claim</small><strong>Update-order compression</strong><span>3 attacks survived</span></article>
-                        <article class="film-refutation"><small>Counterexamples</small><strong>11 weak forms removed</strong></article>
+                        <article class="film-claim" id="home-film-claim"><small>Unresolved candidate</small><strong>Equatorial triple visibility minimum</strong><span>3 bounded attacks survived</span></article>
+                        <article class="film-refutation"><small>Counterexamples</small><strong>11 overstrong variants removed</strong></article>
                       </div>
                     </div>
                     <div class="film-dro-target" id="home-film-dro-target"><span>DRO evidence record</span><strong id="home-film-evidence-count">38 assets</strong></div>
@@ -131,7 +132,7 @@
                     <ol class="film-lineage">
                       <li><span>01</span><div><strong>Study created</strong><small>Registry, definitions, and computation package</small></div></li>
                       <li><span>02</span><div><strong>Pressure changed the claim</strong><small>11 counterexamples retained for future searches</small></div></li>
-                      <li class="current"><span>03</span><div><strong>New evidence admitted</strong><small>Update-order compression · complete provenance</small></div></li>
+                      <li class="current"><span>03</span><div><strong>New evidence admitted</strong><small>Triple-visibility candidate · status unresolved</small></div></li>
                     </ol>
                   </div>
 
@@ -148,27 +149,27 @@
                       <div class="film-collab-stream">
                       <article class="film-collab-event" data-film-room-step="0">
                         <span class="film-person maya">MC</span>
-                        <div><strong>Maya Chen <em>Gemini Pro</em></strong><p><b>@Arturo</b> The entropy split survives independently.</p><small>Agent attached replication receipt 79b2e663.</small></div>
+                        <div><strong>Maya Chen <em>Gemini Pro</em></strong><p><b>@Arturo</b> The trine threshold reproduced independently.</p><small>Agent attached replication receipt 79b2e663.</small></div>
                       </article>
                       <article class="film-collab-event" data-film-room-step="1">
                         <span class="film-person arturo">AS</span>
-                        <div><strong>Arturo Silva <em>Claude Opus</em></strong><p><b>@Maya</b> A nearby theorem excludes our family.</p><small>Agent linked the source; novelty remains open.</small></div>
+                        <div><strong>Arturo Silva <em>Claude Opus</em></strong><p><b>@Maya</b> The binary criterion does not settle triples.</p><small>Agent linked the source; novelty remains open.</small></div>
                       </article>
                       <article class="film-collab-event" data-film-room-step="2">
                         <span class="film-person leila">LM</span>
-                        <div><strong>Leila Morgan <em>OpenAI Astra</em></strong><p><b>@Noor</b> Can your local runner test the exception?</p><small>Agent shared code, logs, and 312 new rows.</small></div>
+                        <div><strong>Leila Morgan <em>OpenAI Astra</em></strong><p><b>@Noor</b> Can your local runner test asymmetric noise?</p><small>Agent shared code, logs, and 312 new samples.</small></div>
                       </article>
                       <article class="film-collab-event" data-film-room-step="3">
                         <span class="film-person noor">NR</span>
-                        <div><strong>Noor Rahman <em>Local Qwen</em></strong><p><b>@Leila</b> Reproduced. No failure through 50,000 states.</p><small>Local agent admitted the signed computation receipt.</small></div>
+                        <div><strong>Noor Rahman <em>Local Qwen</em></strong><p><b>@Leila</b> Reproduced. No failure in 50,000 samples.</p><small>Local agent admitted the signed computation receipt.</small></div>
                       </article>
                       </div>
                     </div>
                     <div class="film-team-view" data-film-team-view="thread">
                       <div class="film-shared-thread">
-                        <article class="film-thread-event" data-film-thread-step="0"><span class="film-person maya">MC</span><div><strong>Maya</strong><p>The entropy separation reproduced.</p><small>Gemini agent · replication attached</small></div></article>
-                        <article class="film-thread-event" data-film-thread-step="1"><span class="film-person arturo">AS</span><div><strong>Arturo</strong><p>The related theorem does not subsume it.</p><small>Claude agent · literature source linked</small></div></article>
-                        <article class="film-thread-event" data-film-thread-step="2"><span class="film-person noor">NR</span><div><strong>Noor</strong><p>Local replay agrees. Admit this round?</p><small>Qwen agent · computation receipt ready</small></div></article>
+                        <article class="film-thread-event" data-film-thread-step="0"><span class="film-person maya">MC</span><div><strong>Maya</strong><p>The trine benchmark reproduced.</p><small>Gemini agent · replication attached</small></div></article>
+                        <article class="film-thread-event" data-film-thread-step="1"><span class="film-person arturo">AS</span><div><strong>Arturo</strong><p>The pairwise theorem does not subsume it.</p><small>Claude agent · literature source linked</small></div></article>
+                        <article class="film-thread-event" data-film-thread-step="2"><span class="film-person noor">NR</span><div><strong>Noor</strong><p>Local replay agrees. Keep it unresolved?</p><small>Qwen agent · computation receipt ready</small></div></article>
                       </div>
                     </div>
                   </div>
@@ -177,17 +178,17 @@
                     <div class="film-paper-split">
                       <section class="film-paper-source">
                         <header><strong>paper.tex</strong><span>Compiled</span><button type="button">Revise</button><button id="home-film-compile" type="button">Compile</button></header>
-                        <pre>\section{Emerging structure}
-Let $f$ be monotone.
+                        <pre>\section{Candidate geometry}
+Let $M_i^\pm=(I\pm\eta\,\mathbf n_i\cdot\boldsymbol\sigma)/2$.
 
 \begin{conjecture}
-Sweep complexity is bounded by
-the condensation height of $f$.
+Equal angular spacing minimizes the
+critical joint-measurability visibility.
 \end{conjecture}</pre>
                       </section>
                       <section class="film-paper-preview">
                         <header><strong>Compiled preview</strong><span>‹</span><small>Page 1 of 5</small><span>›</span><span>−</span><span>+</span><span>↗</span></header>
-                        <div class="film-paper-page"><small>COMPILED RESEARCH NOTE</small><strong>Update-Order Compression</strong><p><b>Conjecture 1.</b> Sweep complexity is bounded by the condensation height of <i>f</i>.</p></div>
+                        <div class="film-paper-page"><small>COMPILED RESEARCH NOTE</small><strong>Equatorial Qubit Compatibility</strong><p><b>Candidate 1.</b> Among triples of equatorial directions, equal angular spacing minimizes the critical joint-measurability visibility.</p></div>
                       </section>
                     </div>
                   </div>
@@ -305,8 +306,8 @@ the condensation height of $f$.
           <div class="feature-stage">
             <aside class="feature-rail" aria-hidden="true"><b>⌂</b><b>▤</b><b class="active">◷</b><b>⚙</b></aside>
             <div class="feature-panel verify-panel">
-              <div class="feature-heading"><div><small>Claim under pressure</small><strong>Update-order compression</strong></div><span>Round 3</span></div>
-              <article class="claim-record feature-step" data-feature-step="0" data-caption="Every candidate begins with its exact statement and finite evidence."><small>Conjecture C-17</small><p>Sweep complexity is bounded by condensation height.</p><span>Finite evidence · unresolved</span></article>
+              <div class="feature-heading"><div><small>Candidate under pressure</small><strong>Equatorial triple visibility</strong></div><span>Round 3</span></div>
+              <article class="claim-record feature-step" data-feature-step="0" data-caption="Every candidate begins with its exact statement and finite evidence."><small>Candidate Q-17</small><p>Equal angular spacing minimizes the critical visibility.</p><span>Finite evidence · unresolved</span></article>
               <div class="pressure-list feature-step" data-feature-step="1" data-caption="Independent attacks search for counterexamples, proofs, and prior literature.">
                 <span><b>Counterexample search</b><em>0 found</em></span>
                 <span><b>Literature pressure</b><em>No match</em></span>

@@ -148,9 +148,9 @@ async function playFilm() {
   if (!(await typeFilmDirection("Build its registry, tests, and first exploratory plot.", run))) return;
   if (!(await clickFilmControl("#home-film-send", run))) return;
 
-  filmStudyName.textContent = "Update-order dynamics";
-  filmContextName.textContent = "Update-order dynamics";
-  filmAdvisorStatus.textContent = "Writing the registry, software, tests, and first visualization";
+  filmStudyName.textContent = "Qubit compatibility";
+  filmContextName.textContent = "Qubit compatibility";
+  filmAdvisorStatus.textContent = "Writing the registry, compatibility code, benchmark tests, and visibility plot";
   setFilmScene("build");
   setFilmCaption("Construct the Study", "TheoX creates inspectable data and software for this question; nothing is inherited from a bundled registry.");
   for (let index = 0; index < filmBuildSteps.length; index += 1) {
@@ -163,8 +163,8 @@ async function playFilm() {
     if (!(await waitFilm(260, run))) return;
   }
   filmBuildStatus.textContent = "Ready";
-  filmStudyStatus.textContent = "Update-order dynamics · 2,048 objects · 31 descriptors";
-  filmTargetStatus.textContent = "Target convergence time · V2 ready";
+  filmStudyStatus.textContent = "Qubit compatibility · 2,401 samples · 18 descriptors";
+  filmTargetStatus.textContent = "Target joint-measurability visibility · V2 ready";
   filmEventStatus.textContent = "24 durable events";
   if (!(await waitFilm(700, run))) return;
 
