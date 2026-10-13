@@ -7,8 +7,9 @@
     <meta name="description" content="TheoX is a collaborative scientific workspace where people and AI build living, reproducible research together.">
     <title>TheoX — First Principles Labs</title>
     <link rel="icon" href="assets/theox-icon.png">
-    <link rel="stylesheet" href="styles.css?v=20261012-3">
-    <script src="home-film.js?v=20261012-3" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261012-4">
+    <script src="home-film.js?v=20261012-4" defer></script>
+    <script src="feature-films.js?v=20261012-4" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -17,8 +18,9 @@
         <span>TheoX</span>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="about.html">About</a>
-        <a href="#watch">Watch</a>
+        <a href="#models">Models</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#verification">Verification</a>
         <a href="#downloads">Download</a>
       </nav>
     </header>
@@ -26,18 +28,18 @@
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Collaborative scientific workspace</p>
+          <p class="eyebrow">Software for living science</p>
           <h1 id="hero-title">TheoX</h1>
-          <p class="lede">Think, compute, and publish with collaborators and AI inside a research record that keeps evolving.</p>
+          <p class="lede">Build each Study as software, data, evidence, and scientific history that others can reproduce, challenge, and extend.</p>
           <div class="hero-actions">
             <a class="primary-action" href="https://github.com/FirstPrinciplesLabs/theox-downloads/releases/download/v0.1.0-preview.1/TheoX-0.1.0-arm64.dmg">
               Download for Apple silicon
             </a>
-            <a class="text-action" href="#watch">Watch TheoX</a>
+            <a class="text-action" href="#models">See how it works</a>
           </div>
           <p class="release-line">Version 0.1.0 · macOS for Apple silicon · <a href="https://github.com/FirstPrinciplesLabs/theox-downloads/releases/tag/v0.1.0-preview.1">Release notes</a></p>
         </div>
-        <div class="home-film" id="watch" aria-label="TheoX research workflow film">
+        <div class="home-film" id="product" aria-label="TheoX research workflow film">
           <div class="home-film-window" id="home-film-window">
             <header class="home-film-titlebar">
               <div class="home-film-brand"><img src="assets/theox-icon.png" alt="" width="18" height="18"><strong>TheoX</strong></div>
@@ -194,29 +196,125 @@ the condensation height of $f$.
         </div>
       </section>
 
-      <section class="collaboration-band" aria-labelledby="collaboration-title">
-        <div>
-          <p class="section-label">Research together</p>
-          <h2 id="collaboration-title">Every collaborator can bring an agent</h2>
+      <section class="study-foundation" aria-labelledby="study-foundation-title">
+        <div class="foundation-intro">
+          <p class="section-label">A Study is a project</p>
+          <h2 id="study-foundation-title">Every question grows its own scientific software</h2>
+          <p>TheoX does not separate the scientific result from the machinery that produced it. A Study owns its data, definitions, code, tests, evidence, discussion, and manuscript.</p>
         </div>
-        <div class="collaboration-copy">
-          <div class="collaboration-presence" aria-label="Collaboration preview with four researchers">
-            <span>MC</span><span>AS</span><span>LM</span><span>NR</span><small>Relay preview</small>
+        <ol class="foundation-parts" aria-label="Contents of a TheoX Study">
+          <li><span>01</span><div><strong>Build</strong><small>Datasets, descriptors, simulations, packages, and tests evolve with the question.</small></div></li>
+          <li><span>02</span><div><strong>Discover</strong><small>People and agents conjecture, compute, visualize, search, and invent inside the same project.</small></div></li>
+          <li><span>03</span><div><strong>Verify</strong><small>Proofs, counterexamples, literature, and independent runs remain attached to each claim.</small></div></li>
+          <li><span>04</span><div><strong>Continue</strong><small>A release can be reproduced exactly, then expanded into the next version of the science.</small></div></li>
+        </ol>
+      </section>
+
+      <section class="product-story" id="models" aria-labelledby="models-title">
+        <div class="story-copy">
+          <p class="section-label">Models</p>
+          <h2 id="models-title">Choose the intelligence for each part of the work</h2>
+          <p>Bring provider keys, run a local model, or connect a self-hosted endpoint. The advisor can use one route while discovery, literature, and verification use others. Every contribution is attributed to its person, model, settings, and Study revision.</p>
+          <p class="story-note">Model choice belongs to the researcher. Scientific custody remains with the Study.</p>
+        </div>
+        <div class="feature-film" data-feature-film="models" aria-label="Model selection demonstration">
+          <header class="feature-titlebar"><span><img src="assets/theox-icon.png" alt="" width="16" height="16"> TheoX</span><small>Study settings</small><button type="button" data-feature-replay>Replay</button></header>
+          <div class="feature-stage">
+            <aside class="feature-rail" aria-hidden="true"><b>⌂</b><b>▤</b><b>◷</b><b class="active">⚙</b></aside>
+            <div class="feature-panel">
+              <div class="feature-heading"><div><small>Model routes</small><strong>Finite dynamics</strong></div><span>4 available</span></div>
+              <div class="route-picker feature-step" data-feature-step="0" data-caption="Connect provider keys, local models, or a self-hosted endpoint.">
+                <small>Advisor</small><strong>OpenAI · Astra</strong><span>High⌄</span>
+              </div>
+              <div class="model-menu feature-step" data-feature-step="1" data-caption="Select a model and reasoning tier for the active role.">
+                <span><i class="provider-mark openai"></i>OpenAI Astra <b>Selected</b></span>
+                <span><i class="provider-mark anthropic"></i>Anthropic Opus</span>
+                <span><i class="provider-mark gemini"></i>Gemini Pro</span>
+                <span><i class="provider-mark local"></i>Local Qwen</span>
+              </div>
+              <div class="role-routes feature-step" data-feature-step="2" data-caption="Assign different models to discovery, literature, and verification.">
+                <span><small>Discovery</small><b>Gemini · Pro</b></span>
+                <span><small>Literature</small><b>Claude · Opus</b></span>
+                <span><small>Verification</small><b>Local · Qwen</b></span>
+              </div>
+            </div>
+            <span class="feature-cursor" aria-hidden="true">➤</span>
           </div>
-          <p>The installed app includes the local causal ledger, roles, invitations, agent grants, discussion, and scientific version controls. When connected to a collaboration relay, researchers can contribute from personal provider keys, local models, or self-hosted endpoints to the same versioned Study.</p>
-          <div class="model-routes" aria-label="Supported model routes">
-            <span>OpenAI</span><span>Anthropic</span><span>Gemini</span><span>Local</span><span>Self-hosted</span>
-          </div>
-          <small class="privacy-note">Live cross-device synchronization requires a configured relay. Local routes keep model execution on hardware the researcher controls.</small>
+          <footer><span data-feature-caption>Connect provider keys, local models, or a self-hosted endpoint.</span><b>Model choice stays explicit</b></footer>
         </div>
       </section>
 
-      <section class="thesis-band" aria-labelledby="thesis-title">
-        <div>
-          <p class="section-label">Dynamic research objects</p>
-          <h2 id="thesis-title">Research that remains alive</h2>
+      <section class="product-story alternate" id="privacy" aria-labelledby="privacy-title">
+        <div class="story-copy">
+          <p class="section-label">Privacy</p>
+          <h2 id="privacy-title">Decide where every model runs and what it can see</h2>
+          <p>Local routes can keep model execution on the researcher’s hardware. Cloud routes receive only the context selected for that task. Collaboration synchronizes the versioned Study record without requiring every contributor to use the same provider.</p>
+          <p class="story-note">Private work can remain private. Share a release only when the Study is ready.</p>
         </div>
-        <p>Every Study develops into a versioned record of its questions, data, code, evidence, conversations, failures, and results. A paper becomes one view of that history. Replication continues it.</p>
+        <div class="feature-film" data-feature-film="privacy" aria-label="Privacy controls demonstration">
+          <header class="feature-titlebar"><span><img src="assets/theox-icon.png" alt="" width="16" height="16"> TheoX</span><small>Execution boundary</small><button type="button" data-feature-replay>Replay</button></header>
+          <div class="feature-stage">
+            <aside class="feature-rail" aria-hidden="true"><b>⌂</b><b>▤</b><b>◷</b><b class="active">⚙</b></aside>
+            <div class="feature-panel privacy-panel">
+              <div class="feature-heading"><div><small>Privacy</small><strong>Route this task</strong></div><span class="private-status">Private</span></div>
+              <div class="boundary-options feature-step" data-feature-step="0" data-caption="Choose a local, self-hosted, or cloud execution boundary.">
+                <button class="selected" type="button">Local</button><button type="button">Self-hosted</button><button type="button">Cloud</button>
+              </div>
+              <div class="privacy-flow feature-step" data-feature-step="1" data-caption="The registry and files stay local when a local route is selected.">
+                <span><i>Study</i><b>Registry + code</b></span><em>→</em><span class="local-box"><i>On device</i><b>Local Qwen</b></span>
+              </div>
+              <div class="access-ledger feature-step" data-feature-step="2" data-caption="TheoX records the context, model, permissions, and output for inspection.">
+                <small>Execution receipt</small>
+                <span><b>Files read</b><em>3</em></span><span><b>Network</b><em>Off</em></span><span><b>Revision</b><em>8c14f01a</em></span>
+              </div>
+            </div>
+            <span class="feature-cursor" aria-hidden="true">➤</span>
+          </div>
+          <footer><span data-feature-caption>Choose a local, self-hosted, or cloud execution boundary.</span><b>You control the boundary</b></footer>
+        </div>
+      </section>
+
+      <section class="product-story" id="verification" aria-labelledby="verification-title">
+        <div class="story-copy">
+          <p class="section-label">Verification</p>
+          <h2 id="verification-title">A claim is only as strong as its surviving evidence</h2>
+          <p>TheoX keeps conjectures, proofs, counterexamples, literature matches, computations, and failed attempts in one causal record. Verification is a process, not a badge: every status can be inspected, replayed, and challenged on a new machine.</p>
+          <p class="story-note">The paper is a view. The Dynamic Research Object is the reproducible publication.</p>
+        </div>
+        <div class="feature-film" data-feature-film="verification" aria-label="Scientific verification demonstration">
+          <header class="feature-titlebar"><span><img src="assets/theox-icon.png" alt="" width="16" height="16"> TheoX</span><small>DRO verification</small><button type="button" data-feature-replay>Replay</button></header>
+          <div class="feature-stage">
+            <aside class="feature-rail" aria-hidden="true"><b>⌂</b><b>▤</b><b class="active">◷</b><b>⚙</b></aside>
+            <div class="feature-panel verify-panel">
+              <div class="feature-heading"><div><small>Claim under pressure</small><strong>Update-order compression</strong></div><span>Round 3</span></div>
+              <article class="claim-record feature-step" data-feature-step="0" data-caption="Every candidate begins with its exact statement and finite evidence."><small>Conjecture C-17</small><p>Sweep complexity is bounded by condensation height.</p><span>Finite evidence · unresolved</span></article>
+              <div class="pressure-list feature-step" data-feature-step="1" data-caption="Independent attacks search for counterexamples, proofs, and prior literature.">
+                <span><b>Counterexample search</b><em>0 found</em></span>
+                <span><b>Literature pressure</b><em>No match</em></span>
+                <span><b>Independent replay</b><em>Passed</em></span>
+              </div>
+              <div class="verification-event feature-step" data-feature-step="2" data-caption="The result and every receipt enter the Study history together."><i>✓</i><div><small>Revision admitted</small><strong>3 attacks survived · 39 evidence assets</strong></div></div>
+            </div>
+            <span class="feature-cursor" aria-hidden="true">➤</span>
+          </div>
+          <footer><span data-feature-caption>Every candidate begins with its exact statement and finite evidence.</span><b>Replayable by design</b></footer>
+        </div>
+      </section>
+
+      <section class="collaboration-band" aria-labelledby="collaboration-title">
+        <div>
+          <p class="section-label">Research together</p>
+          <h2 id="collaboration-title">One Study, many researchers and agents</h2>
+        </div>
+        <div class="collaboration-copy">
+          <div class="collaboration-presence" aria-label="Collaboration preview with four researchers">
+            <span>MC</span><span>AS</span><span>LM</span><span>NR</span><small>Shared Study</small>
+          </div>
+          <p>Collaborators can discuss the work, contribute code and evidence, and bring their own model routes. The DRO preserves attribution, licenses, decisions, failures, and revisions across institutions and generations of the Study.</p>
+          <div class="model-routes" aria-label="Supported model routes">
+            <span>OpenAI</span><span>Anthropic</span><span>Gemini</span><span>Local</span><span>Self-hosted</span>
+          </div>
+        </div>
       </section>
 
       <section class="availability" id="downloads" aria-labelledby="availability-title">
@@ -261,7 +359,9 @@ the condensation height of $f$.
     <footer>
       <span>First Principles Labs</span>
       <div class="footer-links">
-        <a href="about.html">About TheoX</a>
+        <a href="#models">Models</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#verification">Verification</a>
         <a href="https://github.com/FirstPrinciplesLabs/theox-downloads">Release repository</a>
       </div>
     </footer>

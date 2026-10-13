@@ -6,6 +6,10 @@ The application source remains in the private `FirstPrinciplesLabs/theox`
 repository. This repository contains only the static download site, public
 release metadata, and published installer assets.
 
+The public product story is intentionally a single homepage. Its overview and
+focused model, privacy, and verification films mirror the current TheoX V2 UI;
+legacy About and tour URLs redirect back into that page.
+
 ## Release policy
 
 - Preview artifacts must be visibly identified as unsigned when applicable.
