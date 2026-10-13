@@ -37,6 +37,42 @@
       "sizeBytes": 5936781,
       "packagePath": "packages/integer-arithmetic-foundation-1.0.0.theox-study.json",
       "sha256": "ccd1619c3453fd7bf74639846adc508007baa88e05490be12727774c2ce4c294"
+    },
+    {
+      "key": "study-package:quantum-measurement-compatibility-foundation",
+      "slug": "quantum_measurement_compatibility_foundation",
+      "kind": "template",
+      "title": "Quantum Measurement Compatibility Foundation",
+      "summary": "An exact finite qubit-measurement compatibility substrate with reconstructible rational Bloch vectors, analytic labels, and inspectable computation software.",
+      "field": "Quantum Information Science",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "CC0-1.0 data and metadata; Apache-2.0 software",
+      "compatibility": "0.1.0",
+      "objectCount": 11013,
+      "descriptorCount": 51,
+      "fileCount": 31,
+      "sizeBytes": 1146898,
+      "packagePath": "packages/quantum-measurement-compatibility-foundation-1.0.0.theox-study.json",
+      "sha256": "aaea3ce7ac49becc83d298567b42918ffab21bdbe50ec3e59e4916d8d393d020"
+    },
+    {
+      "key": "study-package:quantum-state-geometry-foundation",
+      "slug": "quantum_state_geometry_foundation",
+      "kind": "template",
+      "title": "Quantum State Geometry Foundation",
+      "summary": "A complete finite geometry of reconstructible pure two-qubit state rays with broad Pauli, correlation, entanglement, stabilizer, and computational-basis structure.",
+      "field": "Physics",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "CC0-1.0 AND Apache-2.0",
+      "compatibility": "0.1.0",
+      "objectCount": 90204,
+      "descriptorCount": 99,
+      "fileCount": 31,
+      "sizeBytes": 7633692,
+      "packagePath": "packages/quantum-state-geometry-foundation-1.0.0.theox-study.json",
+      "sha256": "e01e415465a7df5dc530d0b9b153929fd3ee988ffbde21599a0846791e4555f1"
     }
   ]
 }
