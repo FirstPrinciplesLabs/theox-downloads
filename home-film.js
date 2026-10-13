@@ -26,6 +26,7 @@ let filmVisible = false;
 function setFilmScene(scene) {
   filmTabs.forEach((tab) => tab.classList.toggle("active", tab.dataset.homeFilmTab === scene));
   filmScenes.forEach((panel) => panel.classList.toggle("active", panel.dataset.homeFilmScene === scene));
+  filmWindow.classList.toggle("paper-mode", scene === "paper");
 }
 
 function setFilmCaption(title, copy) {
