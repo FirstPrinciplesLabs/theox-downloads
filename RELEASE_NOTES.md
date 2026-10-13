@@ -1,6 +1,6 @@
-# TheoX 0.1.0 Preview 1
+# TheoX 0.1.0
 
-The first installable TheoX preview from First Principles Labs.
+The first installable TheoX release from First Principles Labs.
 
 ## Included
 
@@ -15,7 +15,7 @@ The first installable TheoX preview from First Principles Labs.
 
 - macOS on Apple silicon (M1 or later)
 
-## Preview notice
+## Installation note
 
 This artifact passed packaged startup and scientific-workflow acceptance tests.
 It is not yet Apple-signed or notarized. macOS may require explicit approval in

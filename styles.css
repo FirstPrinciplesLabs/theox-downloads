@@ -122,13 +122,13 @@ h1 {
 
 .product-mark img { display: block; width: 100%; height: 100%; }
 
-.preview-notice,
+.thesis-band,
 .availability,
 .integrity {
   border-top: 1px solid #d8d9d6;
 }
 
-.preview-notice {
+.thesis-band {
   padding: 44px max(32px, calc((100vw - 1084px) / 2));
   display: grid;
   grid-template-columns: minmax(240px, .8fr) minmax(300px, 1.2fr);
@@ -137,7 +137,7 @@ h1 {
 }
 
 h2 { margin: 0; font-size: 27px; line-height: 1.2; font-weight: 640; }
-.preview-notice > p { margin: 27px 0 0; color: #4f524e; font-size: 15px; line-height: 1.6; }
+.thesis-band > p { margin: 27px 0 0; color: #4f524e; font-size: 15px; line-height: 1.6; }
 
 .availability,
 .integrity {
@@ -163,6 +163,7 @@ h2 { margin: 0; font-size: 27px; line-height: 1.2; font-weight: 640; }
 
 .integrity { background: #191a19; color: #f1f2ef; }
 .integrity .section-label { color: #9da19b; }
+.install-note { max-width: 720px; margin: 26px 0 0; color: #c7cac5; font-size: 14px; line-height: 1.6; }
 .filename { margin: 30px 0 12px; color: #c7cac5; font-size: 13px; }
 .integrity code { display: block; max-width: 100%; overflow-wrap: anywhere; color: #9da19b; font-size: 12px; line-height: 1.6; }
 
@@ -295,7 +296,7 @@ footer a { text-underline-offset: 4px; }
   h1 { font-size: 56px; }
   .lede { font-size: 18px; }
   .product-mark { width: min(72vw, 300px); justify-self: start; }
-  .preview-notice { padding: 38px 24px; grid-template-columns: 1fr; gap: 8px; }
+  .thesis-band { padding: 38px 24px; grid-template-columns: 1fr; gap: 8px; }
   .availability, .integrity { padding: 56px 24px; }
   .about-hero { min-height: 0; padding: 78px 24px 64px; }
   .about-hero h1 { font-size: 44px; }
