@@ -8,6 +8,7 @@
     <title>TheoX — First Principles Labs</title>
     <link rel="icon" href="assets/theox-icon.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="home-film.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -17,7 +18,7 @@
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="about.html">About</a>
-        <a href="demo.html">Demo</a>
+        <a href="#watch">Watch</a>
         <a href="#downloads">Download</a>
       </nav>
     </header>
@@ -32,12 +33,98 @@
             <a class="primary-action" href="https://github.com/FirstPrinciplesLabs/theox-downloads/releases/download/v0.1.0-preview.1/TheoX-0.1.0-arm64.dmg">
               Download for Apple silicon
             </a>
-            <a class="text-action" href="demo.html">Watch TheoX</a>
+            <a class="text-action" href="#watch">Watch TheoX</a>
           </div>
           <p class="release-line">Version 0.1.0 · macOS for Apple silicon · <a href="https://github.com/FirstPrinciplesLabs/theox-downloads/releases/tag/v0.1.0-preview.1">Release notes</a></p>
         </div>
-        <div class="product-mark" aria-hidden="true">
-          <img src="assets/theox-icon.png" alt="" width="512" height="512">
+        <div class="home-film" id="watch" aria-label="TheoX research workflow film">
+          <div class="home-film-window" id="home-film-window">
+            <header class="home-film-titlebar">
+              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span class="home-film-title">Orbit convergence</span>
+              <button id="home-film-toggle" type="button" aria-label="Pause workflow film">Pause</button>
+            </header>
+
+            <div class="home-film-body">
+              <aside class="home-film-rail" aria-hidden="true">
+                <img src="assets/theox-icon.png" alt="" width="22" height="22">
+                <span class="rail-glyph active">⌂</span>
+                <span class="rail-glyph">▤</span>
+                <span class="rail-glyph">◎</span>
+              </aside>
+
+              <section class="home-film-workspace">
+                <nav class="home-film-tabs" aria-label="Workflow scene">
+                  <button class="active" type="button" data-home-film-tab="chat">Chat</button>
+                  <button type="button" data-home-film-tab="discover">Discover</button>
+                  <button type="button" data-home-film-tab="dro">DRO</button>
+                  <button type="button" data-home-film-tab="paper">Paper</button>
+                </nav>
+
+                <div class="home-film-scenes">
+                  <div class="home-film-scene active" data-home-film-scene="chat">
+                    <p class="film-kicker">Research advisor</p>
+                    <div class="film-message">
+                      <span>You</span>
+                      <p>Study how update order changes convergence.</p>
+                    </div>
+                    <div class="film-advisor-line"><i></i><span>Inspecting the registry, code, and prior evidence</span></div>
+                    <div class="film-composer">
+                      <span id="home-film-typed"></span><b class="typing-caret" aria-hidden="true"></b>
+                      <button id="home-film-send" type="button" aria-label="Send research direction">↑</button>
+                    </div>
+                  </div>
+
+                  <div class="home-film-scene" data-home-film-scene="discover">
+                    <div class="film-scene-heading"><div><p class="film-kicker">Discovery pressure</p><strong>Search across code and evidence</strong></div><span id="film-search-status">Running</span></div>
+                    <div class="film-discovery-grid">
+                      <div class="film-mini-plot" aria-label="Candidate pressure plot">
+                        <span style="height: 24%"></span><span style="height: 58%"></span><span style="height: 38%"></span><span style="height: 78%"></span><span style="height: 51%"></span><span style="height: 88%"></span>
+                        <small>candidate pressure</small>
+                      </div>
+                      <div class="film-findings">
+                        <article class="film-claim" id="home-film-claim"><small>Surviving claim</small><strong>Update-order compression</strong><span>3 attacks survived</span></article>
+                        <article class="film-refutation"><small>Counterexamples</small><strong>11 weak forms removed</strong></article>
+                      </div>
+                    </div>
+                    <div class="film-dro-target" id="home-film-dro-target"><span>DRO evidence record</span><strong id="home-film-evidence-count">38 assets</strong></div>
+                  </div>
+
+                  <div class="home-film-scene" data-home-film-scene="dro">
+                    <div class="film-scene-heading"><div><p class="film-kicker">Dynamic research object</p><strong>Exact research lineage</strong></div><span>Synced</span></div>
+                    <ol class="film-lineage">
+                      <li><span>01</span><div><strong>Study created</strong><small>Registry, definitions, and computation package</small></div></li>
+                      <li><span>02</span><div><strong>Pressure changed the claim</strong><small>11 counterexamples retained for future searches</small></div></li>
+                      <li class="current"><span>03</span><div><strong>New evidence admitted</strong><small>Update-order compression · complete provenance</small></div></li>
+                    </ol>
+                  </div>
+
+                  <div class="home-film-scene" data-home-film-scene="paper">
+                    <div class="film-paper-toolbar"><span>manuscript/main.tex</span><button id="home-film-compile" type="button">Compile</button></div>
+                    <div class="film-paper-split">
+                      <pre>\section{Emerging structure}
+Let $f$ be monotone.
+
+\begin{conjecture}
+Sweep complexity is bounded by
+the condensation height of $f$.
+\end{conjecture}</pre>
+                      <div><small>COMPILED PREVIEW</small><strong>Update-Order Compression</strong><p><b>Conjecture 1.</b> Sweep complexity is bounded by the condensation height of <i>f</i>.</p></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="home-film-caption">
+                  <strong id="home-film-caption-title">Direct the research</strong>
+                  <span id="home-film-caption-copy">Work with TheoX in natural language.</span>
+                </div>
+              </section>
+            </div>
+
+            <div class="home-film-cursor" id="home-film-cursor" aria-hidden="true">
+              <svg viewBox="0 0 24 28" role="presentation"><path d="M2 2v19l5.2-4.8 3.8 8.6 4.1-1.8-3.8-8.5H19L2 2Z"></path></svg>
+            </div>
+          </div>
         </div>
       </section>
 
