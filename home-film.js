@@ -10,6 +10,16 @@ const filmEvidenceCount = document.querySelector("#home-film-evidence-count");
 const filmSearchStatus = document.querySelector("#film-search-status");
 const filmCompile = document.querySelector("#home-film-compile");
 const filmRunControl = document.querySelector("#home-film-run");
+const filmStudyName = document.querySelector("#home-film-study-name");
+const filmContextName = document.querySelector("#home-film-context-name");
+const filmAdvisorStatus = document.querySelector("#home-film-advisor-status");
+const filmStudyStatus = document.querySelector("#home-film-study-status");
+const filmTargetStatus = document.querySelector("#home-film-target-status");
+const filmEventStatus = document.querySelector("#home-film-event-status");
+const filmBuildStatus = document.querySelector("#film-build-status");
+const filmGeneratedFiles = Array.from(document.querySelectorAll("[data-generated-file]"));
+const filmBuildSteps = Array.from(document.querySelectorAll("[data-film-build-step]"));
+const filmCreatedFiles = Array.from(document.querySelectorAll("[data-film-created-file]"));
 const filmTabs = Array.from(document.querySelectorAll("[data-home-film-tab]"));
 const filmScenes = Array.from(document.querySelectorAll("[data-home-film-scene]"));
 const filmTeamModes = Array.from(document.querySelectorAll("[data-film-team-mode]"));
@@ -100,6 +110,14 @@ function resetFilm() {
   filmCompile.textContent = "Compile";
   filmRunControl.classList.remove("running");
   filmRunControl.querySelector("span").textContent = "Run";
+  filmStudyName.textContent = "New Study";
+  filmContextName.textContent = "Create a Study";
+  filmAdvisorStatus.textContent = "Waiting for a research direction";
+  filmStudyStatus.textContent = "No registry attached";
+  filmTargetStatus.textContent = "Create a Study to begin";
+  filmEventStatus.textContent = "0 durable events";
+  filmBuildStatus.textContent = "Creating";
+  [...filmGeneratedFiles, ...filmBuildSteps, ...filmCreatedFiles].forEach((element) => element.classList.remove("visible", "complete"));
   setFilmTeamMode("rooms");
   [...filmRoomEvents, ...filmThreadEvents].forEach((event) => event.classList.remove("visible"));
   filmCursor.classList.remove("visible", "clicking");
@@ -127,10 +145,30 @@ async function playFilm() {
 
   if (!(await waitFilm(450, run))) return;
   if (!(await moveFilmCursor(".film-composer", run))) return;
-  if (!(await typeFilmDirection("Find structure the current descriptors miss.", run))) return;
+  if (!(await typeFilmDirection("Build its registry, tests, and first exploratory plot.", run))) return;
   if (!(await clickFilmControl("#home-film-send", run))) return;
 
-  setFilmCaption("Search the Study", "TheoX inspects data, code, prior claims, and counterexamples.");
+  filmStudyName.textContent = "Update-order dynamics";
+  filmContextName.textContent = "Update-order dynamics";
+  filmAdvisorStatus.textContent = "Writing the registry, software, tests, and first visualization";
+  setFilmScene("build");
+  setFilmCaption("Construct the Study", "TheoX creates inspectable data and software for this question; nothing is inherited from a bundled registry.");
+  for (let index = 0; index < filmBuildSteps.length; index += 1) {
+    filmBuildSteps[index].classList.add("visible");
+    filmCreatedFiles[index]?.classList.add("visible");
+    filmGeneratedFiles[index * 2]?.classList.add("visible");
+    filmGeneratedFiles[index * 2 + 1]?.classList.add("visible");
+    if (!(await moveFilmCursor(`[data-film-created-file="${index}"]`, run, 420))) return;
+    filmBuildSteps[index].classList.add("complete");
+    if (!(await waitFilm(260, run))) return;
+  }
+  filmBuildStatus.textContent = "Ready";
+  filmStudyStatus.textContent = "Update-order dynamics · 2,048 objects · 31 descriptors";
+  filmTargetStatus.textContent = "Target convergence time · V2 ready";
+  filmEventStatus.textContent = "24 durable events";
+  if (!(await waitFilm(700, run))) return;
+
+  setFilmCaption("Search the new Study", "TheoX inspects the registry it made, executes its code, and retains plots and counterexamples.");
   if (!(await clickFilmControl('[data-home-film-tab="discover"]', run))) return;
   filmRunControl.classList.add("running");
   filmRunControl.querySelector("span").textContent = "Stop";
@@ -149,6 +187,7 @@ async function playFilm() {
   filmCursor.classList.remove("clicking");
   filmClaim.classList.add("admitted");
   filmEvidenceCount.textContent = "39 assets";
+  filmEventStatus.textContent = "184 durable events";
   if (!(await waitFilm(650, run))) return;
 
   setFilmCaption("Open the Collaborators workspace", "Members, their model routes, agent grants, and version history stay visible beside the Study.");
