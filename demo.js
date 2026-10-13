@@ -33,7 +33,7 @@ composer.addEventListener("submit", (event) => {
   if (!text) return;
 
   const userMessage = document.createElement("article");
-  userMessage.className = "message user-message";
+  userMessage.className = "message user-message tour-generated";
   const userAuthor = document.createElement("div");
   userAuthor.className = "message-author";
   userAuthor.textContent = "You";
@@ -42,7 +42,7 @@ composer.addEventListener("submit", (event) => {
   userMessage.append(userAuthor, userText);
 
   const response = document.createElement("article");
-  response.className = "message advisor-message";
+  response.className = "message advisor-message tour-generated";
   const responseAuthor = document.createElement("div");
   responseAuthor.className = "message-author";
   responseAuthor.textContent = "TheoX advisor · demonstration";
@@ -215,3 +215,191 @@ replaySteps.forEach((step) => {
 });
 
 renderReplay(0);
+
+const tourScreen = document.querySelector("#tour-screen");
+const tourCursor = document.querySelector("#tour-cursor");
+const tourToggle = document.querySelector("#tour-toggle");
+const tourRestart = document.querySelector("#tour-restart");
+const tourSceneTitle = document.querySelector("#tour-scene-title");
+const tourSceneCopy = document.querySelector("#tour-scene-copy");
+const tourProgressBar = document.querySelector("#tour-progress-bar");
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+let tourRun = 0;
+let tourPaused = false;
+let tourRunning = false;
+let tourPausedReplay = false;
+
+function setTourScene(title, copy, progress) {
+  tourSceneTitle.textContent = title;
+  tourSceneCopy.textContent = copy;
+  tourProgressBar.style.width = `${progress}%`;
+}
+
+function waitForTour(milliseconds, run) {
+  return new Promise((resolve) => {
+    let remaining = milliseconds;
+    let previous = performance.now();
+
+    function tick(now) {
+      if (run !== tourRun) {
+        resolve(false);
+        return;
+      }
+      if (!tourPaused) remaining -= now - previous;
+      previous = now;
+      if (remaining <= 0) {
+        resolve(true);
+        return;
+      }
+      window.requestAnimationFrame(tick);
+    }
+
+    window.requestAnimationFrame(tick);
+  });
+}
+
+async function moveTourCursor(selector, run) {
+  const target = document.querySelector(selector);
+  if (!target || run !== tourRun) return false;
+  const screenRect = tourScreen.getBoundingClientRect();
+  const targetRect = target.getBoundingClientRect();
+  tourCursor.style.left = `${targetRect.left - screenRect.left + targetRect.width / 2}px`;
+  tourCursor.style.top = `${targetRect.top - screenRect.top + targetRect.height / 2}px`;
+  tourCursor.classList.add("visible");
+  return waitForTour(850, run);
+}
+
+async function clickForTour(selector, run) {
+  if (!(await moveTourCursor(selector, run))) return false;
+  const target = document.querySelector(selector);
+  tourCursor.classList.add("clicking");
+  target.classList.add("tour-pressed");
+  target.click();
+  const continued = await waitForTour(220, run);
+  tourCursor.classList.remove("clicking");
+  target.classList.remove("tour-pressed");
+  return continued;
+}
+
+async function typeForTour(text, run) {
+  if (!(await moveTourCursor("#demo-message", run))) return false;
+  messageInput.focus({ preventScroll: true });
+  messageInput.value = "";
+  for (const character of text) {
+    if (run !== tourRun) return false;
+    messageInput.value += character;
+    messageInput.dispatchEvent(new Event("input", { bubbles: true }));
+    if (!(await waitForTour(character === " " ? 28 : 43, run))) return false;
+  }
+  return true;
+}
+
+function resetTour() {
+  tourRun += 1;
+  stopReplay();
+  renderReplay(0);
+  setView("chat");
+  messageInput.value = "";
+  document.querySelectorAll(".tour-generated").forEach((element) => element.remove());
+  conversation.scrollTop = 0;
+  document.querySelectorAll(".tour-pressed").forEach((element) => element.classList.remove("tour-pressed"));
+  tourCursor.classList.remove("visible", "clicking");
+  tourPaused = false;
+  tourPausedReplay = false;
+  tourRunning = false;
+  tourToggle.textContent = "Play";
+  tourToggle.setAttribute("aria-label", "Play product film");
+  setTourScene(
+    "Begin with a direction",
+    "A scientist asks TheoX to inspect a pattern the current Study may be missing.",
+    4,
+  );
+}
+
+async function startTour() {
+  resetTour();
+  const run = tourRun;
+  tourRunning = true;
+  tourToggle.textContent = "Pause";
+  tourToggle.setAttribute("aria-label", "Pause product film");
+
+  if (!(await waitForTour(650, run))) return;
+  setTourScene(
+    "Direct the research",
+    "Natural language becomes a concrete scientific action inside the Study.",
+    14,
+  );
+  if (!(await typeForTour("Compare the surviving claim with the replication evidence.", run))) return;
+  if (!(await waitForTour(380, run))) return;
+  if (!(await clickForTour(".send-button", run))) return;
+
+  setTourScene(
+    "Inspect the complete Study",
+    "The advisor grounds its response in the files, evidence, and accumulated history.",
+    31,
+  );
+  if (!(await waitForTour(2200, run))) return;
+
+  setTourScene(
+    "Follow the evidence",
+    "Search, refutation, visual discovery, concept invention, and replication remain inspectable.",
+    48,
+  );
+  if (!(await clickForTour('.view-switcher [data-view="replay"]', run))) return;
+  replaySpeed.value = "2";
+  if (!(await clickForTour("#replay-toggle", run))) return;
+  if (!(await waitForTour(5600, run))) return;
+  stopReplay();
+
+  setTourScene(
+    "Inspect the research record",
+    "The DRO preserves exact lineage, authorship, software, evidence, failures, and releases.",
+    72,
+  );
+  if (!(await clickForTour('.view-switcher [data-view="dro"]', run))) return;
+  if (!(await waitForTour(2400, run))) return;
+
+  setTourScene(
+    "Develop the result",
+    "Source and compiled manuscript stay beside the living scientific record.",
+    89,
+  );
+  if (!(await clickForTour('.view-switcher [data-view="paper"]', run))) return;
+  if (!(await waitForTour(1200, run))) return;
+  if (!(await clickForTour(".paper-toolbar button", run))) return;
+  if (!(await waitForTour(1800, run))) return;
+
+  tourCursor.classList.remove("visible");
+  tourRunning = false;
+  tourToggle.textContent = "Replay";
+  tourToggle.setAttribute("aria-label", "Replay product film");
+  setTourScene(
+    "Continue the Study",
+    "The research remains editable, reproducible, attributable, and ready for its next question.",
+    100,
+  );
+}
+
+tourToggle.addEventListener("click", () => {
+  if (!tourRunning) {
+    startTour();
+    return;
+  }
+  tourPaused = !tourPaused;
+  if (tourPaused) {
+    tourPausedReplay = Boolean(replayTimer);
+    if (tourPausedReplay) stopReplay();
+    tourToggle.textContent = "Resume";
+    tourToggle.setAttribute("aria-label", "Resume product film");
+  } else {
+    if (tourPausedReplay) startReplay();
+    tourPausedReplay = false;
+    tourToggle.textContent = "Pause";
+    tourToggle.setAttribute("aria-label", "Pause product film");
+  }
+});
+
+tourRestart.addEventListener("click", startTour);
+
+resetTour();
+if (!reducedMotion.matches) startTour();

@@ -3,20 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#181918">
-    <meta name="description" content="Explore an interactive demonstration of the signed-in TheoX scientific workspace.">
-    <title>TheoX Workspace Demo</title>
+    <meta name="theme-color" content="#f3f3f1">
+    <meta name="description" content="Watch a TheoX Study move from a research direction to evidence, replication, and a living manuscript.">
+    <title>Watch TheoX — First Principles Labs</title>
     <link rel="icon" href="assets/theox-icon.png">
     <link rel="stylesheet" href="demo.css">
   </head>
   <body>
-    <div class="demo-notice">
-      <span>Interactive product tour</span>
-      <span>Example research only</span>
-      <a href="./">Back to TheoX</a>
-    </div>
+    <header class="tour-site-header">
+      <a class="tour-brand" href="./" aria-label="TheoX home">
+        <img src="assets/theox-icon.png" alt="" width="28" height="28">
+        <span>TheoX</span>
+      </a>
+      <nav aria-label="Tour navigation">
+        <a href="about.html">About</a>
+        <a href="./#downloads">Download</a>
+      </nav>
+    </header>
 
-    <main class="app-shell">
+    <main class="tour-page">
+      <section class="tour-intro" aria-labelledby="tour-title">
+        <p class="tour-eyebrow">A Study in motion</p>
+        <h1 id="tour-title">Watch research become a living record.</h1>
+        <p>TheoX works beside a scientist, carries ideas through pressure and replication, and preserves the path into a Dynamic Research Object.</p>
+      </section>
+
+      <section class="tour-player" aria-label="TheoX product film">
+        <div class="tour-screen" id="tour-screen">
+          <div class="tour-example-label">Example Study</div>
+          <div class="tour-cursor" id="tour-cursor" aria-hidden="true">↖</div>
+
+          <div class="app-shell" id="tour-app">
       <header class="app-header">
         <a class="app-brand" href="./" aria-label="TheoX home">
           <img src="assets/theox-icon.png" alt="" width="24" height="24">
@@ -256,6 +273,21 @@ the height of the condensation order of $f$.
           </nav>
         </section>
       </div>
+          </div>
+        </div>
+
+        <div class="tour-controls">
+          <button class="tour-toggle" id="tour-toggle" type="button" aria-label="Pause product film">Pause</button>
+          <div class="tour-caption" aria-live="polite">
+            <strong id="tour-scene-title">Begin with a direction</strong>
+            <span id="tour-scene-copy">A scientist asks TheoX to inspect a pattern the current Study may be missing.</span>
+          </div>
+          <div class="tour-progress" aria-hidden="true"><span id="tour-progress-bar"></span></div>
+          <button class="tour-restart" id="tour-restart" type="button" aria-label="Restart product film">↻</button>
+        </div>
+      </section>
+
+      <p class="tour-disclosure">The interface is real. The example Study is illustrative, and this public film does not call a model or modify research data.</p>
     </main>
 
     <dialog id="search-dialog">
