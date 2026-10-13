@@ -7,8 +7,8 @@
     <meta name="description" content="TheoX is a collaborative scientific workspace where people and AI build living, reproducible research together.">
     <title>TheoX — First Principles Labs</title>
     <link rel="icon" href="assets/theox-icon.png">
-    <link rel="stylesheet" href="styles.css?v=20261012-2">
-    <script src="home-film.js?v=20261012-2" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261012-3">
+    <script src="home-film.js?v=20261012-3" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -40,24 +40,28 @@
         <div class="home-film" id="watch" aria-label="TheoX research workflow film">
           <div class="home-film-window" id="home-film-window">
             <header class="home-film-titlebar">
-              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
-              <span class="home-film-title">Orbit convergence</span>
-              <button id="home-film-toggle" type="button" aria-label="Pause workflow film">Pause</button>
+              <div class="home-film-brand"><img src="assets/theox-icon.png" alt="" width="18" height="18"><strong>TheoX</strong></div>
+              <div class="home-film-search"><span aria-hidden="true">⌕</span><span>Search</span><kbd>⌘ K</kbd></div>
+              <div class="home-film-runtime"><i></i><span>Agent runtime V2</span><button id="home-film-toggle" type="button" aria-label="Pause workflow film">Pause</button></div>
             </header>
 
             <div class="home-film-body">
               <aside class="home-film-rail" aria-hidden="true">
-                <img src="assets/theox-icon.png" alt="" width="22" height="22">
                 <span class="rail-glyph active">⌂</span>
                 <span class="rail-glyph">▤</span>
-                <span class="rail-glyph">◎</span>
+                <span class="rail-glyph">◷</span>
+                <span class="rail-glyph">✣</span>
+                <span class="rail-glyph">⌁</span>
+                <span class="rail-glyph rail-bottom">⚙</span>
               </aside>
 
-              <aside class="home-film-studies" aria-label="Studies">
-                <header><span>Studies</span><button type="button" aria-label="Create a study">+</button></header>
-                <button class="active" type="button"><strong>Update-order dynamics</strong><small>Active Study</small></button>
-                <button type="button"><strong>Spectral gap atlas</strong><small>12 durable events</small></button>
-                <button type="button"><strong>Finite orbit structure</strong><small>Paper checkpoint</small></button>
+              <aside class="home-film-studies" aria-label="Study navigation">
+                <header><span>Update-order dynamics</span><button type="button" aria-label="Collapse Study sidebar">‹</button></header>
+                <button class="active" type="button"><strong>▢ Study chat</strong></button>
+                <p>Files</p>
+                <ul class="film-file-tree">
+                  <li>› artifacts</li><li>› checks</li><li>› computation</li><li>› definitions</li><li>› evolution</li><li>› knowledge</li><li>› manuscript</li><li>› tables</li>
+                </ul>
               </aside>
 
               <section class="home-film-workspace">
@@ -149,24 +153,25 @@
                   </div>
 
                   <div class="home-film-scene" data-home-film-scene="paper">
-                    <div class="film-paper-toolbar"><span>manuscript/main.tex</span><button id="home-film-compile" type="button">Compile</button></div>
                     <div class="film-paper-split">
-                      <pre>\section{Emerging structure}
+                      <section class="film-paper-source">
+                        <header><strong>paper.tex</strong><span>Compiled</span><button type="button">Revise</button><button id="home-film-compile" type="button">Compile</button></header>
+                        <pre>\section{Emerging structure}
 Let $f$ be monotone.
 
 \begin{conjecture}
 Sweep complexity is bounded by
 the condensation height of $f$.
 \end{conjecture}</pre>
-                      <div><small>COMPILED PREVIEW</small><strong>Update-Order Compression</strong><p><b>Conjecture 1.</b> Sweep complexity is bounded by the condensation height of <i>f</i>.</p></div>
+                      </section>
+                      <section class="film-paper-preview">
+                        <header><strong>Compiled preview</strong><span>‹</span><small>Page 1 of 5</small><span>›</span><span>−</span><span>+</span><span>↗</span></header>
+                        <div class="film-paper-page"><small>COMPILED RESEARCH NOTE</small><strong>Update-Order Compression</strong><p><b>Conjecture 1.</b> Sweep complexity is bounded by the condensation height of <i>f</i>.</p></div>
+                      </section>
                     </div>
                   </div>
                 </div>
 
-                <div class="home-film-caption">
-                  <strong id="home-film-caption-title">Direct the research</strong>
-                  <span id="home-film-caption-copy">Work with TheoX in natural language.</span>
-                </div>
                 <nav class="home-film-tools" aria-label="Study workspace tools">
                   <button class="active" type="button" data-home-film-tab="chat">Chat</button>
                   <button type="button" data-home-film-tab="paper">Paper</button>
@@ -176,9 +181,15 @@ the condensation height of $f$.
               </section>
             </div>
 
+            <footer class="home-film-statusbar"><span>Update-order dynamics · 2,048 objects · 31 descriptors</span><span>Target convergence time · V2 ready</span><span>184 durable events</span></footer>
+
             <div class="home-film-cursor" id="home-film-cursor" aria-hidden="true">
               <svg viewBox="0 0 24 28" role="presentation"><path d="M2 2v19l5.2-4.8 3.8 8.6 4.1-1.8-3.8-8.5H19L2 2Z"></path></svg>
             </div>
+          </div>
+          <div class="home-film-caption" aria-live="polite">
+            <strong id="home-film-caption-title">Direct the research</strong>
+            <span id="home-film-caption-copy">Work with TheoX in natural language.</span>
           </div>
         </div>
       </section>
