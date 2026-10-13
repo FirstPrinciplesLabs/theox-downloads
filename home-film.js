@@ -134,7 +134,7 @@ async function playFilm() {
   filmEvidenceCount.textContent = "39 assets";
   if (!(await waitFilm(650, run))) return;
 
-  setFilmCaption("Work across models", "Researchers and their agents exchange evidence in one shared Study.");
+  setFilmCaption("Collaborate on your terms", "Each researcher controls a provider, local model, or self-hosted route.");
   if (!(await clickFilmControl('[data-home-film-tab="team"]', run))) return;
   for (let index = 0; index < filmCollabEvents.length; index += 1) {
     filmCollabEvents[index].classList.add("visible");
