@@ -1,0 +1,24 @@
+{
+  "schema_version": "theox.study-library-catalog.v1",
+  "publisher": "FirstPrinciples Labs",
+  "packages": [
+    {
+      "key": "study-package:graph-theory-foundation",
+      "slug": "graph_theory_foundation",
+      "kind": "template",
+      "title": "Graph Theory Foundation",
+      "summary": "A complete-case finite graph Study with 12,359 reconstructible objects, 183 populated descriptors, and attached Python computation and Lean source.",
+      "field": "Mathematics",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "Proprietary",
+      "compatibility": "0.1.0",
+      "objectCount": 12359,
+      "descriptorCount": 183,
+      "fileCount": 67,
+      "sizeBytes": 11521035,
+      "packagePath": "packages/graph-theory-foundation-1.0.0.theox-study.json",
+      "sha256": "d34ee41cfc963ef3f43bf508f7de0db7e731f055f6984e827621c7581621e539"
+    }
+  ]
+}
