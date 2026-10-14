@@ -3,6 +3,42 @@
 Portable Study templates are optional scientific starting points. They are not bundled
 with TheoX and installation never executes packaged code.
 
+## Boolean Function Complexity Foundation 1.0.0
+
+- all 65,812 labeled Boolean functions on one through four variables
+- 49 complete exact fields spanning truth tables, algebraic normal form, Fourier
+  structure, symmetry, monotonicity, canalization, and finite query complexity
+- dependency-free Python reference provider and full-corpus C++ parity check
+- compiled Study-local Lean foundation with explicit partial formal scope
+- no active target, conjecture, or research history
+
+## Chemical Reaction Network Foundation 1.0.0
+
+- 34,374 canonical reaction networks on two and three species
+- 45 complete exact fields spanning stoichiometry, deficiency, linkage classes,
+  reversibility, conservation, catalysis, and reaction-graph structure
+- dependency-free exact Python provider with deterministic reconstruction
+- compiled Study-local Lean foundation with explicit partial formal scope
+- no selected kinetics, rate constants, target, or preloaded claim
+
+## Classical Ising Energy Landscape Foundation 1.0.0
+
+- 141,200 exact microstates across 12 open and periodic rectangular lattice families
+- 60 complete exact fields spanning Hamiltonian statistics, degeneracy, metastability,
+  domains, symmetries, local fields, and single-spin-flip geometry
+- dependency-free Python reference provider and stratified Julia parity check
+- compiled Study-local Lean foundation with explicit partial formal scope
+- no preselected temperature regime, target, conjecture, or run history
+
+## Gene Regulatory Network Foundation 1.0.0
+
+- 26,919 canonical signed-threshold two- and three-gene models
+- 49 complete exact fields spanning network structure, synchronous attractors, basins,
+  perturbation response, fixed points, cycles, and feedback
+- dependency-free exact Python provider with full finite-state reconstruction
+- compiled Study-local Lean foundation with explicit partial formal scope
+- no biological interpretation, target, conjecture, or research history imposed
+
 ## Graph Theory Foundation 1.0.0
 
 - 12,359 reconstructible finite graph objects
