@@ -28,9 +28,25 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python -m json.tool release-manifest.json >/dev/null
-          grep -q 'v0.1.0-preview.1' index.html
-          grep -q '46a0461fa592249903245177b387ee3b222ac35d0b9f7ec3bd185d6080b1ec53' index.html
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path('release-manifest.json').read_text())
+          page = Path('index.html').read_text()
+          version = manifest['version']
+          artifacts = manifest['artifacts']
+          if not artifacts or f'/releases/tag/v{version}' not in page:
+              raise SystemExit('The homepage does not match the release manifest')
+          for artifact in artifacts:
+              release_path = f'/releases/download/v{version}/{artifact["name"]}'
+              if release_path not in page:
+                  raise SystemExit(f'Missing download link: {artifact["name"]}')
+              if len(artifact['sha256']) != 64:
+                  raise SystemExit(f'Invalid SHA-256 digest: {artifact["name"]}')
+          if artifacts[0]['sha256'] not in page:
+              raise SystemExit('The featured download checksum does not match')
+          PY
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static site
