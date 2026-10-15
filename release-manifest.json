@@ -1,17 +1,38 @@
 {
   "schema_version": "theox.public-release.v1",
   "product": "TheoX",
-  "version": "0.1.0-preview.1",
+  "version": "0.1.1-preview.1",
   "channel": "preview",
   "published_by": "First Principles Labs",
   "artifacts": [
     {
       "platform": "macos",
       "architecture": "arm64",
-      "name": "TheoX-0.1.0-arm64.dmg",
-      "sha256": "46a0461fa592249903245177b387ee3b222ac35d0b9f7ec3bd185d6080b1ec53",
+      "name": "TheoX-0.1.1-arm64.dmg",
+      "sha256": "59290981c4a41a1e0019a825a73f83095b67de7aceacb37b2f4a6fbbec5f9300",
       "signed": false,
       "notarized": false
+    },
+    {
+      "platform": "windows",
+      "architecture": "x64",
+      "name": "TheoX-0.1.1-x64.exe",
+      "sha256": "35eb7e6dbfc5d2173291affa198c70fce548ffd1344e416842a3489f8a0ffcfd",
+      "signed": false
+    },
+    {
+      "platform": "linux",
+      "architecture": "x86_64",
+      "name": "TheoX-0.1.1-x86_64.AppImage",
+      "sha256": "1604749dc74b5e9b0807486f24e5d76631f770f04e0dd7791824a4dec8191a4c",
+      "signed": false
+    },
+    {
+      "platform": "linux",
+      "architecture": "x64",
+      "name": "TheoX-0.1.1-x64.tar.gz",
+      "sha256": "90bb13460a588ea0364443610f4a7106804d4ea7546faa97300159ba8042c19c",
+      "signed": false
     }
   ]
 }
