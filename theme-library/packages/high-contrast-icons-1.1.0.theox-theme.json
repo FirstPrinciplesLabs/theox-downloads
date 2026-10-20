@@ -4,9 +4,9 @@
   "id": "high-contrast-icons",
   "title": "High Contrast Research Icons",
   "summary": "A vivid, accessibility-minded semantic palette for quickly locating file categories in large or visually dense Studies.",
-  "details": "High Contrast Research Icons maximizes separation between neighboring file categories without changing TheoX's safe built-in symbols. It is intended for large explorers, low-contrast displays, and users who benefit from stronger color cues.",
+  "details": "High Contrast Research Icons pairs explicit single-letter category markers with vivid colors. It is intended for large explorers, low-contrast displays, and users who benefit from redundant shape and color cues.",
   "publisher": "FirstPrinciples Labs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "compatibility": {
     "minimum_version": "0.1.2"
@@ -14,7 +14,7 @@
   "features": [
     "High-separation colors across research file categories",
     "Strong folder and archive cues in dense explorers",
-    "Safe built-in symbols with no executable or remote assets"
+    "Explicit category markers with no executable or remote assets"
   ],
   "tags": ["file icons", "high contrast", "accessible", "vivid"],
   "published_at": "2026-10-20",
@@ -32,6 +32,18 @@
         "archive": "#e99a5b",
         "generic": "#d0d6d4",
         "folder": "#f0c75e"
+      },
+      "glyphs": {
+        "source": "S",
+        "formal": "P",
+        "data": "D",
+        "table": "T",
+        "manuscript": "M",
+        "config": "C",
+        "image": "I",
+        "archive": "A",
+        "generic": "F",
+        "folder": "▶"
       }
     }
   }

@@ -6,7 +6,7 @@
   "summary": "An editorial icon palette that brings formal proofs, Lean files, LaTeX, Markdown, and research writing to the foreground.",
   "details": "Proof & Paper is tuned for theorem development and manuscript work. Formal and writing formats receive the clearest visual emphasis, while source, data, configuration, and archive files remain distinct and easy to locate.",
   "publisher": "FirstPrinciples Labs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "compatibility": {
     "minimum_version": "0.1.2"
@@ -32,6 +32,18 @@
         "archive": "#ad7f5f",
         "generic": "#898582",
         "folder": "#c4a05e"
+      },
+      "glyphs": {
+        "source": "ƒ",
+        "formal": "⊢",
+        "data": "≔",
+        "table": "⊞",
+        "manuscript": "§",
+        "config": "⋮",
+        "image": "◫",
+        "archive": "□",
+        "generic": "·",
+        "folder": "›"
       }
     }
   }

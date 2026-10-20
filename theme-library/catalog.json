@@ -363,7 +363,7 @@
       "summary": "A balanced semantic icon palette that separates source, proofs, data, tables, manuscripts, and research assets at a glance.",
       "details": "Research Spectrum is the general-purpose TheoX file icon theme. Its compact symbols and distinct but restrained colors make mixed research workspaces easier to scan without competing with the editor or the selected workbench theme.",
       "publisher": "FirstPrinciples Labs",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "license": "MIT",
       "compatibility": "0.1.2",
       "colorScheme": "dark",
@@ -382,9 +382,9 @@
       ],
       "tags": ["file icons", "semantic", "balanced", "research"],
       "publishedAt": "2026-10-20",
-      "sizeBytes": 1404,
-      "packagePath": "packages/research-spectrum-icons-1.0.0.theox-theme.json",
-      "sha256": "38c7e6e8cade78de9460e4f90a6f9643179effb6e9208441249b0923afa38dd9",
+      "sizeBytes": 1678,
+      "packagePath": "packages/research-spectrum-icons-1.1.0.theox-theme.json",
+      "sha256": "e1af6ee01100de414bd6fd72bc1fb8afaa8eafac35e66a327f7a5dec13546a7e",
       "contributionTypes": ["file-icons"],
       "fileIconPreview": {
         "style": "symbols",
@@ -399,6 +399,18 @@
           "archive": "#b98256",
           "generic": "#7f8b89",
           "folder": "#d0a84d"
+        },
+        "glyphs": {
+          "source": "λ",
+          "formal": "∀",
+          "data": "{}",
+          "table": "▦",
+          "manuscript": "¶",
+          "config": "⚙",
+          "image": "◇",
+          "archive": "▣",
+          "generic": "·",
+          "folder": "▸"
         }
       }
     },
@@ -409,7 +421,7 @@
       "summary": "An editorial icon palette that brings formal proofs, Lean files, LaTeX, Markdown, and research writing to the foreground.",
       "details": "Proof & Paper is tuned for theorem development and manuscript work. Formal and writing formats receive the clearest visual emphasis, while source, data, configuration, and archive files remain distinct and easy to locate.",
       "publisher": "FirstPrinciples Labs",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "license": "MIT",
       "compatibility": "0.1.2",
       "colorScheme": "dark",
@@ -428,9 +440,9 @@
       ],
       "tags": ["file icons", "formal", "writing", "editorial"],
       "publishedAt": "2026-10-20",
-      "sizeBytes": 1370,
-      "packagePath": "packages/proof-and-paper-icons-1.0.0.theox-theme.json",
-      "sha256": "1b256b7f01f22696cfa29c9bb55e422836d42e0aece7a38ba2f976661faa0770",
+      "sizeBytes": 1645,
+      "packagePath": "packages/proof-and-paper-icons-1.1.0.theox-theme.json",
+      "sha256": "5287c82830bbcc143a7dfe58a8d05786db45d98e3990457ad2194e5c7f54af52",
       "contributionTypes": ["file-icons"],
       "fileIconPreview": {
         "style": "symbols",
@@ -445,6 +457,18 @@
           "archive": "#ad7f5f",
           "generic": "#898582",
           "folder": "#c4a05e"
+        },
+        "glyphs": {
+          "source": "ƒ",
+          "formal": "⊢",
+          "data": "≔",
+          "table": "⊞",
+          "manuscript": "§",
+          "config": "⋮",
+          "image": "◫",
+          "archive": "□",
+          "generic": "·",
+          "folder": "›"
         }
       }
     },
@@ -455,7 +479,7 @@
       "summary": "A high-clarity icon palette that makes datasets, tables, notebooks, scripts, and generated assets easy to distinguish.",
       "details": "Data Atlas is optimized for computational and empirical Studies. Data and table formats carry the strongest cues, while code, formal sources, manuscripts, images, configuration, and archives retain a disciplined semantic hierarchy.",
       "publisher": "FirstPrinciples Labs",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "license": "MIT",
       "compatibility": "0.1.2",
       "colorScheme": "dark",
@@ -474,9 +498,9 @@
       ],
       "tags": ["file icons", "data", "tables", "computational"],
       "publishedAt": "2026-10-20",
-      "sizeBytes": 1363,
-      "packagePath": "packages/data-atlas-icons-1.0.0.theox-theme.json",
-      "sha256": "2923c6f3bc6d5cfb48106edab4377bafbc0c702994947c65ced67658ae07853e",
+      "sizeBytes": 1635,
+      "packagePath": "packages/data-atlas-icons-1.1.0.theox-theme.json",
+      "sha256": "4f353d835b404303e61ff753d7affd2c842027d0a0d17ecd6dcdaa64c3eca472",
       "contributionTypes": ["file-icons"],
       "fileIconPreview": {
         "style": "symbols",
@@ -491,6 +515,18 @@
           "archive": "#bb8050",
           "generic": "#75858a",
           "folder": "#c69a40"
+        },
+        "glyphs": {
+          "source": "<>",
+          "formal": "∎",
+          "data": "◈",
+          "table": "#",
+          "manuscript": "Aa",
+          "config": "≡",
+          "image": "▧",
+          "archive": "▤",
+          "generic": "•",
+          "folder": "+"
         }
       }
     },
@@ -501,7 +537,7 @@
       "summary": "A quiet minimal icon set for users who prefer file-type labels and structure over a multicolor explorer.",
       "details": "Monochrome Lab reduces the visual weight of the Study explorer. Its minimal style keeps categories recognizable through concise labels while a narrow neutral palette lets the workbench and editor remain dominant.",
       "publisher": "FirstPrinciples Labs",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "license": "MIT",
       "compatibility": "0.1.2",
       "colorScheme": "dark",
@@ -520,9 +556,9 @@
       ],
       "tags": ["file icons", "minimal", "monochrome", "quiet"],
       "publishedAt": "2026-10-20",
-      "sizeBytes": 1307,
-      "packagePath": "packages/monochrome-lab-icons-1.0.0.theox-theme.json",
-      "sha256": "6db45630e0098284d683ac7baa4f7cb84795dc9dd1bd4d05c6228c2ea689e950",
+      "sizeBytes": 1575,
+      "packagePath": "packages/monochrome-lab-icons-1.1.0.theox-theme.json",
+      "sha256": "de93adbe2e0777c8f1d8bed93cf48d6cb000a79010b80c8e5578dc9135894060",
       "contributionTypes": ["file-icons"],
       "fileIconPreview": {
         "style": "minimal",
@@ -537,6 +573,18 @@
           "archive": "#8e887f",
           "generic": "#818887",
           "folder": "#9a9178"
+        },
+        "glyphs": {
+          "source": "·",
+          "formal": "·",
+          "data": "·",
+          "table": "·",
+          "manuscript": "·",
+          "config": "·",
+          "image": "·",
+          "archive": "·",
+          "generic": "·",
+          "folder": "·"
         }
       }
     },
@@ -545,9 +593,9 @@
       "id": "high-contrast-icons",
       "title": "High Contrast Research Icons",
       "summary": "A vivid, accessibility-minded semantic palette for quickly locating file categories in large or visually dense Studies.",
-      "details": "High Contrast Research Icons maximizes separation between neighboring file categories without changing TheoX's safe built-in symbols. It is intended for large explorers, low-contrast displays, and users who benefit from stronger color cues.",
+      "details": "High Contrast Research Icons pairs explicit single-letter category markers with vivid colors. It is intended for large explorers, low-contrast displays, and users who benefit from redundant shape and color cues.",
       "publisher": "FirstPrinciples Labs",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "license": "MIT",
       "compatibility": "0.1.2",
       "colorScheme": "dark",
@@ -562,13 +610,13 @@
       "features": [
         "High-separation colors across research file categories",
         "Strong folder and archive cues in dense explorers",
-        "Safe built-in symbols with no executable or remote assets"
+        "Explicit category markers with no executable or remote assets"
       ],
       "tags": ["file icons", "high contrast", "accessible", "vivid"],
       "publishedAt": "2026-10-20",
-      "sizeBytes": 1395,
-      "packagePath": "packages/high-contrast-icons-1.0.0.theox-theme.json",
-      "sha256": "854aa03a8843c3037b3438b76ae41d6962f7bcb9ad410e814b794597b934c4b0",
+      "sizeBytes": 1630,
+      "packagePath": "packages/high-contrast-icons-1.1.0.theox-theme.json",
+      "sha256": "ece9747cb38427d59920a57ef56fdb3315a2d09b123301a650127a341a20a787",
       "contributionTypes": ["file-icons"],
       "fileIconPreview": {
         "style": "symbols",
@@ -583,6 +631,18 @@
           "archive": "#e99a5b",
           "generic": "#d0d6d4",
           "folder": "#f0c75e"
+        },
+        "glyphs": {
+          "source": "S",
+          "formal": "P",
+          "data": "D",
+          "table": "T",
+          "manuscript": "M",
+          "config": "C",
+          "image": "I",
+          "archive": "A",
+          "generic": "F",
+          "folder": "▶"
         }
       }
     }

@@ -31,5 +31,7 @@ Appearance selector; it does not silently replace the user's other theme choices
 Version 1.2 separates each curated workbench and syntax contribution so users can
 mix them independently. The catalog carries validated preview palettes so TheoX can
 show a realistic workspace and highlighted-editor example before installation. File
-icon packs use only TheoX's fixed, allowlisted symbols and semantic color tokens;
-they cannot ship arbitrary SVG, scripts, fonts, or remote assets.
+icon packs use bounded, validated glyph maps and semantic color tokens, so every
+pack can have a genuinely distinct visual language without shipping arbitrary
+SVG, scripts, fonts, or remote assets. TheoX renders the same glyph map in the
+extension preview and the real Study file explorer.

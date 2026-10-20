@@ -6,7 +6,7 @@
   "summary": "A high-clarity icon palette that makes datasets, tables, notebooks, scripts, and generated assets easy to distinguish.",
   "details": "Data Atlas is optimized for computational and empirical Studies. Data and table formats carry the strongest cues, while code, formal sources, manuscripts, images, configuration, and archives retain a disciplined semantic hierarchy.",
   "publisher": "FirstPrinciples Labs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "compatibility": {
     "minimum_version": "0.1.2"
@@ -32,6 +32,18 @@
         "archive": "#bb8050",
         "generic": "#75858a",
         "folder": "#c69a40"
+      },
+      "glyphs": {
+        "source": "<>",
+        "formal": "∎",
+        "data": "◈",
+        "table": "#",
+        "manuscript": "Aa",
+        "config": "≡",
+        "image": "▧",
+        "archive": "▤",
+        "generic": "•",
+        "folder": "+"
       }
     }
   }
