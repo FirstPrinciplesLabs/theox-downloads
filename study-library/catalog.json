@@ -8,6 +8,20 @@
       "kind": "template",
       "title": "Boolean Function Complexity Foundation",
       "summary": "A complete exact atlas of every labeled Boolean function on one through four variables, with logical, algebraic, Fourier, query-complexity, symmetry, and relation-closure structure.",
+      "details": "A research-neutral starting point for finite Boolean-function investigations. The Study combines a complete labeled atlas through four variables with exact descriptors, reproducible providers, and a small formal foundation, while leaving the research question and target to the user.",
+      "features": [
+        "All 65,812 labeled Boolean functions on one through four variables",
+        "49 complete exact fields spanning algebraic, Fourier, symmetry, monotonicity, canalization, and query-complexity structure",
+        "Dependency-free Python reference provider with a full-corpus C++ parity check",
+        "Pinned Study-local Lean foundation with explicitly documented formal scope"
+      ],
+      "limitations": [
+        "No active target, conjecture, or research history is preloaded",
+        "The finite atlas stops at four input variables"
+      ],
+      "languages": ["Python", "C++", "Lean"],
+      "tags": ["Boolean functions", "Complexity", "Fourier analysis", "Exact atlas"],
+      "publishedAt": "2026-10-14",
       "field": "Computer Science",
       "publisher": "FirstPrinciples Labs",
       "version": "1.0.0",
@@ -26,6 +40,20 @@
       "kind": "template",
       "title": "Chemical Reaction Network Foundation",
       "summary": "An exact canonical atlas of small chemical reaction networks with complete stoichiometric, deficiency, linkage, reversibility, conservation, and catalytic structure.",
+      "details": "A compact exact substrate for studying structural questions in small chemical reaction networks. It provides canonical finite models, complete descriptors, deterministic reconstruction, and inspectable formal source without imposing kinetics or a preferred scientific claim.",
+      "features": [
+        "34,374 canonical reaction networks on two and three species",
+        "45 exact fields covering stoichiometry, deficiency, linkage, reversibility, conservation, catalysis, and reaction-graph structure",
+        "Dependency-free exact Python provider with deterministic reconstruction",
+        "Pinned Study-local Lean foundation with explicitly documented formal scope"
+      ],
+      "limitations": [
+        "No kinetics, rate constants, target, or conjecture is preselected",
+        "The packaged atlas is restricted to two- and three-species networks"
+      ],
+      "languages": ["Python", "Lean"],
+      "tags": ["Reaction networks", "Stoichiometry", "Catalysis", "Exact atlas"],
+      "publishedAt": "2026-10-14",
       "field": "Chemistry",
       "publisher": "FirstPrinciples Labs",
       "version": "1.0.0",
@@ -44,6 +72,20 @@
       "kind": "template",
       "title": "Classical Ising Energy Landscape Foundation",
       "summary": "An exact finite atlas of classical Ising microstates on open and periodic rectangular lattices, with Hamiltonian statistics, degeneracy, metastability, domains, symmetries, and flip geometry.",
+      "details": "A reproducible finite foundation for exploring classical Ising energy landscapes. The package exposes exact microstates and structural observables across several lattice families, with reference implementations and formal source but no prescribed thermodynamic regime or research target.",
+      "features": [
+        "141,200 exact microstates across 12 open and periodic rectangular lattice families",
+        "60 exact fields covering energy, degeneracy, metastability, domains, symmetries, local fields, and flip geometry",
+        "Dependency-free Python reference provider with stratified Julia parity checks",
+        "Pinned Study-local Lean foundation with explicitly documented formal scope"
+      ],
+      "limitations": [
+        "No temperature regime, target, conjecture, or run history is preselected",
+        "The packaged object universe is finite and limited to the listed rectangular lattices"
+      ],
+      "languages": ["Python", "Julia", "Lean"],
+      "tags": ["Ising model", "Energy landscapes", "Statistical physics", "Exact atlas"],
+      "publishedAt": "2026-10-14",
       "field": "Physics",
       "publisher": "FirstPrinciples Labs",
       "version": "1.0.0",
@@ -62,6 +104,20 @@
       "kind": "template",
       "title": "Gene Regulatory Network Foundation",
       "summary": "A complete canonical atlas of two- and three-gene signed-threshold regulatory networks with exact synchronous dynamics, attractors, basins, perturbation response, and feedback structure.",
+      "details": "An exact, interpretation-neutral starting point for small gene-regulatory network research. It packages canonical signed-threshold models with complete synchronous dynamics and reproducible providers while deliberately leaving biological interpretation and research direction open.",
+      "features": [
+        "26,919 canonical signed-threshold two- and three-gene models",
+        "49 exact fields spanning structure, attractors, basins, perturbation response, fixed points, cycles, and feedback",
+        "Dependency-free exact Python provider with complete finite-state reconstruction",
+        "Pinned Study-local Lean foundation with explicitly documented formal scope"
+      ],
+      "limitations": [
+        "No biological interpretation, target, conjecture, or research history is imposed",
+        "Dynamics are synchronous and the packaged atlas is limited to two and three genes"
+      ],
+      "languages": ["Python", "Lean"],
+      "tags": ["Gene regulation", "Dynamical systems", "Attractors", "Exact atlas"],
+      "publishedAt": "2026-10-14",
       "field": "Biology",
       "publisher": "FirstPrinciples Labs",
       "version": "1.0.0",
@@ -80,6 +136,20 @@
       "kind": "template",
       "title": "Graph Theory Foundation",
       "summary": "A complete-case finite graph Study with 12,359 reconstructible objects, 183 populated descriptors, and attached Python computation and Lean source.",
+      "details": "A broad finite graph research foundation built from the compact graph registry. Every installed scientific cell is populated, each graph is reconstructible, and the package includes computation and formal sources so new descriptors, conjectures, and proofs can grow inside an independent Study.",
+      "features": [
+        "12,359 reconstructible finite graph objects",
+        "183 populated scientific fields, including 37 Boolean predicates, with no missing cells",
+        "Attached Python computation package with exact algorithms, optimization routines, and independent bounded oracles",
+        "Pinned Study-local Lean project plus explicit computation and formal coverage manifests"
+      ],
+      "limitations": [
+        "Historical runs, old targets, caches, tensors, and rejected-candidate archives are intentionally excluded",
+        "Fields with incomplete source coverage remain available through the computation package rather than the installed table"
+      ],
+      "languages": ["Python", "Lean"],
+      "tags": ["Graph theory", "Finite graphs", "Optimization", "Formal methods"],
+      "publishedAt": "2026-10-13",
       "field": "Mathematics",
       "publisher": "FirstPrinciples Labs",
       "version": "1.0.0",
@@ -98,6 +168,20 @@
       "kind": "template",
       "title": "Integer Arithmetic Foundation",
       "summary": "A research-neutral exact arithmetic Study with 100,000 reconstructible integers, 55 complete scientific fields, and attached Python, C++, and Lean source.",
+      "details": "A large exact arithmetic substrate for developing integer-function and predicate research. It combines a complete reconstructible table with portable computation providers and a formal foundation, without selecting a target, conjecture, or inherited research narrative.",
+      "features": [
+        "100,000 reconstructible positive integer objects",
+        "55 complete exact fields: 30 integer functions and 25 Boolean predicates",
+        "Dependency-free Python provider with an optional C++ factorization core parity-tested across representative objects",
+        "Pinned Study-local Lean foundation with explicitly documented bridge and coverage limits"
+      ],
+      "limitations": [
+        "No target, conjecture, or run history is preloaded",
+        "The installed table covers the first 100,000 positive integers; broader ranges require Study-owned computation"
+      ],
+      "languages": ["Python", "C++", "Lean"],
+      "tags": ["Number theory", "Integer arithmetic", "Exact computation", "Formal methods"],
+      "publishedAt": "2026-10-13",
       "field": "Mathematics",
       "publisher": "FirstPrinciples Labs",
       "version": "1.0.0",
@@ -116,6 +200,20 @@
       "kind": "template",
       "title": "Quantum Measurement Compatibility Foundation",
       "summary": "An exact finite qubit-measurement compatibility substrate with reconstructible rational Bloch vectors, analytic labels, and inspectable computation software.",
+      "details": "An exact foundation for finite compatibility questions involving unbiased binary qubit measurements. Rational Bloch-vector representations, analytic labels, and reproducible providers make every packaged result inspectable while leaving higher-dimensional or generalized-measurement extensions to future research.",
+      "features": [
+        "11,013 reconstructible unbiased binary qubit-measurement instances",
+        "51 exact integer and Boolean fields with analytic pair and triple compatibility certificates",
+        "Dependency-free Python provider with an optional C++ core parity-tested across all packaged families",
+        "Pinned Study-local Lean foundation with explicitly documented formal scope"
+      ],
+      "limitations": [
+        "The package contains no numerical semidefinite-program labels",
+        "It makes no claim about arbitrary POVMs or higher-dimensional systems"
+      ],
+      "languages": ["Python", "C++", "Lean"],
+      "tags": ["Quantum information", "Measurement compatibility", "Qubits", "Exact computation"],
+      "publishedAt": "2026-10-14",
       "field": "Quantum Information Science",
       "publisher": "FirstPrinciples Labs",
       "version": "1.0.0",
@@ -134,6 +232,20 @@
       "kind": "template",
       "title": "Quantum State Geometry Foundation",
       "summary": "A complete finite geometry of reconstructible pure two-qubit state rays with broad Pauli, correlation, entanglement, stabilizer, and computational-basis structure.",
+      "details": "A complete finite starting geometry for research on pure two-qubit projective states. It packages canonical state rays, broad exact and policy-controlled observables, portable providers, and formal representations while clearly separating the finite atlas from mixed-state or multipartite claims.",
+      "features": [
+        "90,204 canonical, reconstructible pure two-qubit projective rays",
+        "99 complete fields spanning amplitudes, Pauli expectations, correlations, entanglement, Bell fidelity, and stabilizer structure",
+        "Dependency-free Python provider plus an optional C++ exact-invariant core parity-tested on 10,000 objects",
+        "Pinned Study-local Lean representation foundation with explicitly documented formal scope"
+      ],
+      "limitations": [
+        "Mixed states and multipartite states are intentionally excluded",
+        "Transcendental quantities follow the package's explicit rounding policy rather than an exact symbolic representation"
+      ],
+      "languages": ["Python", "C++", "Lean"],
+      "tags": ["Quantum information", "Quantum states", "Entanglement", "State geometry"],
+      "publishedAt": "2026-10-13",
       "field": "Physics",
       "publisher": "FirstPrinciples Labs",
       "version": "1.0.0",
