@@ -1,0 +1,162 @@
+{
+  "schema_version": "theox.theme-library-catalog.v1",
+  "publisher": "FirstPrinciples Labs",
+  "packages": [
+    {
+      "key": "theme-package:aurora-noir",
+      "id": "aurora-noir",
+      "title": "Aurora Noir",
+      "summary": "A deep blue-black research palette with cool mint accents and crisp scientific status colors.",
+      "details": "Aurora Noir keeps the canvas quiet while giving active controls, references, and research states a restrained northern-light glow. It is designed for long evening sessions without flattening the hierarchy between conversation, evidence, and tools.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "preview": {
+        "bg": "#0f1417",
+        "surface": "#172126",
+        "text": "#e7efed",
+        "accent": "#6fd1c2",
+        "blue": "#7db7e8"
+      },
+      "features": [
+        "Low-glare blue-black surfaces for long research sessions",
+        "Mint focus and navigation accents without neon saturation",
+        "Clearly separated evidence, warning, success, and failure colors"
+      ],
+      "tags": ["dark", "cool", "low glare", "research"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1709,
+      "packagePath": "packages/aurora-noir-1.0.0.theox-theme.json",
+      "sha256": "2a7192c0532734fa1b4a5652293749aa4e9185bdc115b04a5f5ade4e713ab4f7"
+    },
+    {
+      "key": "theme-package:arctic-daylight",
+      "id": "arctic-daylight",
+      "title": "Arctic Daylight",
+      "summary": "A crisp cool-light theme with blue-gray structure, clean white surfaces, and teal focus accents.",
+      "details": "Arctic Daylight is built for bright rooms and high-density review. Cool gray-blue separators make complex panes easy to parse, while the white working surface stays clean without losing the distinction between controls, drawers, and evidence regions.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "light",
+      "preview": { "bg": "#eef3f6", "surface": "#ffffff", "text": "#1d2930", "accent": "#377f92", "blue": "#3f70a8" },
+      "features": [
+        "Crisp daylight surfaces for bright working environments",
+        "Blue-gray structural layers for complex pane layouts",
+        "Teal focus cues with accessible light-background status colors"
+      ],
+      "tags": ["light", "cool", "crisp", "review"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1639,
+      "packagePath": "packages/arctic-daylight-1.0.0.theox-theme.json",
+      "sha256": "351570ee56aae0f81f1657b3416141e26deadcd5726ced955d5ed52695d4c17d"
+    },
+    {
+      "key": "theme-package:cobalt-night",
+      "id": "cobalt-night",
+      "title": "Cobalt Night",
+      "summary": "A focused midnight-blue theme with luminous cobalt controls and cool scientific accents.",
+      "details": "Cobalt Night uses layered navy surfaces to keep complex workspaces legible without turning black. Bright cobalt focus cues and carefully separated state colors make it particularly effective for dense evidence tables and long tool-driven sessions.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "preview": { "bg": "#0c1220", "surface": "#16213a", "text": "#e9efff", "accent": "#78a9ff", "blue": "#75c8ff" },
+      "features": [
+        "Layered navy surfaces for dense technical workspaces",
+        "Luminous cobalt focus cues and selection states",
+        "Cool status palette with readable warning and failure contrast"
+      ],
+      "tags": ["dark", "blue", "focused", "technical"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1614,
+      "packagePath": "packages/cobalt-night-1.0.0.theox-theme.json",
+      "sha256": "c169ae7819896440e336fc6ed7e9ba0555e2ab43b4338b792d80194375924767"
+    },
+    {
+      "key": "theme-package:ember-slate",
+      "id": "ember-slate",
+      "title": "Ember Slate",
+      "summary": "A warm charcoal theme with copper accents, soft paper text, and grounded research-state colors.",
+      "details": "Ember Slate trades the usual blue-gray developer palette for warm mineral surfaces and a precise copper accent. The restrained warmth makes manuscripts and long explanations comfortable while preserving crisp borders and visible scientific state changes.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "preview": {
+        "bg": "#171414",
+        "surface": "#241f1d",
+        "text": "#f0e8e3",
+        "accent": "#e29a62",
+        "blue": "#86a8d8"
+      },
+      "features": [
+        "Warm charcoal surfaces that reduce cold-screen fatigue",
+        "Copper navigation accents with soft high-contrast text",
+        "Balanced status colors for proofs, warnings, and counterexamples"
+      ],
+      "tags": ["dark", "warm", "charcoal", "writing"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1711,
+      "packagePath": "packages/ember-slate-1.0.0.theox-theme.json",
+      "sha256": "4137f1233176e61c96524f2c82ae30c283397279501df945c5066d4d0e386c90"
+    },
+    {
+      "key": "theme-package:paper-sage",
+      "id": "paper-sage",
+      "title": "Paper Sage",
+      "summary": "A warm light theme inspired by archival paper, with sage navigation and ink-like typography.",
+      "details": "Paper Sage is a daylight palette for reading, reviewing evidence, and drafting manuscripts. Warm neutral surfaces avoid stark white glare, while sage accents and ink-like text keep the workspace calm and unmistakably structured.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "light",
+      "preview": {
+        "bg": "#f1f0ea",
+        "surface": "#fbfaf5",
+        "text": "#202722",
+        "accent": "#4f7f68",
+        "blue": "#4e7399"
+      },
+      "features": [
+        "Warm paper surfaces for daylight reading and manuscript work",
+        "Ink-like body text with calm sage navigation accents",
+        "Accessible research-state colors tuned for light backgrounds"
+      ],
+      "tags": ["light", "warm", "paper", "writing"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1678,
+      "packagePath": "packages/paper-sage-1.0.0.theox-theme.json",
+      "sha256": "a0cffad3185feb5ff3341b9337338d8192ba284d555676c2ad7aec31d289c92b"
+    },
+    {
+      "key": "theme-package:plum-graphite",
+      "id": "plum-graphite",
+      "title": "Plum Graphite",
+      "summary": "A sophisticated graphite-and-plum palette with lavender focus cues and soft neutral text.",
+      "details": "Plum Graphite gives TheoX a quieter editorial character. Graphite foundations prevent the purple family from becoming decorative, while lavender accents make navigation, references, and active research controls easy to find.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "preview": { "bg": "#151217", "surface": "#221c2a", "text": "#f0e9f3", "accent": "#c28bd7", "blue": "#88aee6" },
+      "features": [
+        "Graphite foundations with restrained plum depth",
+        "Lavender focus cues for navigation and active controls",
+        "Soft neutral typography for editorial and manuscript work"
+      ],
+      "tags": ["dark", "plum", "editorial", "calm"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1589,
+      "packagePath": "packages/plum-graphite-1.0.0.theox-theme.json",
+      "sha256": "3df3408c8ae7be94012b1a999a99eeb84bad7986b4d83520e5a0dad34769fe3c"
+    }
+  ]
+}
