@@ -21,9 +21,9 @@ legacy About and tour URLs redirect back into that page.
   SHA-256 digest.
 - Study templates live under `study-library/`, publish their own catalog and
   checksum set, and install inertly through TheoX Extensions.
-- Color-only themes live under `theme-library/`, publish versioned interface and
-  syntax palettes with checksums, and cannot include grammars, executable code,
-  fonts, or remote assets.
+- Inert appearance packs live under `theme-library/`, publish independently
+  selectable workbench, syntax, and validated file-icon contributions with
+  checksums, and cannot include grammars, executable code, fonts, or remote assets.
 - Hosted model access extensions live under `model-library/`. They contain no
   weights, credentials, executable code, or private service endpoints.
 - GitHub Pages deploys only from `main` through `.github/workflows/pages.yml`.
