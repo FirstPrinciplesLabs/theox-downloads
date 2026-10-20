@@ -355,6 +355,236 @@
         "emphasis": "#e2bfd3",
         "selection": "#51385d"
       }
+    },
+    {
+      "key": "theme-package:research-spectrum-icons",
+      "id": "research-spectrum-icons",
+      "title": "Research Spectrum Icons",
+      "summary": "A balanced semantic icon palette that separates source, proofs, data, tables, manuscripts, and research assets at a glance.",
+      "details": "Research Spectrum is the general-purpose TheoX file icon theme. Its compact symbols and distinct but restrained colors make mixed research workspaces easier to scan without competing with the editor or the selected workbench theme.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "schemeIndependent": true,
+      "preview": {
+        "bg": "#16191d",
+        "surface": "#20252b",
+        "text": "#e6ece9",
+        "accent": "#69b7a8",
+        "blue": "#6da7d9"
+      },
+      "features": [
+        "Semantic colors for source, formal, data, manuscript, and asset files",
+        "Compact symbols designed for dense Study explorers",
+        "Balanced contrast across dark and light workbench themes"
+      ],
+      "tags": ["file icons", "semantic", "balanced", "research"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1404,
+      "packagePath": "packages/research-spectrum-icons-1.0.0.theox-theme.json",
+      "sha256": "38c7e6e8cade78de9460e4f90a6f9643179effb6e9208441249b0923afa38dd9",
+      "contributionTypes": ["file-icons"],
+      "fileIconPreview": {
+        "style": "symbols",
+        "colors": {
+          "source": "#5e9fd1",
+          "formal": "#9c82d3",
+          "data": "#d49a43",
+          "table": "#45a790",
+          "manuscript": "#c87891",
+          "config": "#879491",
+          "image": "#78a65e",
+          "archive": "#b98256",
+          "generic": "#7f8b89",
+          "folder": "#d0a84d"
+        }
+      }
+    },
+    {
+      "key": "theme-package:proof-and-paper-icons",
+      "id": "proof-and-paper-icons",
+      "title": "Proof & Paper Icons",
+      "summary": "An editorial icon palette that brings formal proofs, Lean files, LaTeX, Markdown, and research writing to the foreground.",
+      "details": "Proof & Paper is tuned for theorem development and manuscript work. Formal and writing formats receive the clearest visual emphasis, while source, data, configuration, and archive files remain distinct and easy to locate.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "schemeIndependent": true,
+      "preview": {
+        "bg": "#191719",
+        "surface": "#242124",
+        "text": "#eee9e6",
+        "accent": "#b078d0",
+        "blue": "#6d8fb4"
+      },
+      "features": [
+        "Prominent formal-language and manuscript categories",
+        "Readable warm editorial palette for long writing sessions",
+        "Semantic coverage for the full TheoX research workspace"
+      ],
+      "tags": ["file icons", "formal", "writing", "editorial"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1370,
+      "packagePath": "packages/proof-and-paper-icons-1.0.0.theox-theme.json",
+      "sha256": "1b256b7f01f22696cfa29c9bb55e422836d42e0aece7a38ba2f976661faa0770",
+      "contributionTypes": ["file-icons"],
+      "fileIconPreview": {
+        "style": "symbols",
+        "colors": {
+          "source": "#6d8fb4",
+          "formal": "#b078d0",
+          "data": "#b99555",
+          "table": "#659d8e",
+          "manuscript": "#d17e8e",
+          "config": "#8e8985",
+          "image": "#7da069",
+          "archive": "#ad7f5f",
+          "generic": "#898582",
+          "folder": "#c4a05e"
+        }
+      }
+    },
+    {
+      "key": "theme-package:data-atlas-icons",
+      "id": "data-atlas-icons",
+      "title": "Data Atlas Icons",
+      "summary": "A high-clarity icon palette that makes datasets, tables, notebooks, scripts, and generated assets easy to distinguish.",
+      "details": "Data Atlas is optimized for computational and empirical Studies. Data and table formats carry the strongest cues, while code, formal sources, manuscripts, images, configuration, and archives retain a disciplined semantic hierarchy.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "schemeIndependent": true,
+      "preview": {
+        "bg": "#151a1c",
+        "surface": "#1e272a",
+        "text": "#e6eeec",
+        "accent": "#2fa68b",
+        "blue": "#5594c1"
+      },
+      "features": [
+        "Strong differentiation between datasets and tabular files",
+        "Clear source, image, configuration, and archive categories",
+        "Compact symbols for data-heavy Study explorers"
+      ],
+      "tags": ["file icons", "data", "tables", "computational"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1363,
+      "packagePath": "packages/data-atlas-icons-1.0.0.theox-theme.json",
+      "sha256": "2923c6f3bc6d5cfb48106edab4377bafbc0c702994947c65ced67658ae07853e",
+      "contributionTypes": ["file-icons"],
+      "fileIconPreview": {
+        "style": "symbols",
+        "colors": {
+          "source": "#5594c1",
+          "formal": "#897ac2",
+          "data": "#dfa139",
+          "table": "#2fa68b",
+          "manuscript": "#b6768b",
+          "config": "#819094",
+          "image": "#70a259",
+          "archive": "#bb8050",
+          "generic": "#75858a",
+          "folder": "#c69a40"
+        }
+      }
+    },
+    {
+      "key": "theme-package:monochrome-lab-icons",
+      "id": "monochrome-lab-icons",
+      "title": "Monochrome Lab Icons",
+      "summary": "A quiet minimal icon set for users who prefer file-type labels and structure over a multicolor explorer.",
+      "details": "Monochrome Lab reduces the visual weight of the Study explorer. Its minimal style keeps categories recognizable through concise labels while a narrow neutral palette lets the workbench and editor remain dominant.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "schemeIndependent": true,
+      "preview": {
+        "bg": "#191b1b",
+        "surface": "#232626",
+        "text": "#e3e7e6",
+        "accent": "#9a9178",
+        "blue": "#7f8c8a"
+      },
+      "features": [
+        "Minimal labels instead of decorative file symbols",
+        "Low-distraction neutral palette",
+        "Compatible with dark and light workbench themes"
+      ],
+      "tags": ["file icons", "minimal", "monochrome", "quiet"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1307,
+      "packagePath": "packages/monochrome-lab-icons-1.0.0.theox-theme.json",
+      "sha256": "6db45630e0098284d683ac7baa4f7cb84795dc9dd1bd4d05c6228c2ea689e950",
+      "contributionTypes": ["file-icons"],
+      "fileIconPreview": {
+        "style": "minimal",
+        "colors": {
+          "source": "#7f8c8a",
+          "formal": "#89858d",
+          "data": "#918b7e",
+          "table": "#7f8d88",
+          "manuscript": "#8d8587",
+          "config": "#838987",
+          "image": "#858c80",
+          "archive": "#8e887f",
+          "generic": "#818887",
+          "folder": "#9a9178"
+        }
+      }
+    },
+    {
+      "key": "theme-package:high-contrast-icons",
+      "id": "high-contrast-icons",
+      "title": "High Contrast Research Icons",
+      "summary": "A vivid, accessibility-minded semantic palette for quickly locating file categories in large or visually dense Studies.",
+      "details": "High Contrast Research Icons maximizes separation between neighboring file categories without changing TheoX's safe built-in symbols. It is intended for large explorers, low-contrast displays, and users who benefit from stronger color cues.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "schemeIndependent": true,
+      "preview": {
+        "bg": "#101315",
+        "surface": "#1a1e21",
+        "text": "#f1f4f3",
+        "accent": "#39c6a3",
+        "blue": "#4ea1ff"
+      },
+      "features": [
+        "High-separation colors across research file categories",
+        "Strong folder and archive cues in dense explorers",
+        "Safe built-in symbols with no executable or remote assets"
+      ],
+      "tags": ["file icons", "high contrast", "accessible", "vivid"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1395,
+      "packagePath": "packages/high-contrast-icons-1.0.0.theox-theme.json",
+      "sha256": "854aa03a8843c3037b3438b76ae41d6962f7bcb9ad410e814b794597b934c4b0",
+      "contributionTypes": ["file-icons"],
+      "fileIconPreview": {
+        "style": "symbols",
+        "colors": {
+          "source": "#4ea1ff",
+          "formal": "#c58cff",
+          "data": "#ffb84d",
+          "table": "#39c6a3",
+          "manuscript": "#ff7fa5",
+          "config": "#b8c0c2",
+          "image": "#8bd35f",
+          "archive": "#e99a5b",
+          "generic": "#d0d6d4",
+          "folder": "#f0c75e"
+        }
+      }
     }
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "schema_version": "theox.theme-package.v2",
+  "key": "theme-package:monochrome-lab-icons",
+  "id": "monochrome-lab-icons",
+  "title": "Monochrome Lab Icons",
+  "summary": "A quiet minimal icon set for users who prefer file-type labels and structure over a multicolor explorer.",
+  "details": "Monochrome Lab reduces the visual weight of the Study explorer. Its minimal style keeps categories recognizable through concise labels while a narrow neutral palette lets the workbench and editor remain dominant.",
+  "publisher": "FirstPrinciples Labs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "compatibility": {
+    "minimum_version": "0.1.2"
+  },
+  "features": [
+    "Minimal labels instead of decorative file symbols",
+    "Low-distraction neutral palette",
+    "Compatible with dark and light workbench themes"
+  ],
+  "tags": ["file icons", "minimal", "monochrome", "quiet"],
+  "published_at": "2026-10-20",
+  "contributes": {
+    "file_icons": {
+      "style": "minimal",
+      "colors": {
+        "source": "#7f8c8a",
+        "formal": "#89858d",
+        "data": "#918b7e",
+        "table": "#7f8d88",
+        "manuscript": "#8d8587",
+        "config": "#838987",
+        "image": "#858c80",
+        "archive": "#8e887f",
+        "generic": "#818887",
+        "folder": "#9a9178"
+      }
+    }
+  }
+}

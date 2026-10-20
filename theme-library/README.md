@@ -15,6 +15,14 @@ The initial curated collection includes:
 - **Paper Sage** — a warm archival-paper light theme with sage structure.
 - **Plum Graphite** — graphite foundations with quiet plum and lavender accents.
 
+File icon choices are independent of the workbench and syntax palettes:
+
+- **Research Spectrum Icons** — balanced semantic symbols for mixed research workspaces.
+- **Proof & Paper Icons** — emphasizes Lean, formal sources, LaTeX, and Markdown.
+- **Data Atlas Icons** — emphasizes datasets, tables, scripts, and generated assets.
+- **Monochrome Lab Icons** — a quiet minimal-label option with restrained neutral colors.
+- **High Contrast Research Icons** — vivid, high-separation cues for dense explorers.
+
 TheoX downloads a package only after the user chooses **Add Theme Pack**, verifies its
 published SHA-256 digest, stores it in the app's local theme library, and records an
 inert installation receipt. Installation adds each contribution to its matching
@@ -22,4 +30,6 @@ Appearance selector; it does not silently replace the user's other theme choices
 
 Version 1.2 separates each curated workbench and syntax contribution so users can
 mix them independently. The catalog carries validated preview palettes so TheoX can
-show a realistic workspace and highlighted-editor example before installation.
+show a realistic workspace and highlighted-editor example before installation. File
+icon packs use only TheoX's fixed, allowlisted symbols and semantic color tokens;
+they cannot ship arbitrary SVG, scripts, fonts, or remote assets.

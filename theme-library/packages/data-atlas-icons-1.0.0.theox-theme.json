@@ -1,0 +1,38 @@
+{
+  "schema_version": "theox.theme-package.v2",
+  "key": "theme-package:data-atlas-icons",
+  "id": "data-atlas-icons",
+  "title": "Data Atlas Icons",
+  "summary": "A high-clarity icon palette that makes datasets, tables, notebooks, scripts, and generated assets easy to distinguish.",
+  "details": "Data Atlas is optimized for computational and empirical Studies. Data and table formats carry the strongest cues, while code, formal sources, manuscripts, images, configuration, and archives retain a disciplined semantic hierarchy.",
+  "publisher": "FirstPrinciples Labs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "compatibility": {
+    "minimum_version": "0.1.2"
+  },
+  "features": [
+    "Strong differentiation between datasets and tabular files",
+    "Clear source, image, configuration, and archive categories",
+    "Compact symbols for data-heavy Study explorers"
+  ],
+  "tags": ["file icons", "data", "tables", "computational"],
+  "published_at": "2026-10-20",
+  "contributes": {
+    "file_icons": {
+      "style": "symbols",
+      "colors": {
+        "source": "#5594c1",
+        "formal": "#897ac2",
+        "data": "#dfa139",
+        "table": "#2fa68b",
+        "manuscript": "#b6768b",
+        "config": "#819094",
+        "image": "#70a259",
+        "archive": "#bb8050",
+        "generic": "#75858a",
+        "folder": "#c69a40"
+      }
+    }
+  }
+}
