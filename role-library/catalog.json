@@ -1,0 +1,55 @@
+{
+  "schema_version": "theox.role-library-catalog.v1",
+  "packages": [
+    {
+      "key": "role-package:education",
+      "id": "education",
+      "title": "Education",
+      "summary": "Build versioned Class workspaces in TheoX, publish bounded student investigations, and review structured student mathematical work.",
+      "details": "Education adds an instructor workspace implemented by TheoX core. Instructors can connect exact Study revisions, develop clear definitions and activities with the advisor, review an immutable student release, and explicitly publish it through the First Principles Education service. Published classes use bounded deterministic TheoX engines by default, while conjectures, counterexamples, proofs, files, and review history synchronize back as structured records. Installing this package is inert: it does not create a Class, contact a service, store a key, or publish content.",
+      "publisher": "First Principles Labs",
+      "version": "1.0.0",
+      "license": "First Principles Education service terms",
+      "compatibility": "0.1.2",
+      "contribution": {
+        "id": "education",
+        "activity_label": "Education",
+        "activity_icon": "education"
+      },
+      "authentication": "firstprinciples_llm_key",
+      "serviceId": "first-principles-education-v1",
+      "capabilities": [
+        "Instructor-owned Class workspaces with durable local history",
+        "Advisor-assisted curriculum drafting with typed directives and provenance",
+        "Exact Study revision bindings without duplicating private registries",
+        "Clarity review for definitions, notation, examples, and prerequisites",
+        "Explicit immutable release and disclosure review before publishing",
+        "Invite-only hosted student investigations by default",
+        "Deterministic property, invariant, conjecture, and counterexample activities",
+        "Structured conjecture, proof, counterexample, file, and review records"
+      ],
+      "limitations": [
+        "Requires a supported TheoX build with the Education role implementation",
+        "Advisor and publishing operations require a verified First Principles Education key",
+        "Hosted class availability depends on an active First Principles deployment lease",
+        "Student model use is disabled by default; core investigations use deterministic engines",
+        "Installing the role never creates, uploads, or publishes a Class"
+      ],
+      "dataNotice": "Class authoring records and downloaded submissions remain in the instructor's local TheoX custody. Only the instructor-approved, content-addressed release projection is uploaded during an explicit publish action. Student identity, contact, submission, and file handling follows the selected Class policy. The instructor's Education key is stored by TheoX in the operating-system credential vault and is never contained in this package.",
+      "availabilityNotice": "Published student sites are First Principles-managed deployment leases, not permanent hosting. A site may be suspended, expire, or be retired. TheoX retains the local Class, releases, deployment receipts, and previously synchronized submissions so service retirement does not erase instructor custody.",
+      "tags": [
+        "education",
+        "instructor",
+        "classroom",
+        "conjecturing",
+        "deterministic",
+        "invite-only",
+        "hosted"
+      ],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 3260,
+      "packagePath": "packages/education-1.0.0.theox-role.json",
+      "sha256": "c2efa875edb5b0ca2c30c93e4b6a1a999ad8fd0a41932af0b1b219ffe45112d3"
+    }
+  ]
+}

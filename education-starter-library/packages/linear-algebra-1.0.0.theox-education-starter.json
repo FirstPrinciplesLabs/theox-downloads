@@ -1,0 +1,201 @@
+{
+  "schema_version": "theox.education-class-starter.v1",
+  "id": "linear-algebra",
+  "title": "Linear Algebra Investigation Starter",
+  "subject": "Linear Algebra",
+  "summary": "An exact finite-matrix scaffold connecting rank, nullity, determinant, trace, symmetry, and invertibility through bounded investigations.",
+  "details": "This starter helps an instructor build a linear algebra Class around small integer matrices interpreted over the rational numbers. Definitions distinguish matrix representations from linear maps, examples expose complete calculations, and the investigation palette remains bounded and deterministic.",
+  "publisher": "First Principles Labs",
+  "version": "1.0.0",
+  "license": "CC BY 4.0 curriculum metadata",
+  "compatibility": "0.1.2",
+  "tags": ["linear algebra", "matrices", "rank", "determinant", "deterministic"],
+  "published_at": "2026-10-20",
+  "default_class": {"title": null, "description": null},
+  "curriculum": {
+    "objectives": [
+      "Interpret a matrix as a representation of a linear transformation after bases are fixed.",
+      "Compute rank, nullity, determinant, and trace exactly for small matrices.",
+      "Form and test relationships among algebraic properties and numeric invariants.",
+      "Use counterexamples to separate statements that require square matrices from those that do not."
+    ],
+    "concepts": [
+      {
+        "descriptor_id": "linear_algebra.matrix",
+        "kind": "definition",
+        "title": "Matrix over the rational numbers",
+        "plain_language": "A matrix is a rectangular array of rational numbers with a fixed number of rows and columns.",
+        "formal_definition": "An m×n rational matrix is a function A:{1,…,m}×{1,…,n}→ℚ. Its value at (i,j) is written aᵢⱼ.",
+        "notation": [
+          {"symbol": "A∈ℚ^{m×n}", "meaning": "A has m rows, n columns, and rational entries"},
+          {"symbol": "aᵢⱼ", "meaning": "the entry in row i and column j"}
+        ],
+        "prerequisites": [],
+        "worked_example": {
+          "prompt": "Describe A=[[1,2],[0,-1]].",
+          "steps": ["Count two rows and two columns.", "Observe that every entry is rational."],
+          "conclusion": "A∈ℚ^{2×2}."
+        },
+        "nonexample": {
+          "prompt": "A jagged list with first row [1,2] and second row [3].",
+          "explanation": "Rows do not share a common column count, so this is not a matrix under the definition."
+        },
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "linear_algebra.rank",
+        "kind": "invariant",
+        "title": "Rank",
+        "plain_language": "Rank counts the number of independent directions produced by the matrix.",
+        "formal_definition": "For A∈ℚ^{m×n}, rank(A) is the dimension over ℚ of the span of its columns, equivalently of its rows.",
+        "notation": [
+          {"symbol": "rank(A)", "meaning": "the dimension of the column space of A"},
+          {"symbol": "span", "meaning": "all rational linear combinations of the listed vectors"}
+        ],
+        "prerequisites": ["linear_algebra.matrix"],
+        "worked_example": {
+          "prompt": "Find rank([[1,2],[2,4]]).",
+          "steps": ["The second row is twice the first.", "The first row is nonzero, so exactly one row is independent."],
+          "conclusion": "The rank is 1."
+        },
+        "nonexample": {
+          "prompt": "Claim every 2×2 matrix has rank 2.",
+          "explanation": "Shape only gives an upper bound. Dependent or zero rows can make the rank smaller."
+        },
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "linear_algebra.nullity",
+        "kind": "invariant",
+        "title": "Nullity",
+        "plain_language": "Nullity counts the independent input directions that the matrix sends to zero.",
+        "formal_definition": "For A∈ℚ^{m×n}, nullity(A)=dim₍ℚ₎{x∈ℚⁿ:Ax=0}. The rank-nullity theorem gives rank(A)+nullity(A)=n.",
+        "notation": [
+          {"symbol": "ker(A)", "meaning": "the set of vectors x with Ax=0"},
+          {"symbol": "nullity(A)", "meaning": "the dimension of ker(A)"}
+        ],
+        "prerequisites": ["linear_algebra.matrix", "linear_algebra.rank"],
+        "worked_example": {
+          "prompt": "Find the nullity of [[1,2],[2,4]].",
+          "steps": ["The matrix has n=2 columns and rank 1.", "Apply rank+nullity=n."],
+          "conclusion": "The nullity is 2-1=1."
+        },
+        "nonexample": {
+          "prompt": "Use m-rank(A) for an m×n matrix.",
+          "explanation": "Nullity concerns input vectors and therefore uses the number n of columns, not the number of rows."
+        },
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "linear_algebra.determinant",
+        "kind": "invariant",
+        "title": "Determinant",
+        "plain_language": "For a square matrix, the determinant is a signed volume-scaling factor and detects whether the transformation collapses a direction.",
+        "formal_definition": "For A=(aᵢⱼ)∈ℚ^{n×n}, det(A)=Σ_{σ∈Sₙ}sgn(σ)∏_{i=1}^n a_{i,σ(i)}.",
+        "notation": [
+          {"symbol": "det(A)", "meaning": "the determinant of the square matrix A"},
+          {"symbol": "Sₙ", "meaning": "the permutations of {1,…,n}"}
+        ],
+        "prerequisites": ["linear_algebra.matrix"],
+        "worked_example": {
+          "prompt": "Compute det([[1,2],[3,4]]).",
+          "steps": ["Use ad-bc for a 2×2 matrix.", "Compute 1·4-2·3."],
+          "conclusion": "The determinant is -2."
+        },
+        "nonexample": {
+          "prompt": "Ask for the determinant of a 2×3 matrix.",
+          "explanation": "The determinant in this starter is defined only for square matrices."
+        },
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "linear_algebra.trace",
+        "kind": "invariant",
+        "title": "Trace",
+        "plain_language": "The trace adds the entries on the main diagonal of a square matrix.",
+        "formal_definition": "For A∈ℚ^{n×n}, tr(A)=Σ_{i=1}^n aᵢᵢ.",
+        "notation": [
+          {"symbol": "tr(A)", "meaning": "the trace of A"},
+          {"symbol": "aᵢᵢ", "meaning": "the diagonal entry in row i and column i"}
+        ],
+        "prerequisites": ["linear_algebra.matrix"],
+        "worked_example": {
+          "prompt": "Compute tr([[1,2],[3,4]]).",
+          "steps": ["Identify the diagonal entries 1 and 4.", "Add them."],
+          "conclusion": "The trace is 5."
+        },
+        "nonexample": {
+          "prompt": "Add every entry and call the result the trace.",
+          "explanation": "Only main-diagonal entries contribute to the trace."
+        },
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "linear_algebra.invertible",
+        "kind": "property",
+        "title": "Invertible matrix",
+        "plain_language": "A square matrix is invertible when another matrix reverses its action exactly.",
+        "formal_definition": "A∈ℚ^{n×n} is invertible when there exists B∈ℚ^{n×n} with AB=BA=Iₙ.",
+        "notation": [
+          {"symbol": "A⁻¹", "meaning": "the unique inverse matrix when it exists"},
+          {"symbol": "Iₙ", "meaning": "the n×n identity matrix"}
+        ],
+        "prerequisites": ["linear_algebra.matrix", "linear_algebra.determinant"],
+        "worked_example": {
+          "prompt": "Decide whether [[1,2],[3,4]] is invertible.",
+          "steps": ["Its determinant is -2.", "A square matrix over ℚ is invertible exactly when its determinant is nonzero."],
+          "conclusion": "The matrix is invertible."
+        },
+        "nonexample": {
+          "prompt": "The matrix [[1,2],[2,4]].",
+          "explanation": "Its determinant is 0 and its rows are dependent, so no inverse exists."
+        },
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "linear_algebra.symmetric",
+        "kind": "property",
+        "title": "Symmetric matrix",
+        "plain_language": "A square matrix is symmetric when reflecting its entries across the main diagonal changes nothing.",
+        "formal_definition": "A∈ℚ^{n×n} is symmetric when A=Aᵀ, equivalently aᵢⱼ=aⱼᵢ for all i,j.",
+        "notation": [
+          {"symbol": "Aᵀ", "meaning": "the transpose obtained by exchanging rows and columns"},
+          {"symbol": "aᵢⱼ=aⱼᵢ", "meaning": "entries mirrored across the diagonal agree"}
+        ],
+        "prerequisites": ["linear_algebra.matrix"],
+        "worked_example": {
+          "prompt": "Check [[2,-1],[-1,3]] for symmetry.",
+          "steps": ["Compare the off-diagonal entries.", "Both are -1; diagonal entries mirror themselves."],
+          "conclusion": "The matrix is symmetric."
+        },
+        "nonexample": {
+          "prompt": "[[1,2],[0,1]].",
+          "explanation": "The (1,2) entry is 2 but the mirrored (2,1) entry is 0."
+        },
+        "verification": "required_at_import"
+      }
+    ],
+    "investigation": {
+      "object_family": {
+        "id": "linear_algebra.bounded_integer_matrix",
+        "label": "Small integer matrices interpreted over ℚ",
+        "scope": "Matrices with at most 5 rows and 5 columns and entries between -5 and 5; square-only descriptors apply only to square members.",
+        "representation": "row-major integer entry array with explicit row and column counts"
+      },
+      "properties": [
+        {"descriptor_id": "linear_algebra.invertible", "label": "Invertible"},
+        {"descriptor_id": "linear_algebra.symmetric", "label": "Symmetric"}
+      ],
+      "invariants": [
+        {"descriptor_id": "linear_algebra.rank", "label": "Rank"},
+        {"descriptor_id": "linear_algebra.nullity", "label": "Nullity"},
+        {"descriptor_id": "linear_algebra.determinant", "label": "Determinant"},
+        {"descriptor_id": "linear_algebra.trace", "label": "Trace"}
+      ],
+      "conjecture_families": ["implication", "equivalence", "equality", "lower_bound", "upper_bound"],
+      "concept_invention_heuristics": ["boolean_composition", "threshold_predicate", "invariant_difference", "restricted_object_view"],
+      "visualizations": ["matrix_heatmap", "invariant_scatter", "property_matrix", "counterexample_table"],
+      "limits": {"max_objects": 10000, "max_properties": 5, "max_invariants": 8, "max_conjectures_per_run": 250, "max_derived_concepts": 12, "student_model_calls": 0}
+    }
+  }
+}
