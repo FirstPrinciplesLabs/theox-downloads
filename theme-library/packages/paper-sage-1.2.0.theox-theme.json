@@ -1,0 +1,82 @@
+{
+  "schema_version": "theox.theme-package.v2",
+  "key": "theme-package:paper-sage",
+  "id": "paper-sage",
+  "title": "Paper Sage",
+  "summary": "A warm light theme inspired by archival paper, with sage navigation and ink-like typography.",
+  "details": "Paper Sage is a daylight palette for reading, reviewing evidence, and drafting manuscripts. Warm neutral surfaces avoid stark white glare, while sage accents and ink-like text keep the workspace calm and unmistakably structured.",
+  "publisher": "FirstPrinciples Labs",
+  "version": "1.2.0",
+  "license": "MIT",
+  "compatibility": {
+    "minimum_version": "0.1.2"
+  },
+  "features": [
+    "Warm paper surfaces for daylight reading and manuscript work",
+    "Ink-like body text with calm sage navigation accents",
+    "Accessible research-state colors tuned for light backgrounds",
+    "Ink-and-sage syntax palette for manuscripts, data, and proofs"
+  ],
+  "tags": [
+    "light",
+    "warm",
+    "paper",
+    "writing"
+  ],
+  "published_at": "2026-10-20",
+  "contributes": {
+    "workbench": {
+      "color_scheme": "light",
+      "colors": {
+        "bg": "#f1f0ea",
+        "sidebar": "#e4e7df",
+        "surface": "#fbfaf5",
+        "surface-panel": "#f6f5ef",
+        "surface-sunken": "#e9ebe4",
+        "surface-deep": "#dfe3da",
+        "surface-raised": "#f0f2eb",
+        "surface-active": "#dce3d9",
+        "surface-hover": "#d4ded3",
+        "surface-control": "#e1e5dc",
+        "drawer": "#f4f4ee",
+        "titlebar": "#e7e8e1",
+        "statusbar": "#dce1d8",
+        "border": "#c4cac0",
+        "border-strong": "#8c988c",
+        "line-soft": "#d4d9d1",
+        "line-tree": "#c9d0c6",
+        "text": "#202722",
+        "text-soft": "#4d5a52",
+        "text-muted": "#727f76",
+        "accent": "#4f7f68",
+        "blue": "#4e7399",
+        "amber": "#906f31",
+        "green": "#507952",
+        "rose": "#9a555c",
+        "focus": "#31674f"
+      }
+    },
+    "syntax": {
+      "colors": {
+        "comment": "#68766c",
+        "keyword": "#93465b",
+        "string": "#4f742e",
+        "number": "#865f17",
+        "type": "#196e66",
+        "function": "#416b98",
+        "property": "#765487",
+        "operator": "#56635a",
+        "punctuation": "#737d75",
+        "heading": "#264e3a",
+        "link": "#356f9f",
+        "constant": "#8f5631",
+        "tag": "#267469",
+        "attribute": "#7c631c",
+        "variable": "#3d5550",
+        "meta": "#57717d",
+        "emphasis": "#704e3e",
+        "selection": "#c9d8c8"
+      }
+    }
+  }
+}

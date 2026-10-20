@@ -1,0 +1,50 @@
+{
+  "schema_version": "theox.theme-package.v2",
+  "key": "theme-package:research-spectrum-icons",
+  "id": "research-spectrum-icons",
+  "title": "Research Spectrum Icons",
+  "summary": "A balanced semantic icon palette that separates source, proofs, data, tables, manuscripts, and research assets at a glance.",
+  "details": "Research Spectrum is the general-purpose TheoX file icon theme. Its compact symbols and distinct but restrained colors make mixed research workspaces easier to scan without competing with the editor or the selected workbench theme.",
+  "publisher": "FirstPrinciples Labs",
+  "version": "1.1.0",
+  "license": "MIT",
+  "compatibility": {
+    "minimum_version": "0.1.2"
+  },
+  "features": [
+    "Semantic colors for source, formal, data, manuscript, and asset files",
+    "Compact symbols designed for dense Study explorers",
+    "Balanced contrast across dark and light workbench themes"
+  ],
+  "tags": ["file icons", "semantic", "balanced", "research"],
+  "published_at": "2026-10-20",
+  "contributes": {
+    "file_icons": {
+      "style": "symbols",
+      "colors": {
+        "source": "#5e9fd1",
+        "formal": "#9c82d3",
+        "data": "#d49a43",
+        "table": "#45a790",
+        "manuscript": "#c87891",
+        "config": "#879491",
+        "image": "#78a65e",
+        "archive": "#b98256",
+        "generic": "#7f8b89",
+        "folder": "#d0a84d"
+      },
+      "glyphs": {
+        "source": "λ",
+        "formal": "∀",
+        "data": "{}",
+        "table": "▦",
+        "manuscript": "¶",
+        "config": "⚙",
+        "image": "◇",
+        "archive": "▣",
+        "generic": "·",
+        "folder": "▸"
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "theox.theme-package.v2",
+  "key": "theme-package:proof-and-paper-icons",
+  "id": "proof-and-paper-icons",
+  "title": "Proof & Paper Icons",
+  "summary": "An editorial icon palette that brings formal proofs, Lean files, LaTeX, Markdown, and research writing to the foreground.",
+  "details": "Proof & Paper is tuned for theorem development and manuscript work. Formal and writing formats receive the clearest visual emphasis, while source, data, configuration, and archive files remain distinct and easy to locate.",
+  "publisher": "FirstPrinciples Labs",
+  "version": "1.1.0",
+  "license": "MIT",
+  "compatibility": {
+    "minimum_version": "0.1.2"
+  },
+  "features": [
+    "Prominent formal-language and manuscript categories",
+    "Readable warm editorial palette for long writing sessions",
+    "Semantic coverage for the full TheoX research workspace"
+  ],
+  "tags": ["file icons", "formal", "writing", "editorial"],
+  "published_at": "2026-10-20",
+  "contributes": {
+    "file_icons": {
+      "style": "symbols",
+      "colors": {
+        "source": "#6d8fb4",
+        "formal": "#b078d0",
+        "data": "#b99555",
+        "table": "#659d8e",
+        "manuscript": "#d17e8e",
+        "config": "#8e8985",
+        "image": "#7da069",
+        "archive": "#ad7f5f",
+        "generic": "#898582",
+        "folder": "#c4a05e"
+      },
+      "glyphs": {
+        "source": "ƒ",
+        "formal": "⊢",
+        "data": "≔",
+        "table": "⊞",
+        "manuscript": "§",
+        "config": "⋮",
+        "image": "◫",
+        "archive": "□",
+        "generic": "·",
+        "folder": "›"
+      }
+    }
+  }
+}

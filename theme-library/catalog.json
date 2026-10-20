@@ -9,7 +9,7 @@
       "summary": "A deep blue-black research palette with cool mint accents and crisp scientific status colors.",
       "details": "Aurora Noir keeps the canvas quiet while giving active controls, references, and research states a restrained northern-light glow. It is designed for long evening sessions without flattening the hierarchy between conversation, evidence, and tools.",
       "publisher": "FirstPrinciples Labs",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "license": "MIT",
       "compatibility": "0.1.2",
       "colorScheme": "dark",
@@ -26,11 +26,40 @@
         "Clearly separated evidence, warning, success, and failure colors",
         "Aurora syntax palette for code, data, Lean, and Markdown"
       ],
-      "tags": ["dark", "cool", "low glare", "research"],
+      "tags": [
+        "dark",
+        "cool",
+        "low glare",
+        "research"
+      ],
       "publishedAt": "2026-10-20",
-      "sizeBytes": 2206,
-      "packagePath": "packages/aurora-noir-1.1.0.theox-theme.json",
-      "sha256": "ae77c6a2de32e88a2fdc3fa1ec0fd641f3b57dd02dcf6ff3b4994f790d4e816f"
+      "sizeBytes": 2550,
+      "packagePath": "packages/aurora-noir-1.2.0.theox-theme.json",
+      "sha256": "d7fe457e37c9e1e9bddd8afab8eacfd6f4912885f9228c3dc3f505dcfe6b70f9",
+      "contributionTypes": [
+        "workbench",
+        "syntax"
+      ],
+      "syntaxPreview": {
+        "comment": "#78908a",
+        "keyword": "#ff9db8",
+        "string": "#a9d58d",
+        "number": "#f1c77d",
+        "type": "#7ddbd0",
+        "function": "#8dc8ff",
+        "property": "#d6a7ee",
+        "operator": "#c0ceca",
+        "punctuation": "#78908a",
+        "heading": "#f2fbf8",
+        "link": "#7dc9f2",
+        "constant": "#e6a77a",
+        "tag": "#73d3c1",
+        "attribute": "#e0c07e",
+        "variable": "#d8e5e1",
+        "meta": "#93aec2",
+        "emphasis": "#e8cdc0",
+        "selection": "#264d4a"
+      }
     },
     {
       "key": "theme-package:arctic-daylight",
@@ -39,22 +68,57 @@
       "summary": "A crisp cool-light theme with blue-gray structure, clean white surfaces, and teal focus accents.",
       "details": "Arctic Daylight is built for bright rooms and high-density review. Cool gray-blue separators make complex panes easy to parse, while the white working surface stays clean without losing the distinction between controls, drawers, and evidence regions.",
       "publisher": "FirstPrinciples Labs",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "license": "MIT",
       "compatibility": "0.1.2",
       "colorScheme": "light",
-      "preview": { "bg": "#eef3f6", "surface": "#ffffff", "text": "#1d2930", "accent": "#377f92", "blue": "#3f70a8" },
+      "preview": {
+        "bg": "#eef3f6",
+        "surface": "#ffffff",
+        "text": "#1d2930",
+        "accent": "#377f92",
+        "blue": "#3f70a8"
+      },
       "features": [
         "Crisp daylight surfaces for bright working environments",
         "Blue-gray structural layers for complex pane layouts",
         "Teal focus cues with accessible light-background status colors",
         "High-contrast daylight syntax colors across supported Study files"
       ],
-      "tags": ["light", "cool", "crisp", "review"],
+      "tags": [
+        "light",
+        "cool",
+        "crisp",
+        "review"
+      ],
       "publishedAt": "2026-10-20",
-      "sizeBytes": 2145,
-      "packagePath": "packages/arctic-daylight-1.1.0.theox-theme.json",
-      "sha256": "77b1cebdd58f1b28f109684fabd54a6a6f36f08f57be2d7e1e50681dc02ec9e1"
+      "sizeBytes": 2565,
+      "packagePath": "packages/arctic-daylight-1.2.0.theox-theme.json",
+      "sha256": "73d536120d61308f8d6052d142dd77399cc3a6a955aec81a1bbd4f15e4cb47b1",
+      "contributionTypes": [
+        "workbench",
+        "syntax"
+      ],
+      "syntaxPreview": {
+        "comment": "#627782",
+        "keyword": "#9b315a",
+        "string": "#3f742f",
+        "number": "#8a5b12",
+        "type": "#08776f",
+        "function": "#315f9b",
+        "property": "#75508c",
+        "operator": "#4e626c",
+        "punctuation": "#71818a",
+        "heading": "#173f50",
+        "link": "#176c9b",
+        "constant": "#92542e",
+        "tag": "#08776f",
+        "attribute": "#7c5d13",
+        "variable": "#344f60",
+        "meta": "#4f6e80",
+        "emphasis": "#6c493d",
+        "selection": "#bddce5"
+      }
     },
     {
       "key": "theme-package:cobalt-night",
@@ -63,22 +127,57 @@
       "summary": "A focused midnight-blue theme with luminous cobalt controls and cool scientific accents.",
       "details": "Cobalt Night uses layered navy surfaces to keep complex workspaces legible without turning black. Bright cobalt focus cues and carefully separated state colors make it particularly effective for dense evidence tables and long tool-driven sessions.",
       "publisher": "FirstPrinciples Labs",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "license": "MIT",
       "compatibility": "0.1.2",
       "colorScheme": "dark",
-      "preview": { "bg": "#0c1220", "surface": "#16213a", "text": "#e9efff", "accent": "#78a9ff", "blue": "#75c8ff" },
+      "preview": {
+        "bg": "#0c1220",
+        "surface": "#16213a",
+        "text": "#e9efff",
+        "accent": "#78a9ff",
+        "blue": "#75c8ff"
+      },
       "features": [
         "Layered navy surfaces for dense technical workspaces",
         "Luminous cobalt focus cues and selection states",
         "Cool status palette with readable warning and failure contrast",
         "Cobalt syntax hierarchy for dense technical editing"
       ],
-      "tags": ["dark", "blue", "focused", "technical"],
+      "tags": [
+        "dark",
+        "blue",
+        "focused",
+        "technical"
+      ],
       "publishedAt": "2026-10-20",
-      "sizeBytes": 2106,
-      "packagePath": "packages/cobalt-night-1.1.0.theox-theme.json",
-      "sha256": "9386da96edd06bd8d44e81754383a67fcd29111362da63adc35de0a13e159362"
+      "sizeBytes": 2526,
+      "packagePath": "packages/cobalt-night-1.2.0.theox-theme.json",
+      "sha256": "7c631e1a81c0e8f27e434ce744b65c71078a34457f54b14f4f4013da3fbced30",
+      "contributionTypes": [
+        "workbench",
+        "syntax"
+      ],
+      "syntaxPreview": {
+        "comment": "#7f91b3",
+        "keyword": "#ff8fb4",
+        "string": "#9bd88f",
+        "number": "#e8bd69",
+        "type": "#71d5d0",
+        "function": "#82b7ff",
+        "property": "#c5a2ff",
+        "operator": "#c5d3ef",
+        "punctuation": "#8495b8",
+        "heading": "#f2f6ff",
+        "link": "#75c8ff",
+        "constant": "#eca071",
+        "tag": "#6fdcc8",
+        "attribute": "#e0bf72",
+        "variable": "#dce6fb",
+        "meta": "#91b5d9",
+        "emphasis": "#e7cad9",
+        "selection": "#294a79"
+      }
     },
     {
       "key": "theme-package:ember-slate",
@@ -87,7 +186,7 @@
       "summary": "A warm charcoal theme with copper accents, soft paper text, and grounded research-state colors.",
       "details": "Ember Slate trades the usual blue-gray developer palette for warm mineral surfaces and a precise copper accent. The restrained warmth makes manuscripts and long explanations comfortable while preserving crisp borders and visible scientific state changes.",
       "publisher": "FirstPrinciples Labs",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "license": "MIT",
       "compatibility": "0.1.2",
       "colorScheme": "dark",
@@ -104,11 +203,40 @@
         "Balanced status colors for proofs, warnings, and counterexamples",
         "Warm syntax colors tuned for long writing and review sessions"
       ],
-      "tags": ["dark", "warm", "charcoal", "writing"],
+      "tags": [
+        "dark",
+        "warm",
+        "charcoal",
+        "writing"
+      ],
       "publishedAt": "2026-10-20",
-      "sizeBytes": 2213,
-      "packagePath": "packages/ember-slate-1.1.0.theox-theme.json",
-      "sha256": "cd4d30832004bf94213ed2278f280aa2a546b3395e505028848af532f581b583"
+      "sizeBytes": 2557,
+      "packagePath": "packages/ember-slate-1.2.0.theox-theme.json",
+      "sha256": "f07128b5060d5233b39ac2aaf13609b1d147ad1e83d326a18aa7d91c28547f09",
+      "contributionTypes": [
+        "workbench",
+        "syntax"
+      ],
+      "syntaxPreview": {
+        "comment": "#a28e82",
+        "keyword": "#ec94a2",
+        "string": "#a8c88a",
+        "number": "#efbd6c",
+        "type": "#8ac9c0",
+        "function": "#92b4df",
+        "property": "#c6a4d8",
+        "operator": "#d0c1b8",
+        "punctuation": "#aa9890",
+        "heading": "#fff1e9",
+        "link": "#89b8e8",
+        "constant": "#e9a370",
+        "tag": "#83c8b8",
+        "attribute": "#dfbd78",
+        "variable": "#e2d4cc",
+        "meta": "#a6b3be",
+        "emphasis": "#e7bda8",
+        "selection": "#5b3d30"
+      }
     },
     {
       "key": "theme-package:paper-sage",
@@ -117,7 +245,7 @@
       "summary": "A warm light theme inspired by archival paper, with sage navigation and ink-like typography.",
       "details": "Paper Sage is a daylight palette for reading, reviewing evidence, and drafting manuscripts. Warm neutral surfaces avoid stark white glare, while sage accents and ink-like text keep the workspace calm and unmistakably structured.",
       "publisher": "FirstPrinciples Labs",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "license": "MIT",
       "compatibility": "0.1.2",
       "colorScheme": "light",
@@ -134,11 +262,40 @@
         "Accessible research-state colors tuned for light backgrounds",
         "Ink-and-sage syntax palette for manuscripts, data, and proofs"
       ],
-      "tags": ["light", "warm", "paper", "writing"],
+      "tags": [
+        "light",
+        "warm",
+        "paper",
+        "writing"
+      ],
       "publishedAt": "2026-10-20",
-      "sizeBytes": 2180,
-      "packagePath": "packages/paper-sage-1.1.0.theox-theme.json",
-      "sha256": "b17077cb2f2d32d8f82934b081b8e42a141a6fc5c464822c41705cf0b7328fdc"
+      "sizeBytes": 2524,
+      "packagePath": "packages/paper-sage-1.2.0.theox-theme.json",
+      "sha256": "0a50d710be87e619972b9b812577a007e2d537afa84278b438da6d42a1ae18f2",
+      "contributionTypes": [
+        "workbench",
+        "syntax"
+      ],
+      "syntaxPreview": {
+        "comment": "#68766c",
+        "keyword": "#93465b",
+        "string": "#4f742e",
+        "number": "#865f17",
+        "type": "#196e66",
+        "function": "#416b98",
+        "property": "#765487",
+        "operator": "#56635a",
+        "punctuation": "#737d75",
+        "heading": "#264e3a",
+        "link": "#356f9f",
+        "constant": "#8f5631",
+        "tag": "#267469",
+        "attribute": "#7c631c",
+        "variable": "#3d5550",
+        "meta": "#57717d",
+        "emphasis": "#704e3e",
+        "selection": "#c9d8c8"
+      }
     },
     {
       "key": "theme-package:plum-graphite",
@@ -147,22 +304,347 @@
       "summary": "A sophisticated graphite-and-plum palette with lavender focus cues and soft neutral text.",
       "details": "Plum Graphite gives TheoX a quieter editorial character. Graphite foundations prevent the purple family from becoming decorative, while lavender accents make navigation, references, and active research controls easy to find.",
       "publisher": "FirstPrinciples Labs",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "license": "MIT",
       "compatibility": "0.1.2",
       "colorScheme": "dark",
-      "preview": { "bg": "#151217", "surface": "#221c2a", "text": "#f0e9f3", "accent": "#c28bd7", "blue": "#88aee6" },
+      "preview": {
+        "bg": "#151217",
+        "surface": "#221c2a",
+        "text": "#f0e9f3",
+        "accent": "#c28bd7",
+        "blue": "#88aee6"
+      },
       "features": [
         "Graphite foundations with restrained plum depth",
         "Lavender focus cues for navigation and active controls",
         "Soft neutral typography for editorial and manuscript work",
         "Plum-and-lavender syntax hierarchy for code and formal text"
       ],
-      "tags": ["dark", "plum", "editorial", "calm"],
+      "tags": [
+        "dark",
+        "plum",
+        "editorial",
+        "calm"
+      ],
       "publishedAt": "2026-10-20",
-      "sizeBytes": 2089,
-      "packagePath": "packages/plum-graphite-1.1.0.theox-theme.json",
-      "sha256": "7ec0f833080eae27f59e9af39a7bd8aef3e3cbab74a602c7969d6e191524d545"
+      "sizeBytes": 2509,
+      "packagePath": "packages/plum-graphite-1.2.0.theox-theme.json",
+      "sha256": "bda0737c557f61fd5f45dedebbc40b3154cb98d5b7ba8bd8fe8a570a5e17a2f4",
+      "contributionTypes": [
+        "workbench",
+        "syntax"
+      ],
+      "syntaxPreview": {
+        "comment": "#9a899f",
+        "keyword": "#ef92bc",
+        "string": "#a7ca8c",
+        "number": "#ddb873",
+        "type": "#85c9c1",
+        "function": "#91b9e6",
+        "property": "#d19ae6",
+        "operator": "#cbbfd0",
+        "punctuation": "#a090a5",
+        "heading": "#f6edf8",
+        "link": "#8fc2ed",
+        "constant": "#e0a17e",
+        "tag": "#80c8b8",
+        "attribute": "#d9b979",
+        "variable": "#ddd2e1",
+        "meta": "#9daec3",
+        "emphasis": "#e2bfd3",
+        "selection": "#51385d"
+      }
+    },
+    {
+      "key": "theme-package:research-spectrum-icons",
+      "id": "research-spectrum-icons",
+      "title": "Research Spectrum Icons",
+      "summary": "A balanced semantic icon palette that separates source, proofs, data, tables, manuscripts, and research assets at a glance.",
+      "details": "Research Spectrum is the general-purpose TheoX file icon theme. Its compact symbols and distinct but restrained colors make mixed research workspaces easier to scan without competing with the editor or the selected workbench theme.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.1.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "schemeIndependent": true,
+      "preview": {
+        "bg": "#16191d",
+        "surface": "#20252b",
+        "text": "#e6ece9",
+        "accent": "#69b7a8",
+        "blue": "#6da7d9"
+      },
+      "features": [
+        "Semantic colors for source, formal, data, manuscript, and asset files",
+        "Compact symbols designed for dense Study explorers",
+        "Balanced contrast across dark and light workbench themes"
+      ],
+      "tags": ["file icons", "semantic", "balanced", "research"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1678,
+      "packagePath": "packages/research-spectrum-icons-1.1.0.theox-theme.json",
+      "sha256": "e1af6ee01100de414bd6fd72bc1fb8afaa8eafac35e66a327f7a5dec13546a7e",
+      "contributionTypes": ["file-icons"],
+      "fileIconPreview": {
+        "style": "symbols",
+        "colors": {
+          "source": "#5e9fd1",
+          "formal": "#9c82d3",
+          "data": "#d49a43",
+          "table": "#45a790",
+          "manuscript": "#c87891",
+          "config": "#879491",
+          "image": "#78a65e",
+          "archive": "#b98256",
+          "generic": "#7f8b89",
+          "folder": "#d0a84d"
+        },
+        "glyphs": {
+          "source": "λ",
+          "formal": "∀",
+          "data": "{}",
+          "table": "▦",
+          "manuscript": "¶",
+          "config": "⚙",
+          "image": "◇",
+          "archive": "▣",
+          "generic": "·",
+          "folder": "▸"
+        }
+      }
+    },
+    {
+      "key": "theme-package:proof-and-paper-icons",
+      "id": "proof-and-paper-icons",
+      "title": "Proof & Paper Icons",
+      "summary": "An editorial icon palette that brings formal proofs, Lean files, LaTeX, Markdown, and research writing to the foreground.",
+      "details": "Proof & Paper is tuned for theorem development and manuscript work. Formal and writing formats receive the clearest visual emphasis, while source, data, configuration, and archive files remain distinct and easy to locate.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.1.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "schemeIndependent": true,
+      "preview": {
+        "bg": "#191719",
+        "surface": "#242124",
+        "text": "#eee9e6",
+        "accent": "#b078d0",
+        "blue": "#6d8fb4"
+      },
+      "features": [
+        "Prominent formal-language and manuscript categories",
+        "Readable warm editorial palette for long writing sessions",
+        "Semantic coverage for the full TheoX research workspace"
+      ],
+      "tags": ["file icons", "formal", "writing", "editorial"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1645,
+      "packagePath": "packages/proof-and-paper-icons-1.1.0.theox-theme.json",
+      "sha256": "5287c82830bbcc143a7dfe58a8d05786db45d98e3990457ad2194e5c7f54af52",
+      "contributionTypes": ["file-icons"],
+      "fileIconPreview": {
+        "style": "symbols",
+        "colors": {
+          "source": "#6d8fb4",
+          "formal": "#b078d0",
+          "data": "#b99555",
+          "table": "#659d8e",
+          "manuscript": "#d17e8e",
+          "config": "#8e8985",
+          "image": "#7da069",
+          "archive": "#ad7f5f",
+          "generic": "#898582",
+          "folder": "#c4a05e"
+        },
+        "glyphs": {
+          "source": "ƒ",
+          "formal": "⊢",
+          "data": "≔",
+          "table": "⊞",
+          "manuscript": "§",
+          "config": "⋮",
+          "image": "◫",
+          "archive": "□",
+          "generic": "·",
+          "folder": "›"
+        }
+      }
+    },
+    {
+      "key": "theme-package:data-atlas-icons",
+      "id": "data-atlas-icons",
+      "title": "Data Atlas Icons",
+      "summary": "A high-clarity icon palette that makes datasets, tables, notebooks, scripts, and generated assets easy to distinguish.",
+      "details": "Data Atlas is optimized for computational and empirical Studies. Data and table formats carry the strongest cues, while code, formal sources, manuscripts, images, configuration, and archives retain a disciplined semantic hierarchy.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.1.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "schemeIndependent": true,
+      "preview": {
+        "bg": "#151a1c",
+        "surface": "#1e272a",
+        "text": "#e6eeec",
+        "accent": "#2fa68b",
+        "blue": "#5594c1"
+      },
+      "features": [
+        "Strong differentiation between datasets and tabular files",
+        "Clear source, image, configuration, and archive categories",
+        "Compact symbols for data-heavy Study explorers"
+      ],
+      "tags": ["file icons", "data", "tables", "computational"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1635,
+      "packagePath": "packages/data-atlas-icons-1.1.0.theox-theme.json",
+      "sha256": "4f353d835b404303e61ff753d7affd2c842027d0a0d17ecd6dcdaa64c3eca472",
+      "contributionTypes": ["file-icons"],
+      "fileIconPreview": {
+        "style": "symbols",
+        "colors": {
+          "source": "#5594c1",
+          "formal": "#897ac2",
+          "data": "#dfa139",
+          "table": "#2fa68b",
+          "manuscript": "#b6768b",
+          "config": "#819094",
+          "image": "#70a259",
+          "archive": "#bb8050",
+          "generic": "#75858a",
+          "folder": "#c69a40"
+        },
+        "glyphs": {
+          "source": "<>",
+          "formal": "∎",
+          "data": "◈",
+          "table": "#",
+          "manuscript": "Aa",
+          "config": "≡",
+          "image": "▧",
+          "archive": "▤",
+          "generic": "•",
+          "folder": "+"
+        }
+      }
+    },
+    {
+      "key": "theme-package:monochrome-lab-icons",
+      "id": "monochrome-lab-icons",
+      "title": "Monochrome Lab Icons",
+      "summary": "A quiet minimal icon set for users who prefer file-type labels and structure over a multicolor explorer.",
+      "details": "Monochrome Lab reduces the visual weight of the Study explorer. Its minimal style keeps categories recognizable through concise labels while a narrow neutral palette lets the workbench and editor remain dominant.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.1.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "schemeIndependent": true,
+      "preview": {
+        "bg": "#191b1b",
+        "surface": "#232626",
+        "text": "#e3e7e6",
+        "accent": "#9a9178",
+        "blue": "#7f8c8a"
+      },
+      "features": [
+        "Minimal labels instead of decorative file symbols",
+        "Low-distraction neutral palette",
+        "Compatible with dark and light workbench themes"
+      ],
+      "tags": ["file icons", "minimal", "monochrome", "quiet"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1575,
+      "packagePath": "packages/monochrome-lab-icons-1.1.0.theox-theme.json",
+      "sha256": "de93adbe2e0777c8f1d8bed93cf48d6cb000a79010b80c8e5578dc9135894060",
+      "contributionTypes": ["file-icons"],
+      "fileIconPreview": {
+        "style": "minimal",
+        "colors": {
+          "source": "#7f8c8a",
+          "formal": "#89858d",
+          "data": "#918b7e",
+          "table": "#7f8d88",
+          "manuscript": "#8d8587",
+          "config": "#838987",
+          "image": "#858c80",
+          "archive": "#8e887f",
+          "generic": "#818887",
+          "folder": "#9a9178"
+        },
+        "glyphs": {
+          "source": "·",
+          "formal": "·",
+          "data": "·",
+          "table": "·",
+          "manuscript": "·",
+          "config": "·",
+          "image": "·",
+          "archive": "·",
+          "generic": "·",
+          "folder": "·"
+        }
+      }
+    },
+    {
+      "key": "theme-package:high-contrast-icons",
+      "id": "high-contrast-icons",
+      "title": "High Contrast Research Icons",
+      "summary": "A vivid, accessibility-minded semantic palette for quickly locating file categories in large or visually dense Studies.",
+      "details": "High Contrast Research Icons pairs explicit single-letter category markers with vivid colors. It is intended for large explorers, low-contrast displays, and users who benefit from redundant shape and color cues.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.1.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "schemeIndependent": true,
+      "preview": {
+        "bg": "#101315",
+        "surface": "#1a1e21",
+        "text": "#f1f4f3",
+        "accent": "#39c6a3",
+        "blue": "#4ea1ff"
+      },
+      "features": [
+        "High-separation colors across research file categories",
+        "Strong folder and archive cues in dense explorers",
+        "Explicit category markers with no executable or remote assets"
+      ],
+      "tags": ["file icons", "high contrast", "accessible", "vivid"],
+      "publishedAt": "2026-10-20",
+      "sizeBytes": 1630,
+      "packagePath": "packages/high-contrast-icons-1.1.0.theox-theme.json",
+      "sha256": "ece9747cb38427d59920a57ef56fdb3315a2d09b123301a650127a341a20a787",
+      "contributionTypes": ["file-icons"],
+      "fileIconPreview": {
+        "style": "symbols",
+        "colors": {
+          "source": "#4ea1ff",
+          "formal": "#c58cff",
+          "data": "#ffb84d",
+          "table": "#39c6a3",
+          "manuscript": "#ff7fa5",
+          "config": "#b8c0c2",
+          "image": "#8bd35f",
+          "archive": "#e99a5b",
+          "generic": "#d0d6d4",
+          "folder": "#f0c75e"
+        },
+        "glyphs": {
+          "source": "S",
+          "formal": "P",
+          "data": "D",
+          "table": "T",
+          "manuscript": "M",
+          "config": "C",
+          "image": "I",
+          "archive": "A",
+          "generic": "F",
+          "folder": "▶"
+        }
+      }
     }
   ]
 }
