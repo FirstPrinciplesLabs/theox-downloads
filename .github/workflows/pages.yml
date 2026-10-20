@@ -47,6 +47,8 @@ jobs:
           if artifacts[0]['sha256'] not in page:
               raise SystemExit('The featured download checksum does not match')
           PY
+      - name: Validate the public Role Library
+        run: node --test tests/role-library.test.mjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static site

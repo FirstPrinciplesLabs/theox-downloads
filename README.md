@@ -26,4 +26,7 @@ legacy About and tour URLs redirect back into that page.
   checksums, and cannot include grammars, executable code, fonts, or remote assets.
 - Hosted model access extensions live under `model-library/`. They contain no
   weights, credentials, executable code, or private service endpoints.
+- Product role declarations live under `role-library/`. They can activate only
+  workflows already implemented by a compatible TheoX build and contain no
+  executable code, endpoint, credential, or installable preview asset.
 - GitHub Pages deploys only from `main` through `.github/workflows/pages.yml`.
