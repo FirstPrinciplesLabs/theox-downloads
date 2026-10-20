@@ -1,9 +1,9 @@
 # TheoX Theme Library
 
 Theme extensions are optional, color-only palettes for TheoX. Each package uses the
-`theox.theme-package.v1` schema and may contain only the fixed set of validated color
-tokens understood by the desktop app. Themes cannot include scripts, fonts, remote
-assets, or executable code.
+`theox.theme-package.v1` schema and may contain only the fixed sets of validated
+interface and syntax color tokens understood by the desktop app. Themes cannot
+include grammars, scripts, fonts, remote assets, or executable code.
 
 The initial curated collection includes:
 
@@ -17,3 +17,7 @@ The initial curated collection includes:
 TheoX downloads a package only after the user chooses **Add Theme**, verifies its
 published SHA-256 digest, stores it in the app's local theme library, and records an
 inert installation receipt.
+
+Version 1.1 of each curated palette adds a complete editor syntax palette for the
+languages TheoX supports in Study file tabs. Older TheoX builds safely ignore these
+additional inert color values; builds with syntax support offer an in-app update.

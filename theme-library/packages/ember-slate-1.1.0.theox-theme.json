@@ -6,7 +6,7 @@
   "summary": "A warm charcoal theme with copper accents, soft paper text, and grounded research-state colors.",
   "details": "Ember Slate trades the usual blue-gray developer palette for warm mineral surfaces and a precise copper accent. The restrained warmth makes manuscripts and long explanations comfortable while preserving crisp borders and visible scientific state changes.",
   "publisher": "FirstPrinciples Labs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "compatibility": { "minimum_version": "0.1.2" },
   "color_scheme": "dark",
@@ -38,10 +38,18 @@
     "rose": "#dc8791",
     "focus": "#ffc18f"
   },
+  "syntax": {
+    "comment": "#a28e82", "keyword": "#ec94a2", "string": "#a8c88a", "number": "#efbd6c",
+    "type": "#8ac9c0", "function": "#92b4df", "property": "#c6a4d8", "operator": "#d0c1b8",
+    "punctuation": "#aa9890", "heading": "#fff1e9", "link": "#89b8e8", "constant": "#e9a370",
+    "tag": "#83c8b8", "attribute": "#dfbd78", "variable": "#e2d4cc", "meta": "#a6b3be",
+    "emphasis": "#e7bda8", "selection": "#5b3d30"
+  },
   "features": [
     "Warm charcoal surfaces that reduce cold-screen fatigue",
     "Copper navigation accents with soft high-contrast text",
-    "Balanced status colors for proofs, warnings, and counterexamples"
+    "Balanced status colors for proofs, warnings, and counterexamples",
+    "Warm syntax colors tuned for long writing and review sessions"
   ],
   "tags": ["dark", "warm", "charcoal", "writing"],
   "published_at": "2026-10-20"

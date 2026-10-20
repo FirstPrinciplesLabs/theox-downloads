@@ -6,7 +6,7 @@
   "summary": "A warm light theme inspired by archival paper, with sage navigation and ink-like typography.",
   "details": "Paper Sage is a daylight palette for reading, reviewing evidence, and drafting manuscripts. Warm neutral surfaces avoid stark white glare, while sage accents and ink-like text keep the workspace calm and unmistakably structured.",
   "publisher": "FirstPrinciples Labs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "compatibility": { "minimum_version": "0.1.2" },
   "color_scheme": "light",
@@ -38,10 +38,18 @@
     "rose": "#9a555c",
     "focus": "#31674f"
   },
+  "syntax": {
+    "comment": "#68766c", "keyword": "#93465b", "string": "#4f742e", "number": "#865f17",
+    "type": "#196e66", "function": "#416b98", "property": "#765487", "operator": "#56635a",
+    "punctuation": "#737d75", "heading": "#264e3a", "link": "#356f9f", "constant": "#8f5631",
+    "tag": "#267469", "attribute": "#7c631c", "variable": "#3d5550", "meta": "#57717d",
+    "emphasis": "#704e3e", "selection": "#c9d8c8"
+  },
   "features": [
     "Warm paper surfaces for daylight reading and manuscript work",
     "Ink-like body text with calm sage navigation accents",
-    "Accessible research-state colors tuned for light backgrounds"
+    "Accessible research-state colors tuned for light backgrounds",
+    "Ink-and-sage syntax palette for manuscripts, data, and proofs"
   ],
   "tags": ["light", "warm", "paper", "writing"],
   "published_at": "2026-10-20"
