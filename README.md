@@ -29,4 +29,7 @@ legacy About and tour URLs redirect back into that page.
 - Product role declarations live under `role-library/`. They can activate only
   workflows already implemented by a compatible TheoX build and contain no
   executable code, endpoint, credential, or installable preview asset.
+- Education curriculum scaffolds live under `education-starter-library/`.
+  Starters leave instructor and Study bindings unset, require import-time
+  validation, and publish only bounded deterministic investigation palettes.
 - GitHub Pages deploys only from `main` through `.github/workflows/pages.yml`.

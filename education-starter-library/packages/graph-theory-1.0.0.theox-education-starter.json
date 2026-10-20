@@ -1,0 +1,152 @@
+{
+  "schema_version": "theox.education-class-starter.v1",
+  "id": "graph-theory",
+  "title": "Graph Theory Investigation Starter",
+  "subject": "Graph Theory",
+  "summary": "A finite-simple-graph scaffold for investigating connectivity, bipartiteness, trees, degree, clique number, and chromatic number.",
+  "details": "This starter helps an instructor build a graph theory Class around finite simple graphs. It separates definitions that students often conflate, provides hand-checkable examples and boundary cases, and exposes a bounded deterministic palette that can resolve against an exact Graph Theory Study revision.",
+  "publisher": "First Principles Labs",
+  "version": "1.0.0",
+  "license": "CC BY 4.0 curriculum metadata",
+  "compatibility": "0.1.2",
+  "tags": ["graph theory", "finite graphs", "coloring", "connectivity", "deterministic"],
+  "published_at": "2026-10-20",
+  "default_class": {"title": null, "description": null},
+  "curriculum": {
+    "objectives": [
+      "Read a finite simple graph from vertices and unordered edges without assuming a drawing is the graph itself.",
+      "Distinguish connectivity, bipartiteness, and the tree property with explicit witnesses.",
+      "Compute order, size, maximum degree, clique number, and chromatic number on small graphs.",
+      "Generate and test bounded conjectures while retaining refuting graphs and exact provenance."
+    ],
+    "concepts": [
+      {
+        "descriptor_id": "graph_theory.finite_simple_graph",
+        "kind": "definition",
+        "title": "Finite simple graph",
+        "plain_language": "A finite simple graph has finitely many vertices and edges joining distinct pairs, with no loops or repeated edges.",
+        "formal_definition": "A finite simple graph is G=(V,E), where V is finite and E⊆{{u,v}:u,v∈V and u≠v}.",
+        "notation": [{"symbol": "V(G)", "meaning": "the vertex set of G"}, {"symbol": "E(G)", "meaning": "the set of unordered two-vertex edges"}],
+        "prerequisites": [],
+        "worked_example": {"prompt": "Describe the graph with V={1,2,3} and E={{1,2},{2,3}}.", "steps": ["There are three vertices.", "Both edges join distinct vertices and neither repeats."], "conclusion": "This is a finite simple path on three vertices."},
+        "nonexample": {"prompt": "V={1,2} and an edge {1,1}.", "explanation": "The edge is a loop, which is excluded from a simple graph."},
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "graph_theory.connected",
+        "kind": "property",
+        "title": "Connected graph",
+        "plain_language": "A graph is connected when every pair of vertices can be joined by a route along edges.",
+        "formal_definition": "G is connected when for every u,v∈V(G), there is a path u=v₀,v₁,…,vₖ=v with {vᵢ₋₁,vᵢ}∈E(G) for each i.",
+        "notation": [{"symbol": "u∼v", "meaning": "u and v are adjacent when {u,v} is an edge"}, {"symbol": "v₀,…,vₖ", "meaning": "the ordered vertices of a path"}],
+        "prerequisites": ["graph_theory.finite_simple_graph"],
+        "worked_example": {"prompt": "Check the path 1-2-3 for connectivity.", "steps": ["Adjacent pairs have direct edges.", "Vertices 1 and 3 are joined by the path 1,2,3."], "conclusion": "Every vertex pair has a path, so the graph is connected."},
+        "nonexample": {"prompt": "V={1,2,3} and E={{1,2}}.", "explanation": "Vertex 3 has no path to 1 or 2, so the graph is disconnected."},
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "graph_theory.bipartite",
+        "kind": "property",
+        "title": "Bipartite graph",
+        "plain_language": "A graph is bipartite when its vertices can be split into two groups so every edge crosses between the groups.",
+        "formal_definition": "G is bipartite when V(G)=A⊔B for disjoint A,B and every {u,v}∈E(G) has one endpoint in A and one in B.",
+        "notation": [{"symbol": "A⊔B", "meaning": "a disjoint union of the two vertex parts"}, {"symbol": "(A,B)", "meaning": "a chosen bipartition"}],
+        "prerequisites": ["graph_theory.finite_simple_graph"],
+        "worked_example": {"prompt": "Give a bipartition of the path 1-2-3-4.", "steps": ["Put alternating vertices in A={1,3} and B={2,4}.", "Each path edge crosses from one part to the other."], "conclusion": "The path is bipartite."},
+        "nonexample": {"prompt": "The triangle with all three edges.", "explanation": "Alternating two parts around the three-cycle forces the final edge to have both endpoints in one part."},
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "graph_theory.tree",
+        "kind": "property",
+        "title": "Tree",
+        "plain_language": "A tree is a connected graph that contains no closed route returning to its start.",
+        "formal_definition": "A finite simple graph G is a tree when G is connected and contains no cycle, equivalently when G is connected and |E(G)|=|V(G)|-1.",
+        "notation": [{"symbol": "|V(G)|", "meaning": "the number of vertices"}, {"symbol": "|E(G)|", "meaning": "the number of edges"}],
+        "prerequisites": ["graph_theory.finite_simple_graph", "graph_theory.connected"],
+        "worked_example": {"prompt": "Decide whether the path 1-2-3-4 is a tree.", "steps": ["The path is connected.", "It has four vertices and three edges and contains no cycle."], "conclusion": "The graph is a tree."},
+        "nonexample": {"prompt": "The triangle graph.", "explanation": "It is connected but contains a three-cycle, so it is not a tree."},
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "graph_theory.order",
+        "kind": "invariant",
+        "title": "Order",
+        "plain_language": "The order of a graph is its number of vertices.",
+        "formal_definition": "For a finite graph G=(V,E), order(G)=|V(G)|, the cardinality of its vertex set.",
+        "notation": [{"symbol": "|V(G)|", "meaning": "the cardinality of the vertex set"}],
+        "prerequisites": ["graph_theory.finite_simple_graph"],
+        "worked_example": {"prompt": "Find the order of the path 1-2-3-4.", "steps": ["List the distinct vertices: 1,2,3,4.", "Count them."], "conclusion": "The order is 4."},
+        "nonexample": {"prompt": "Call the number of edges the order.", "explanation": "Edge count is size; order counts vertices."},
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "graph_theory.size",
+        "kind": "invariant",
+        "title": "Size",
+        "plain_language": "The size of a graph counts how many distinct unordered edges it contains.",
+        "formal_definition": "For a finite graph G=(V,E), size(G)=|E(G)|, the cardinality of its edge set.",
+        "notation": [{"symbol": "|E(G)|", "meaning": "the cardinality of the edge set"}],
+        "prerequisites": ["graph_theory.finite_simple_graph"],
+        "worked_example": {"prompt": "Find the size of the path 1-2-3-4.", "steps": ["List the edges {1,2},{2,3},{3,4}.", "Count the three edges."], "conclusion": "The size is 3."},
+        "nonexample": {"prompt": "Count both {1,2} and {2,1} in a simple graph.", "explanation": "Edges are unordered, so these names describe the same edge once."},
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "graph_theory.maximum_degree",
+        "kind": "invariant",
+        "title": "Maximum degree",
+        "plain_language": "Maximum degree is the largest number of neighbors any one vertex has.",
+        "formal_definition": "For v∈V(G), deg_G(v)=|{u∈V(G):{u,v}∈E(G)}| and Δ(G)=max_{v∈V(G)}deg_G(v).",
+        "notation": [{"symbol": "deg_G(v)", "meaning": "the number of neighbors of v"}, {"symbol": "Δ(G)", "meaning": "the maximum vertex degree"}],
+        "prerequisites": ["graph_theory.finite_simple_graph"],
+        "worked_example": {"prompt": "Find Δ for the path 1-2-3-4.", "steps": ["Endpoint degrees are 1.", "Interior vertex degrees are 2."], "conclusion": "The maximum degree is 2."},
+        "nonexample": {"prompt": "Add all vertex degrees and call the result Δ(G).", "explanation": "Δ uses the largest single degree, not their sum."},
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "graph_theory.clique_number",
+        "kind": "invariant",
+        "title": "Clique number",
+        "plain_language": "Clique number is the largest number of vertices that are all pairwise adjacent.",
+        "formal_definition": "A clique is C⊆V(G) such that every two distinct vertices in C form an edge. The clique number ω(G) is the maximum |C|.",
+        "notation": [{"symbol": "C", "meaning": "a set of pairwise adjacent vertices"}, {"symbol": "ω(G)", "meaning": "the maximum clique size"}],
+        "prerequisites": ["graph_theory.finite_simple_graph"],
+        "worked_example": {"prompt": "Find ω for a triangle with a pendant vertex.", "steps": ["The three triangle vertices are pairwise adjacent.", "The pendant vertex cannot enlarge that clique."], "conclusion": "The clique number is 3."},
+        "nonexample": {"prompt": "Treat the path 1-2-3 as a three-vertex clique.", "explanation": "Vertices 1 and 3 are not adjacent, so the whole path is not a clique."},
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "graph_theory.chromatic_number",
+        "kind": "invariant",
+        "title": "Chromatic number",
+        "plain_language": "Chromatic number is the fewest colors needed so adjacent vertices receive different colors.",
+        "formal_definition": "A proper k-coloring is c:V(G)→{1,…,k} with c(u)≠c(v) for every {u,v}∈E(G). The chromatic number χ(G) is the least such k.",
+        "notation": [{"symbol": "c", "meaning": "a vertex-color assignment"}, {"symbol": "χ(G)", "meaning": "the minimum number of colors in a proper coloring"}],
+        "prerequisites": ["graph_theory.finite_simple_graph"],
+        "worked_example": {"prompt": "Find χ for a triangle.", "steps": ["Every pair of triangle vertices is adjacent, so three different colors are necessary.", "Assigning one color to each vertex shows three suffice."], "conclusion": "χ=3."},
+        "nonexample": {"prompt": "Use three colors on a path and conclude its chromatic number is 3.", "explanation": "Chromatic number is a minimum. A nontrivial path can be properly colored with two colors."},
+        "verification": "required_at_import"
+      }
+    ],
+    "investigation": {
+      "object_family": {"id": "graph_theory.finite_simple_graph", "label": "Finite simple graphs", "scope": "Instructor-approved simple graphs with at most 12 vertices from an exact bound Study revision.", "representation": "canonical graph encoding with reconstructible vertex and edge sets"},
+      "properties": [
+        {"descriptor_id": "graph_theory.connected", "label": "Connected"},
+        {"descriptor_id": "graph_theory.bipartite", "label": "Bipartite"},
+        {"descriptor_id": "graph_theory.tree", "label": "Tree"}
+      ],
+      "invariants": [
+        {"descriptor_id": "graph_theory.order", "label": "Order"},
+        {"descriptor_id": "graph_theory.size", "label": "Size"},
+        {"descriptor_id": "graph_theory.maximum_degree", "label": "Maximum degree"},
+        {"descriptor_id": "graph_theory.clique_number", "label": "Clique number"},
+        {"descriptor_id": "graph_theory.chromatic_number", "label": "Chromatic number"}
+      ],
+      "conjecture_families": ["implication", "equivalence", "equality", "lower_bound", "upper_bound", "monotonic_relationship"],
+      "concept_invention_heuristics": ["boolean_composition", "threshold_predicate", "invariant_difference", "invariant_ratio", "restricted_object_view"],
+      "visualizations": ["graph_view", "invariant_scatter", "property_matrix", "conjecture_graph", "counterexample_table"],
+      "limits": {"max_objects": 25000, "max_properties": 8, "max_invariants": 12, "max_conjectures_per_run": 500, "max_derived_concepts": 20, "student_model_calls": 0}
+    }
+  }
+}

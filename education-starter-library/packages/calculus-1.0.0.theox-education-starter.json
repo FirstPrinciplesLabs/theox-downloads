@@ -1,0 +1,210 @@
+{
+  "schema_version": "theox.education-class-starter.v1",
+  "id": "calculus",
+  "title": "Calculus Investigation Starter",
+  "subject": "Calculus",
+  "summary": "A clarity-first scaffold for investigating functions, derivatives, critical points, convexity, and definite integrals with exact bounded examples.",
+  "details": "This starter helps an instructor build a calculus Class around rational-coefficient polynomials on bounded rational intervals. It supplies explicit language, notation, examples, nonexamples, and a deterministic investigation palette while leaving course identity, sequencing, Study binding, and publication policy to the instructor.",
+  "publisher": "First Principles Labs",
+  "version": "1.0.0",
+  "license": "CC BY 4.0 curriculum metadata",
+  "compatibility": "0.1.2",
+  "tags": ["calculus", "derivatives", "integrals", "polynomials", "deterministic"],
+  "published_at": "2026-10-20",
+  "default_class": {
+    "title": null,
+    "description": null
+  },
+  "curriculum": {
+    "objectives": [
+      "Connect the formal difference quotient to the slope of a polynomial at a point.",
+      "Use derivative information to identify critical points and reason about shape.",
+      "Form and test bounded claims relating degree, critical points, convexity, and integrals.",
+      "Treat a counterexample as evidence for revising hypotheses rather than as a failed activity."
+    ],
+    "concepts": [
+      {
+        "descriptor_id": "calculus.function_on_interval",
+        "kind": "definition",
+        "title": "Function on a closed interval",
+        "plain_language": "A function assigns exactly one output to every allowed input in an interval that includes both endpoints.",
+        "formal_definition": "For real numbers a ≤ b, a function on [a,b] is a map f:[a,b]→ℝ such that each x∈[a,b] has one value f(x)∈ℝ.",
+        "notation": [
+          {"symbol": "[a,b]", "meaning": "the set of real x satisfying a ≤ x ≤ b"},
+          {"symbol": "f(x)", "meaning": "the unique output assigned to input x"}
+        ],
+        "prerequisites": [],
+        "worked_example": {
+          "prompt": "Describe f(x)=x² on [-1,2].",
+          "steps": ["Check that each x in [-1,2] has one squared value.", "Evaluate the endpoints: f(-1)=1 and f(2)=4."],
+          "conclusion": "The rule defines a function f:[-1,2]→ℝ."
+        },
+        "nonexample": {
+          "prompt": "The rule y²=x on [0,1].",
+          "explanation": "For x>0 it permits both y=√x and y=-√x, so it does not assign exactly one output unless a branch is chosen."
+        },
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "calculus.derivative_at_point",
+        "kind": "function",
+        "title": "Derivative at a point",
+        "plain_language": "The derivative records the instantaneous rate at which a function changes near one input.",
+        "formal_definition": "For an interior point c of the domain, f′(c)=lim_{h→0}(f(c+h)-f(c))/h when this finite limit exists.",
+        "notation": [
+          {"symbol": "f′(c)", "meaning": "the derivative of f at c"},
+          {"symbol": "h→0", "meaning": "h approaches zero through nonzero values"}
+        ],
+        "prerequisites": ["calculus.function_on_interval"],
+        "worked_example": {
+          "prompt": "Find the derivative of f(x)=x² at c=3.",
+          "steps": ["Form ((3+h)²-3²)/h.", "Expand and simplify to 6+h for h≠0.", "Take the limit as h approaches 0."],
+          "conclusion": "f′(3)=6."
+        },
+        "nonexample": {
+          "prompt": "Claim that f(x)=|x| has derivative 0 at x=0 because f(0)=0.",
+          "explanation": "A function value is not a derivative. The right difference quotients approach 1 and the left ones approach -1, so the derivative does not exist."
+        },
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "calculus.differentiable_on_interval",
+        "kind": "property",
+        "title": "Differentiable on an interval",
+        "plain_language": "A function is differentiable on an interval when it has a derivative at every interior point, with appropriate one-sided derivatives at included endpoints.",
+        "formal_definition": "A function f:[a,b]→ℝ is differentiable on [a,b] when f′(x) exists for every x∈(a,b), the right derivative exists at a, and the left derivative exists at b.",
+        "notation": [
+          {"symbol": "(a,b)", "meaning": "the interval excluding both endpoints"},
+          {"symbol": "f′", "meaning": "the derivative function where it exists"}
+        ],
+        "prerequisites": ["calculus.derivative_at_point"],
+        "worked_example": {
+          "prompt": "Decide whether f(x)=x³ is differentiable on [-2,2].",
+          "steps": ["Compute the difference quotient symbolically.", "It converges to 3x² at every interior point and has the corresponding one-sided endpoint limits."],
+          "conclusion": "The polynomial is differentiable on [-2,2]."
+        },
+        "nonexample": {
+          "prompt": "f(x)=|x| on [-1,1].",
+          "explanation": "The one-sided slopes disagree at the interior point 0, so the function is not differentiable on the whole interval."
+        },
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "calculus.convex_on_interval",
+        "kind": "property",
+        "title": "Convex on an interval",
+        "plain_language": "A function is convex when every chord between two points on its graph stays on or above the graph.",
+        "formal_definition": "A function f on an interval I is convex when f(tx+(1-t)y) ≤ t f(x)+(1-t) f(y) for all x,y∈I and t∈[0,1].",
+        "notation": [
+          {"symbol": "t", "meaning": "a weight between 0 and 1"},
+          {"symbol": "tx+(1-t)y", "meaning": "a point between x and y"}
+        ],
+        "prerequisites": ["calculus.function_on_interval"],
+        "worked_example": {
+          "prompt": "Explain why f(x)=x² is convex on ℝ.",
+          "steps": ["Expand t x²+(1-t)y²-(tx+(1-t)y)².", "The difference is t(1-t)(x-y)², which is nonnegative for t∈[0,1]."],
+          "conclusion": "Therefore (tx+(1-t)y)²≤t x²+(1-t)y², exactly the convexity inequality."
+        },
+        "nonexample": {
+          "prompt": "f(x)=-x² on [-1,1].",
+          "explanation": "The midpoint value 0 is greater than the average of the endpoint values -1, violating the convexity inequality."
+        },
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "calculus.polynomial_degree",
+        "kind": "invariant",
+        "title": "Polynomial degree",
+        "plain_language": "The degree is the largest exponent whose coefficient is not zero.",
+        "formal_definition": "For p(x)=a₀+a₁x+⋯+aₙxⁿ with aₙ≠0, degree(p)=n. The zero polynomial requires a separate convention and is excluded from this starter palette.",
+        "notation": [
+          {"symbol": "degree(p)", "meaning": "the largest exponent with nonzero coefficient"},
+          {"symbol": "aₙ", "meaning": "the leading nonzero coefficient"}
+        ],
+        "prerequisites": ["calculus.function_on_interval"],
+        "worked_example": {
+          "prompt": "Find the degree of p(x)=2x³-x+1.",
+          "steps": ["List exponents with nonzero coefficients: 3, 1, and 0.", "Choose the largest exponent."],
+          "conclusion": "degree(p)=3."
+        },
+        "nonexample": {
+          "prompt": "Call 5 the degree of 5x²+7.",
+          "explanation": "The coefficient 5 is not an exponent. The largest nonzero exponent is 2."
+        },
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "calculus.critical_point_count",
+        "kind": "invariant",
+        "title": "Interior critical-point count",
+        "plain_language": "This count records how many interior inputs have derivative zero or no derivative.",
+        "formal_definition": "For f on [a,b], a critical point is c∈(a,b) where f′(c)=0 or f′(c) does not exist. The invariant is the number of distinct such c in the bounded object representation.",
+        "notation": [
+          {"symbol": "c", "meaning": "an interior input"},
+          {"symbol": "f′(c)=0", "meaning": "the tangent slope at c is zero"}
+        ],
+        "prerequisites": ["calculus.derivative_at_point", "calculus.differentiable_on_interval"],
+        "worked_example": {
+          "prompt": "Count the critical points of f(x)=x³-3x on [-2,2].",
+          "steps": ["Compute f′(x)=3x²-3.", "Solve 3x²-3=0 to get x=-1 and x=1.", "Both solutions lie in the interior."],
+          "conclusion": "The interior critical-point count is 2."
+        },
+        "nonexample": {
+          "prompt": "Count both endpoints of f(x)=x on [0,1] as critical points.",
+          "explanation": "This starter's definition counts interior points only; endpoints are excluded and the derivative is never zero inside."
+        },
+        "verification": "required_at_import"
+      },
+      {
+        "descriptor_id": "calculus.definite_integral",
+        "kind": "function",
+        "title": "Definite integral",
+        "plain_language": "The definite integral is the signed accumulation of function values across an interval.",
+        "formal_definition": "For an integrable f:[a,b]→ℝ, ∫ₐᵇf(x)dx is the limit of Riemann sums Σ f(ξᵢ)Δxᵢ as the largest subinterval width approaches zero.",
+        "notation": [
+          {"symbol": "∫ₐᵇ", "meaning": "accumulation from a to b"},
+          {"symbol": "dx", "meaning": "integration with respect to x"}
+        ],
+        "prerequisites": ["calculus.function_on_interval"],
+        "worked_example": {
+          "prompt": "Compute ∫₀² x dx.",
+          "steps": ["Use the antiderivative x²/2.", "Evaluate 2²/2-0²/2."],
+          "conclusion": "The definite integral equals 2."
+        },
+        "nonexample": {
+          "prompt": "Claim ∫₋₁¹ x dx=1 because the triangular area has size 1.",
+          "explanation": "The integral is signed: the negative and positive triangular contributions cancel, so the value is 0."
+        },
+        "verification": "required_at_import"
+      }
+    ],
+    "investigation": {
+      "object_family": {
+        "id": "calculus.rational_polynomial_on_rational_interval",
+        "label": "Rational-coefficient polynomials on bounded rational intervals",
+        "scope": "Nonzero polynomials of degree at most 8 with bounded rational coefficients, paired with a closed rational interval.",
+        "representation": "coefficient vector and ordered interval endpoints"
+      },
+      "properties": [
+        {"descriptor_id": "calculus.differentiable_on_interval", "label": "Differentiable on the interval"},
+        {"descriptor_id": "calculus.convex_on_interval", "label": "Convex on the interval"}
+      ],
+      "invariants": [
+        {"descriptor_id": "calculus.polynomial_degree", "label": "Polynomial degree"},
+        {"descriptor_id": "calculus.critical_point_count", "label": "Interior critical-point count"},
+        {"descriptor_id": "calculus.definite_integral", "label": "Definite integral over the selected interval"}
+      ],
+      "conjecture_families": ["implication", "equivalence", "equality", "lower_bound", "upper_bound", "monotonic_relationship"],
+      "concept_invention_heuristics": ["boolean_composition", "threshold_predicate", "invariant_difference", "restricted_object_view"],
+      "visualizations": ["function_plot", "derivative_plot", "invariant_scatter", "counterexample_table"],
+      "limits": {
+        "max_objects": 5000,
+        "max_properties": 4,
+        "max_invariants": 6,
+        "max_conjectures_per_run": 200,
+        "max_derived_concepts": 12,
+        "student_model_calls": 0
+      }
+    }
+  }
+}
