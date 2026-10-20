@@ -3,6 +3,13 @@
 Portable Study templates are optional scientific starting points. They are not bundled
 with TheoX and installation never executes packaged code.
 
+The catalog is also the human-facing index used by TheoX Study Extensions. Each entry
+publishes a bounded plain-text description, concrete included capabilities, explicit
+scope limits, implementation languages, categories, and its original publication date.
+These fields describe a starting point; they do not attest publisher identity or make
+scientific claims beyond the checksum-bound package. TheoX validates package structure,
+compatibility, portable paths, size, and the published SHA-256 before installation.
+
 ## Boolean Function Complexity Foundation 1.0.0
 
 - all 65,812 labeled Boolean functions on one through four variables
