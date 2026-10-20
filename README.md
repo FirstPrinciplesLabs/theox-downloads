@@ -20,5 +20,9 @@ legacy About and tour URLs redirect back into that page.
 - Every published artifact must appear in `release-manifest.json` with its
   SHA-256 digest.
 - Study templates live under `study-library/`, publish their own catalog and
-  checksum set, and install inertly through the TheoX Study Library.
+  checksum set, and install inertly through TheoX Extensions.
+- Color-only themes live under `theme-library/`, publish versioned packages and
+  checksums, and cannot include executable code, fonts, or remote assets.
+- Hosted model access extensions live under `model-library/`. They contain no
+  weights, credentials, executable code, or private service endpoints.
 - GitHub Pages deploys only from `main` through `.github/workflows/pages.yml`.

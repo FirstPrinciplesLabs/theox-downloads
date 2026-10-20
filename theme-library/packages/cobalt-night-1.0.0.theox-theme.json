@@ -1,0 +1,29 @@
+{
+  "schema_version": "theox.theme-package.v1",
+  "key": "theme-package:cobalt-night",
+  "id": "cobalt-night",
+  "title": "Cobalt Night",
+  "summary": "A focused midnight-blue theme with luminous cobalt controls and cool scientific accents.",
+  "details": "Cobalt Night uses layered navy surfaces to keep complex workspaces legible without turning black. Bright cobalt focus cues and carefully separated state colors make it particularly effective for dense evidence tables and long tool-driven sessions.",
+  "publisher": "FirstPrinciples Labs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "compatibility": { "minimum_version": "0.1.2" },
+  "color_scheme": "dark",
+  "colors": {
+    "bg": "#0c1220", "sidebar": "#10182a", "surface": "#16213a", "surface-panel": "#111a2d",
+    "surface-sunken": "#080d18", "surface-deep": "#0b1222", "surface-raised": "#1b2945",
+    "surface-active": "#213455", "surface-hover": "#294268", "surface-control": "#253a5d",
+    "drawer": "#0f1728", "titlebar": "#0e1626", "statusbar": "#15233a", "border": "#2b4063",
+    "border-strong": "#526c98", "line-soft": "#223451", "line-tree": "#2a3d60", "text": "#e9efff",
+    "text-soft": "#b8c6e2", "text-muted": "#7f91b3", "accent": "#78a9ff", "blue": "#75c8ff",
+    "amber": "#d8b267", "green": "#74c69d", "rose": "#de8396", "focus": "#a6c5ff"
+  },
+  "features": [
+    "Layered navy surfaces for dense technical workspaces",
+    "Luminous cobalt focus cues and selection states",
+    "Cool status palette with readable warning and failure contrast"
+  ],
+  "tags": ["dark", "blue", "focused", "technical"],
+  "published_at": "2026-10-20"
+}
