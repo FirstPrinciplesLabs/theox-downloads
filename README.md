@@ -23,4 +23,6 @@ legacy About and tour URLs redirect back into that page.
   checksum set, and install inertly through TheoX Extensions.
 - Color-only themes live under `theme-library/`, publish versioned packages and
   checksums, and cannot include executable code, fonts, or remote assets.
+- Hosted model access extensions live under `model-library/`. They contain no
+  weights, credentials, executable code, or private service endpoints.
 - GitHub Pages deploys only from `main` through `.github/workflows/pages.yml`.

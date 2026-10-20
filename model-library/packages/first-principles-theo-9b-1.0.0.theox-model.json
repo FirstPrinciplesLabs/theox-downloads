@@ -1,0 +1,30 @@
+{
+  "schema_version": "theox.model-access-package.v1",
+  "key": "model-package:first-principles-theo-9b",
+  "id": "first-principles-theo-9b",
+  "title": "Theo 9B",
+  "summary": "First Principles' hosted specialist for physics and mathematical reasoning, available without downloading model weights.",
+  "details": "Theo 9B is a First Principles specialist derived from Qwen3.5-9B and tuned for physics and mathematical problem solving. This extension does not contain the model or start a local runtime. It allows TheoX to request short-lived hosted access after an entitled First Principles account signs in.",
+  "publisher": "FirstPrinciples Labs",
+  "version": "1.0.0",
+  "license": "First Principles hosted service terms",
+  "compatibility": { "minimum_version": "0.1.2" },
+  "delivery": "hosted",
+  "authentication": "firstprinciples_account",
+  "service_id": "theo-hosted-v1",
+  "model_id": "firstprinciples/theo-9b",
+  "specialization": "Physics and mathematics specialist",
+  "capabilities": [
+    "Step-by-step physics problem solving",
+    "Mathematical derivation and explanation",
+    "Specialist second opinions inside a Study"
+  ],
+  "limitations": [
+    "Non-thinking inference mode only",
+    "Use as a specialist; general agent and tool-use behavior is not guaranteed",
+    "Requires network access and an entitled First Principles account"
+  ],
+  "data_notice": "When selected, the prompt and the Study context needed for that request are sent to the First Principles hosted inference service. Nothing is sent merely by installing or connecting the extension.",
+  "tags": ["hosted", "physics", "mathematics", "specialist", "no download"],
+  "published_at": "2026-10-20"
+}
