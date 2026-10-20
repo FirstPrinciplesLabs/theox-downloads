@@ -6,7 +6,7 @@
   "summary": "A deep blue-black research palette with cool mint accents and crisp scientific status colors.",
   "details": "Aurora Noir keeps the canvas quiet while giving active controls, references, and research states a restrained northern-light glow. It is designed for long evening sessions without flattening the hierarchy between conversation, evidence, and tools.",
   "publisher": "FirstPrinciples Labs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "compatibility": { "minimum_version": "0.1.2" },
   "color_scheme": "dark",
@@ -38,10 +38,18 @@
     "rose": "#d48391",
     "focus": "#a4f0e4"
   },
+  "syntax": {
+    "comment": "#78908a", "keyword": "#ff9db8", "string": "#a9d58d", "number": "#f1c77d",
+    "type": "#7ddbd0", "function": "#8dc8ff", "property": "#d6a7ee", "operator": "#c0ceca",
+    "punctuation": "#78908a", "heading": "#f2fbf8", "link": "#7dc9f2", "constant": "#e6a77a",
+    "tag": "#73d3c1", "attribute": "#e0c07e", "variable": "#d8e5e1", "meta": "#93aec2",
+    "emphasis": "#e8cdc0", "selection": "#264d4a"
+  },
   "features": [
     "Low-glare blue-black surfaces for long research sessions",
     "Mint focus and navigation accents without neon saturation",
-    "Clearly separated evidence, warning, success, and failure colors"
+    "Clearly separated evidence, warning, success, and failure colors",
+    "Aurora syntax palette for code, data, Lean, and Markdown"
   ],
   "tags": ["dark", "cool", "low glare", "research"],
   "published_at": "2026-10-20"

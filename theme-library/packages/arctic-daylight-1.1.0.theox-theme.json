@@ -6,7 +6,7 @@
   "summary": "A crisp cool-light theme with blue-gray structure, clean white surfaces, and teal focus accents.",
   "details": "Arctic Daylight is built for bright rooms and high-density review. Cool gray-blue separators make complex panes easy to parse, while the white working surface stays clean without losing the distinction between controls, drawers, and evidence regions.",
   "publisher": "FirstPrinciples Labs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "compatibility": { "minimum_version": "0.1.2" },
   "color_scheme": "light",
@@ -19,10 +19,18 @@
     "text-soft": "#465761", "text-muted": "#6d808b", "accent": "#377f92", "blue": "#3f70a8",
     "amber": "#8e702c", "green": "#477b5b", "rose": "#995863", "focus": "#1f687b"
   },
+  "syntax": {
+    "comment": "#627782", "keyword": "#9b315a", "string": "#3f742f", "number": "#8a5b12",
+    "type": "#08776f", "function": "#315f9b", "property": "#75508c", "operator": "#4e626c",
+    "punctuation": "#71818a", "heading": "#173f50", "link": "#176c9b", "constant": "#92542e",
+    "tag": "#08776f", "attribute": "#7c5d13", "variable": "#344f60", "meta": "#4f6e80",
+    "emphasis": "#6c493d", "selection": "#bddce5"
+  },
   "features": [
     "Crisp daylight surfaces for bright working environments",
     "Blue-gray structural layers for complex pane layouts",
-    "Teal focus cues with accessible light-background status colors"
+    "Teal focus cues with accessible light-background status colors",
+    "High-contrast daylight syntax colors across supported Study files"
   ],
   "tags": ["light", "cool", "crisp", "review"],
   "published_at": "2026-10-20"
