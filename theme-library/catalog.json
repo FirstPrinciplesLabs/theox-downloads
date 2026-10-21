@@ -3,6 +3,68 @@
   "publisher": "FirstPrinciples Labs",
   "packages": [
     {
+      "key": "theme-package:midnight-laboratory-terminal",
+      "id": "midnight-laboratory-terminal",
+      "title": "Midnight Laboratory Terminal",
+      "summary": "A low-glare blue-black terminal palette with clear scientific status colors and a cool cyan cursor.",
+      "details": "Midnight Laboratory Terminal keeps shell output quiet and structured during long computation sessions. Commands, paths, warnings, and successful checks remain distinct without turning the terminal into a neon display.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "dark",
+      "schemeIndependent": true,
+      "preview": { "bg": "#0b1116", "surface": "#131c23", "text": "#d8e2e8", "accent": "#76d7d0", "blue": "#74aee8" },
+      "features": [
+        "Low-glare blue-black background for long terminal sessions",
+        "Distinct success, warning, error, path, and prompt colors",
+        "Readable normal and bright ANSI palettes",
+        "Inert fixed colors with no scripts, fonts, or remote assets"
+      ],
+      "tags": ["terminal", "dark", "low glare", "technical"],
+      "publishedAt": "2026-10-21",
+      "sizeBytes": 1766,
+      "packagePath": "packages/midnight-laboratory-terminal-1.0.0.theox-theme.json",
+      "sha256": "3a552c0256aed9e42a5c330d570748a8d6d1b85b9512dcdbab459ad2a7a2f8b9",
+      "contributionTypes": ["terminal"],
+      "terminalPreview": {
+        "background": "#0b1116", "foreground": "#d8e2e8", "cursor": "#76d7d0", "cursorAccent": "#0b1116", "selectionBackground": "#294a5f99",
+        "black": "#1a242d", "red": "#e26f78", "green": "#8bcf91", "yellow": "#e5bf72", "blue": "#74aee8", "magenta": "#c59adb", "cyan": "#69c9c3", "white": "#d8e2e8",
+        "brightBlack": "#71808b", "brightRed": "#f18a92", "brightGreen": "#a6e5aa", "brightYellow": "#f4d48a", "brightBlue": "#91c4f5", "brightMagenta": "#d9b4eb", "brightCyan": "#89e0db", "brightWhite": "#ffffff"
+      }
+    },
+    {
+      "key": "theme-package:paper-laboratory-terminal",
+      "id": "paper-laboratory-terminal",
+      "title": "Paper Laboratory Terminal",
+      "summary": "A warm light terminal palette with ink-like text, sage prompts, and restrained research-state colors.",
+      "details": "Paper Laboratory Terminal is intended for bright rooms and light TheoX workbenches. It keeps command output readable on a warm surface while preserving clear distinctions among paths, warnings, failures, and successful verification.",
+      "publisher": "FirstPrinciples Labs",
+      "version": "1.0.0",
+      "license": "MIT",
+      "compatibility": "0.1.2",
+      "colorScheme": "light",
+      "schemeIndependent": true,
+      "preview": { "bg": "#f5f1e8", "surface": "#fffdf7", "text": "#2f352f", "accent": "#477760", "blue": "#416a96" },
+      "features": [
+        "Warm light background for bright-room terminal work",
+        "Ink-like foreground with sage prompt and cursor colors",
+        "Accessible ANSI colors tuned for a light surface",
+        "Inert fixed colors with no scripts, fonts, or remote assets"
+      ],
+      "tags": ["terminal", "light", "warm", "accessible"],
+      "publishedAt": "2026-10-21",
+      "sizeBytes": 1769,
+      "packagePath": "packages/paper-laboratory-terminal-1.0.0.theox-theme.json",
+      "sha256": "8e4601493ce72ddecd732687f55915a9df583a7cefa49c9c0c83dc5a761064f5",
+      "contributionTypes": ["terminal"],
+      "terminalPreview": {
+        "background": "#f5f1e8", "foreground": "#2f352f", "cursor": "#477760", "cursorAccent": "#f5f1e8", "selectionBackground": "#b9d4c899",
+        "black": "#2f352f", "red": "#a93f48", "green": "#477746", "yellow": "#846316", "blue": "#416a96", "magenta": "#765585", "cyan": "#28746f", "white": "#ddd8cd",
+        "brightBlack": "#6f766f", "brightRed": "#c2535c", "brightGreen": "#5d8e5b", "brightYellow": "#9b7923", "brightBlue": "#577fab", "brightMagenta": "#8c6a9a", "brightCyan": "#3c8a84", "brightWhite": "#ffffff"
+      }
+    },
+    {
       "key": "theme-package:aurora-noir",
       "id": "aurora-noir",
       "title": "Aurora Noir",

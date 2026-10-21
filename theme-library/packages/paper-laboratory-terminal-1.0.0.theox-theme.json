@@ -1,0 +1,47 @@
+{
+  "schema_version": "theox.theme-package.v2",
+  "key": "theme-package:paper-laboratory-terminal",
+  "id": "paper-laboratory-terminal",
+  "title": "Paper Laboratory Terminal",
+  "summary": "A warm light terminal palette with ink-like text, sage prompts, and restrained research-state colors.",
+  "details": "Paper Laboratory Terminal is intended for bright rooms and light TheoX workbenches. It keeps command output readable on a warm surface while preserving clear distinctions among paths, warnings, failures, and successful verification.",
+  "publisher": "FirstPrinciples Labs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "compatibility": { "minimum_version": "0.1.2" },
+  "features": [
+    "Warm light background for bright-room terminal work",
+    "Ink-like foreground with sage prompt and cursor colors",
+    "Accessible ANSI colors tuned for a light surface",
+    "Inert fixed colors with no scripts, fonts, or remote assets"
+  ],
+  "tags": ["terminal", "light", "warm", "accessible"],
+  "published_at": "2026-10-21",
+  "contributes": {
+    "terminal": {
+      "colors": {
+        "background": "#f5f1e8",
+        "foreground": "#2f352f",
+        "cursor": "#477760",
+        "cursorAccent": "#f5f1e8",
+        "selectionBackground": "#b9d4c899",
+        "black": "#2f352f",
+        "red": "#a93f48",
+        "green": "#477746",
+        "yellow": "#846316",
+        "blue": "#416a96",
+        "magenta": "#765585",
+        "cyan": "#28746f",
+        "white": "#ddd8cd",
+        "brightBlack": "#6f766f",
+        "brightRed": "#c2535c",
+        "brightGreen": "#5d8e5b",
+        "brightYellow": "#9b7923",
+        "brightBlue": "#577fab",
+        "brightMagenta": "#8c6a9a",
+        "brightCyan": "#3c8a84",
+        "brightWhite": "#ffffff"
+      }
+    }
+  }
+}

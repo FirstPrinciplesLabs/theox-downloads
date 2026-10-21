@@ -1,0 +1,47 @@
+{
+  "schema_version": "theox.theme-package.v2",
+  "key": "theme-package:midnight-laboratory-terminal",
+  "id": "midnight-laboratory-terminal",
+  "title": "Midnight Laboratory Terminal",
+  "summary": "A low-glare blue-black terminal palette with clear scientific status colors and a cool cyan cursor.",
+  "details": "Midnight Laboratory Terminal keeps shell output quiet and structured during long computation sessions. Commands, paths, warnings, and successful checks remain distinct without turning the terminal into a neon display.",
+  "publisher": "FirstPrinciples Labs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "compatibility": { "minimum_version": "0.1.2" },
+  "features": [
+    "Low-glare blue-black background for long terminal sessions",
+    "Distinct success, warning, error, path, and prompt colors",
+    "Readable normal and bright ANSI palettes",
+    "Inert fixed colors with no scripts, fonts, or remote assets"
+  ],
+  "tags": ["terminal", "dark", "low glare", "technical"],
+  "published_at": "2026-10-21",
+  "contributes": {
+    "terminal": {
+      "colors": {
+        "background": "#0b1116",
+        "foreground": "#d8e2e8",
+        "cursor": "#76d7d0",
+        "cursorAccent": "#0b1116",
+        "selectionBackground": "#294a5f99",
+        "black": "#1a242d",
+        "red": "#e26f78",
+        "green": "#8bcf91",
+        "yellow": "#e5bf72",
+        "blue": "#74aee8",
+        "magenta": "#c59adb",
+        "cyan": "#69c9c3",
+        "white": "#d8e2e8",
+        "brightBlack": "#71808b",
+        "brightRed": "#f18a92",
+        "brightGreen": "#a6e5aa",
+        "brightYellow": "#f4d48a",
+        "brightBlue": "#91c4f5",
+        "brightMagenta": "#d9b4eb",
+        "brightCyan": "#89e0db",
+        "brightWhite": "#ffffff"
+      }
+    }
+  }
+}
