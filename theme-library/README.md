@@ -2,7 +2,7 @@
 
 Theme extensions are optional, inert appearance contributions for TheoX. Each
 package uses the `theox.theme-package.v2` schema and may contribute a workbench
-palette, a syntax palette, a file-icon palette, or a compatible combination. The
+palette, a syntax palette, a file-icon palette, a terminal palette, or a compatible combination. The
 desktop validates every fixed token. Packages cannot include grammars, scripts,
 fonts, remote assets, arbitrary SVG, or executable code.
 
@@ -23,6 +23,11 @@ File icon choices are independent of the workbench and syntax palettes:
 - **Monochrome Lab Icons** — a quiet minimal-label option with restrained neutral colors.
 - **High Contrast Research Icons** — vivid, high-separation cues for dense explorers.
 
+Terminal choices are independent of the workbench, syntax, and file-icon palettes:
+
+- **Midnight Laboratory Terminal** — a low-glare blue-black ANSI palette.
+- **Paper Laboratory Terminal** — a warm light ANSI palette for bright-room work.
+
 TheoX downloads a package only after the user chooses **Add Theme Pack**, verifies its
 published SHA-256 digest, stores it in the app's local theme library, and records an
 inert installation receipt. Installation adds each contribution to its matching
@@ -35,3 +40,6 @@ icon packs use bounded, validated glyph maps and semantic color tokens, so every
 pack can have a genuinely distinct visual language without shipping arbitrary
 SVG, scripts, fonts, or remote assets. TheoX renders the same glyph map in the
 extension preview and the real Study file explorer.
+Terminal packs use the same bounded approach: a complete fixed xterm color map is
+validated before installation, previewed against representative TheoX commands, and
+applied to existing and newly opened Study terminals without restarting the shell.
