@@ -1,7 +1,7 @@
 {
   "schema_version": "theox.public-release.v1",
   "product": "TheoX",
-  "version": "0.1.2-preview.1",
+  "version": "0.1.2-preview.2",
   "channel": "preview",
   "published_by": "First Principles Labs",
   "artifacts": [
@@ -9,7 +9,7 @@
       "platform": "macos",
       "architecture": "arm64",
       "name": "TheoX-0.1.2-arm64.dmg",
-      "sha256": "fb2418033a421df379707d302684e98fde0282b56f961e9d4371f64ea7ff0fdb",
+      "sha256": "506ea5b07386c2de43a6bd628c0c2b762b283edbbf7de51069228d3e225dfd1b",
       "signed": false,
       "notarized": false
     },
@@ -17,21 +17,21 @@
       "platform": "windows",
       "architecture": "x64",
       "name": "TheoX-0.1.2-x64.exe",
-      "sha256": "6a0dc263a5fc73ce48dfa9d76024ea66a04e4ee24454000271d342b9ed9f65e0",
+      "sha256": "c8943429de893616981d2ba7b314ea487a36b7aeb40e05b8dd9e38198050e54c",
       "signed": false
     },
     {
       "platform": "linux",
       "architecture": "x86_64",
       "name": "TheoX-0.1.2-x86_64.AppImage",
-      "sha256": "02a4e7c0ed4119d3dc2d6e5fa7dda6d1ea3c0f3febf6eac77b4ca2f6fadc87ee",
+      "sha256": "5bae9603e86178d87757d632460adbcd8fe362cb9db681e66c9f5c7c63bf176d",
       "signed": false
     },
     {
       "platform": "linux",
       "architecture": "x64",
       "name": "TheoX-0.1.2-x64.tar.gz",
-      "sha256": "d1aeba506842872cbad2e524b122dccac3a07aacd67837935d2cf93fc2a016ee",
+      "sha256": "b7ce5aaa7b368907774e99009a3a8c5a5182c571e7c683d94c42ece89f198b63",
       "signed": false
     }
   ]
